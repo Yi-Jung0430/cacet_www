@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light sticky-top">
-    <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top cu__navbar">
+    <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="templates/images/cacet-logo.svg" alt="cacet-logo" height="54px">
         </a>
@@ -7,7 +7,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="home.php">首頁</a>
                 </li>
@@ -42,10 +42,23 @@
                     <a class="nav-link" href="contact.php">聯絡我們</a>
                 </li>
             </ul>
-            <form class="container-fluid justify-content-start">
-                <button class="btn btn-outline-success me-2" type="button">Main button</button>
-                <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
-            </form>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn btn-primary text-white px-4" href="#" id="navbarScrollingDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                        會員中心
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown2">
+                        <li><a class="dropdown-item" href="member.php">個人資料</a></li>
+                        <li><a class="dropdown-item" href="progress.php">稿件進度</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">登出</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>

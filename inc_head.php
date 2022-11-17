@@ -9,7 +9,7 @@
     <link rel="icon" href="storage/CACET.ico">
 
     <!-- css -->
-    <link rel="stylesheet" href="templates/scss/custom.css">
+    <link rel="stylesheet" href="templates/scss/all.css">
 </head>
 
 <body>

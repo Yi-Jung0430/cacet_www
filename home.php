@@ -1,5 +1,5 @@
 <?php include("inc_head.php"); ?>
-<div class="container-fluid bg-gray20">
+<div class="container-fluid bg-gray02">
   <!-- 導航欄 開始 -->
   <?php include("inc_navbar.php"); ?>
   <!-- 導航欄 結束 -->
