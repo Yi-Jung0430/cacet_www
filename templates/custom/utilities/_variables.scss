@@ -1,0 +1,25 @@
+$primary:       #B52121; //custom
+$secondary:     #5D5D5D ; //深灰
+$gray10:        #E2E1E4;// 淺灰
+$gray20:        #EEEEEE;// 最淺的灰
+
+$primary: $primary;
+$secondary: $secondary;
+$gray10: $gray10;
+$gray20: $gray20;
+
+// scss-docs-start colors-map
+$colors: (
+  "gray10":     $gray10,
+  "gray20":     $gray20,
+) ;
+// scss-docs-end colors-map
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "gray10":     $gray10,
+  "gray20":     $gray20
+) ;
+// scss-docs-end theme-colors-map
