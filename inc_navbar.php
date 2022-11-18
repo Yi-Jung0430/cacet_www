@@ -1,21 +1,21 @@
-<nav class="navbar navbar-expand-lg navbar-light sticky-top cu__navbar">
+<nav class="navbar navbar-expand-xxl navbar-light sticky-top cu__navbar">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="templates/images/cacet-logo.svg" alt="cacet-logo" height="54px">
+        <a class="navbar-brand cu__logo" href="#">
+            <img src="templates/images/cacet-logo.svg" alt="cacet-logo" >
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 cu__nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home.php">首頁</a>
+                    <a class="nav-link active cu__navHover" aria-current="page" href="home.php">首頁</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.cacet.org/web/2022ICEET/">研討會官網</a>
+                    <a class="nav-link cu__navHover" href="https://www.cacet.org/web/2022ICEET/">研討會官網</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle  cu__navHover" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         會議投稿
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -25,10 +25,10 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://portal.cacet.org/">期刊官網</a>
+                    <a class="nav-link cu__navHover" href="https://portal.cacet.org/">期刊官網</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle  cu__navHover" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         期刊投稿
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -39,10 +39,10 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.php">聯絡我們</a>
+                    <a class="nav-link cu__navHover" href="contact.php">聯絡我們</a>
                 </li>
             </ul>
-            <ul class="navbar-nav mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0 cu__navBottom">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle btn btn-primary text-white px-4" href="#" id="navbarScrollingDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">

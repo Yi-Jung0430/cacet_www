@@ -157,6 +157,8 @@
 // scss-docs-start navbar-expand-loop
 // Generate series of `.navbar-expand-*` responsive classes for configuring
 // where your navbar collapses.
+
+// 客製手動隱藏
 .navbar-expand {
   @each $breakpoint in map-keys($grid-breakpoints) {
     $next: breakpoint-next($breakpoint, $grid-breakpoints);
@@ -198,6 +200,8 @@
   }
 }
 // scss-docs-end navbar-expand-loop
+
+
 
 
 // Navbar themes
