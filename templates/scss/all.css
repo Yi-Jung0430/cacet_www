@@ -10179,4 +10179,27 @@ $grid-breakpoints: (
     padding: 0.1rem;
     font-size: 1rem;
   }
+}
+
+/*
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+// scss-docs-end grid-breakpoints
+
+*/
+.wrapper__bg01 {
+  background-image: url("../images/bg.svg");
+  background-size: cover;
+  background-position: top left;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=all.css.map */

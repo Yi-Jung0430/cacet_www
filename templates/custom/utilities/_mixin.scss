@@ -48,3 +48,8 @@ $grid-breakpoints: (
       @content;
     }
 }
+
+// 圖片
+@mixin bgimg($bgimg) {
+    background: url($bgimg);
+};

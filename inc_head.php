@@ -12,4 +12,4 @@
     <link rel="stylesheet" href="templates/scss/all.css">
 </head>
 
-<body>
+<body style="background-image: url(../../images/bg-lg-1.png); height:100vh;">
