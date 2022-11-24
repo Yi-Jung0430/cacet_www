@@ -1,9 +1,10 @@
 <div class="container-fluid">
     <nav class="navbar navbar-expand-xxl navbar-light sticky-top bg-transparent cu__navbar">
         <div class="container-fluid">
-            <a class="navbar-brand cu__logo" href="#">
-                <img src="templates/images/cacet-logo.svg" alt="cacet-logo" >
-            </a>
+            <h1 class="logo__text">
+                <a class="navbar-brand cu__logo" href="home.php">中華資訊與科技教育學會</a>
+            </h1>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

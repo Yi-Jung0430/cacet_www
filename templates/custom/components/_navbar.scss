@@ -6,9 +6,14 @@
     &__nav {
         justify-content: space-around;
         width: 60%;
-        @include xxl{
+
+        @media screen and (max-width: 1399px) {
+            // 1400px
             width: 100%;
             margin-top: 1rem;
+            background-color: #fff;
+            padding: 0 40px 16px 40px;
+            border-radius: 4px;
         }
     }
 
@@ -34,20 +39,53 @@
 
     &__logo img {
         height: 54px;
+
         @include sm {
             height: 32px;
         }
     }
 }
 
+.logo__text {
+    margin-top: inherit; 
+    margin-bottom: 0; 
+    font-weight: 0; 
+    line-height:0;
+}
+// Logo 圖片取代文字
+.logo__text a {
+    background-image: url(../../storage/images/logo.svg);
+    height: 70px;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+
+    @media screen and (max-width:768px) {
+        height: 40px;
+        width: 250px;
+    }
+
+    @media screen and (max-width:375px) {
+        height: 30px;
+        width: 185px;
+    }
+}
+
+// 調整 bs 本身 class
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-left: 1rem;
     padding-right: 1rem;
-
 }
 
 .nav-link {
     letter-spacing: 3px;
+
     @include xxl {
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -86,6 +124,11 @@
 .navbar-light .navbar-toggler {
     color: $primary;
     border-color: $primary;
+    padding: 8px;
+
+    @media screen and (max-width:576px) {
+        padding: 4px;
+    }
 }
 
 .navbar-toggler {
@@ -95,3 +138,11 @@
     }
 }
 
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../images/icon/hambuger.svg');
+  }
+
+  .navbar-toggler-icon {
+    width: 24px;
+    height: 24px;
+  }
