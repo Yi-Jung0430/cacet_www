@@ -10562,6 +10562,45 @@ body {
   height: 24px;
 }
 
+.footer {
+  background-color: #5E5E5E;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer__list {
+  list-style-type: none;
+}
+.footer__title {
+  font-weight: 400;
+}
+.footer__text {
+  font-size: 18px;
+  font-weight: 300;
+}
+.footer__icon {
+  margin-top: 8px;
+  transition: all 0.3s;
+}
+.footer__icon svg {
+  width: 85px;
+  transition: all 0.3s;
+  margin-top: 8px;
+}
+.footer__icon svg:hover {
+  transform: translateY(-10px);
+}
+
+.copyright {
+  background-color: #B52121;
+}
+.copyright p {
+  font-size: 14px;
+  color: #F4F4F4;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0;
+}
+
 /*
 
 // scss-docs-start grid-breakpoints
