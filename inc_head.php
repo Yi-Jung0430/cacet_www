@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <title>CACET 投稿系統</title>
     <link rel="icon" href="storage/CACET.ico">
-
-    <!-- css -->
+    <!-- owlCarousel -->
+    <link rel="stylesheet" href="dist/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/owlcarousel/owl.theme.default.min.css">
+    <!-- custom css -->
     <link rel="stylesheet" href="templates/scss/all.css">
 </head>
 

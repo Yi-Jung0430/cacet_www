@@ -4,10 +4,10 @@
     &__bg01 {
         background-image: url('../images/desktop-1440.png');
         // @include bgimg('../../images/bg.svg');
-        background-size: cover;
+        background-size: contain;
         background-position: top right ;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-repeat: no-repeat;
     }
 
@@ -24,6 +24,7 @@
     }
 }
 
+// header
 .header {
     &__line {
         width: 97%;
@@ -181,11 +182,6 @@
         border-radius: 4px 4px 4px 4px;
         transition: all .3s;
 
-        &:hover {
-            height: 80px;
-            line-height: 80px; 
-        }
-
         &::after {
             content: "";
             display: block;
@@ -221,13 +217,6 @@
         }
     }
 
-    
-
-    &__contribute:hover {
-        .header__arrow {
-            bottom: 40px;
-        }
-    }
 
     &__arrow {
         display: block;
@@ -282,5 +271,201 @@
     100% {
       transform: translateX(30%);
     }
-  }
+}
+
+// 最新消息
+.news {
+    background-image: url(../images/news-1440.png);
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-top: 250px;
+    padding-top: 50px;
+
+    &__title {
+        letter-spacing: 12px;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 80px;
+
+        @include md {
+            margin-bottom: 40px;
+        }
+
+        @include sm {
+            margin-bottom: 20px;
+        }
+    }
+
+    // &__paper {
+    //     width: 100%;
+    //     height: auto;
+    //     max-height: 800px;
+    // }
+
+    // &__dot{
+    //     background-image: radial-gradient($primary 0.5px, transparent 0.5px);
+    //     background-size: 5px 5px;
+    //     height: 100%;
+    //     width: 95%;
+    //     top:5%;
+    //     left:-5%;
+    // }
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__item {
+        padding: 20px 0;
+        position: relative;
+        -webkit-transition: opacity .3s ease;
+        transition: opacity .3s ease;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+        }
+
+        &::before {
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: -webkit-transform .5s ease-out;
+            transition: -webkit-transform .5s ease-out;
+            transition: transform .5s ease-out;
+            transition: transform .5s ease-out, -webkit-transform .5s ease-out;
+            background-color: $primary;
+            border-radius: 25px;
+            -webkit-transform-origin: right center;
+            transform-origin: right center;
+        }
+
+        &::after {
+            background-image: url(../images/border-dot.svg);
+            // background-repeat-y: no-repeat;
+            background-size: 9px;
+            background-repeat: no-repeat;
+            background-repeat: repeat-x;
+        }
+
+        &:hover::before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transform-origin: left center;
+            transform-origin: left center;
+        }
+
+    }
+
+
+    &__date {
+        font-size: 14px;
+        color: $primary;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+
+        span {
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 4px;
+            display: inline-block;
+            letter-spacing: 0;
+        }
+
+        @include sm {
+            letter-spacing: 0;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 180%;
+        word-break: break-word;
+        // height: 60px;
+        margin-bottom: 0;
+        text-align-last: left;
+        width: 100%;
+
+        // 溢出文字
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    &__arrow {
+        width: 30px;
+        height: 30px;
+        border: 1px solid $primary;
+        border-radius: 50%;
+        color:$primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        margin-right: 8px;
+
+        &::before {
+            content: url('../images/icon/news_arrow.png');
+            display: block;
+            position: absolute;
+            left: 53%;
+            top: 53%;
+            transform: translate(-50%, -50%) scale(.4);
+
+            @include sm {
+                transform: translate(-50%, -50%) scale(.2);
+            }
+        }
+        
+
+        &:hover {
+            background-color: $primary;
+            &::before {
+                content: url('data:image/svg+xml;charset=UTF-8, <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 7 12" fill="none"><path d="M1 1L6 6L1 11" stroke="white"/></svg>');
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+    } 
+
+    &__button {
+        letter-spacing: 2px;
+        padding: 8px 16px;
+    }
+
+   
+    
+    @media screen and (max-width:768px) {
+        &__arrow {
+            width: 24px;
+            height: 24px; 
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        &__arrow {
+            width: 14px;
+            height: 14px; 
+
+            &::after {
+                transform: translate(-52%, -52%) scale(.5);
+            }
+        }
+    }
+
+}
   
