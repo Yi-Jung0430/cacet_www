@@ -11,6 +11,7 @@
             </div>
             <div class="col-12 col-md-7">
                 
+                
             </div>
         </div>
     </div>
