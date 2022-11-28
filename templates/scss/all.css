@@ -10425,7 +10425,7 @@ body {
   width: 100%;
   padding-right: 20px;
 }
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 991px) {
   .cu__nav {
     width: 100%;
     margin-top: 1rem;
@@ -10446,17 +10446,9 @@ body {
 .cu__navHover:hover::before {
   width: 100%;
 }
-@media (max-width: 1400px) {
+@media (max-width: 992px) {
   .cu__navBottom {
     margin-top: 1rem;
-  }
-}
-.cu__logo img {
-  height: 54px;
-}
-@media (max-width: 576px) {
-  .cu__logo img {
-    height: 32px;
   }
 }
 
@@ -10469,8 +10461,8 @@ body {
 
 .logo__text a {
   background-image: url(../../storage/images/logo.svg);
-  height: 62px;
-  width: 400px;
+  height: 56px;
+  width: 150%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10480,29 +10472,17 @@ body {
   overflow: hidden;
   white-space: nowrap;
 }
-@media screen and (max-width: 1490px) {
+@media screen and (max-width: 1280px) {
   .logo__text a {
-    height: auto;
-    width: 350px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .logo__text a {
-    height: 40px;
-    width: 250px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .logo__text a {
-    height: 30px;
-    width: 185px;
+    height: 48px;
+    width: 100%;
   }
 }
 
 .nav-link {
   letter-spacing: 3px;
 }
-@media (max-width: 1400px) {
+@media screen and (max-width: 991px) {
   .nav-link {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -10511,13 +10491,26 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
   color: #212529;
-  font-size: 20px;
-  padding-left: 16px;
-  padding-right: 16px;
+  font-size: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media screen and (max-width: 1550px) {
+  .navbar-light .navbar-nav .nav-link {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 @media screen and (max-width: 1460px) {
   .navbar-light .navbar-nav .nav-link {
-    font-size: 18px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1152px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
@@ -10586,7 +10579,7 @@ body {
   font-weight: 400;
 }
 .footer__text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
 }
 .footer__icon {
@@ -10627,7 +10620,7 @@ $grid-breakpoints: (
 // scss-docs-end grid-breakpoints
 
 */
-.wrapper__bg01 {
+.home__bg01 {
   background-image: url("../images/desktop-1440.png");
   background-size: contain;
   background-position: top right;
@@ -10636,12 +10629,12 @@ $grid-breakpoints: (
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 744px) {
-  .wrapper__bg01 {
+  .home__bg01 {
     background-image: url("../images/pad-744.png");
   }
 }
 @media screen and (max-width: 428px) {
-  .wrapper__bg01 {
+  .home__bg01 {
     background-image: url("../images/phone-428.png");
   }
 }
@@ -11024,4 +11017,33 @@ $grid-breakpoints: (
   .news__arrow::after {
     transform: translate(-52%, -52%) scale(0.5);
   }
+}
+
+.login__bg01 {
+  background-image: url(../images/login-bg03.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.login .logo__text {
+  margin-top: inherit;
+  margin-bottom: 0;
+  font-weight: 0;
+  line-height: 0;
+}
+
+.login .logo__text a {
+  background-image: url(../../storage/images/logo.svg);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
 }/*# sourceMappingURL=all.css.map */

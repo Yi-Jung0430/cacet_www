@@ -9,7 +9,7 @@
         padding-right: 20px;
         
 
-        @media screen and (max-width: 1399px) {
+        @media screen and (max-width: 991px) {
             // 1400px
             width: 100%;
             margin-top: 1rem;
@@ -34,18 +34,11 @@
     }
 
     &__navBottom {
-        @include xxl {
+        @include lg {
             margin-top: 1rem;
         }
     }
 
-    &__logo img {
-        height: 54px;
-
-        @include sm {
-            height: 32px;
-        }
-    }
 }
 
 .logo__text {
@@ -58,8 +51,8 @@
 .logo__text a {
     background-image: url(../../storage/images/logo.svg);
     
-    height: 62px;
-    width: 400px;
+    height: 56px;
+    width: 150%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -69,40 +62,52 @@
     overflow: hidden;
     white-space: nowrap;
 
-    @media screen and (max-width:1490px) {
-        height: auto;
-        width: 350px;
+    @media screen and (max-width:1280px) {
+        height: 48px;
+        width: 100%;
     }
 
-    @media screen and (max-width:768px) {
-        height: 40px;
-        width: 250px;
-    }
+    // @media screen and (max-width:768px) {
+    //     height: 40px;
+    //     width: 250px;
+    // }
 
-    @media screen and (max-width:375px) {
-        height: 30px;
-        width: 185px;
-    }
+    // @media screen and (max-width:375px) {
+    //     height: 30px;
+    //     width: 185px;
+    // }
 }
 
 // 調整 bs 本身 class
 .nav-link {
     letter-spacing: 3px;
 
-    @include xxl {
+    @media screen and (max-width: 991px) {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
 }
 
+
 .navbar-light .navbar-nav .nav-link {
     color: $gray-900;
-    font-size: 20px;
-    padding-left: 16px;
-    padding-right: 16px;
+    font-size: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    @media screen and (max-width:1550px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
     @media screen and (max-width:1460px) {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    @media screen and (max-width:1152px) {
+        font-size: 14px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 }
 

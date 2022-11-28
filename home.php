@@ -1,6 +1,6 @@
 <?php include("inc_head.php"); ?>
-<div class="wrapper bg-gray02">
-  <div class="wrapper__bg01">
+<div class="home bg-gray02">
+  <div class="home__bg01">
     <!-- 導航欄 開始 -->
     <?php include("inc_navbar.php"); ?>
     <!-- 導航欄 結束 -->
@@ -75,7 +75,7 @@
             </div>
           </div>
           <ul class="col-12 col-sm-8 col-md-7 news__list">
-            <li class="news__item d-flex flex-column justify-content-start flex-sm-row  justify-content-sm-between align-items-start">
+            <li class="news__item d-flex flex-column justify-content-start flex-sm-row  justify-content-sm-between align-items-start align-items-sm-center">
               <p class="news__date d-none d-sm-block">2022<br><span>11.09</span></p>
               <p class="news__date d-sm-none">2022.11.09</p>
               <h4 class="news__subtitle px-sm-2 px-md-4">課堂中的 stem 教育：核心素養與教學實踐。學習的科學，腦科學與 STEM 教育的連結，學習的科學，腦科學與STEM教育的連結，腦科學與STEM教育的連結，新書出版。</h4>
@@ -84,7 +84,7 @@
                 more
               </a>
             </li>
-            <li class="news__item d-flex flex-column justify-content-start flex-sm-row  justify-content-sm-between align-items-start">
+            <li class="news__item d-flex flex-column justify-content-start flex-sm-row  justify-content-sm-between align-items-start align-items-sm-center">
               <p class="news__date d-none d-sm-block">2022<br><span>11.09</span></p>
               <p class="news__date d-sm-none">2022.11.09</p>
               <h4 class="news__subtitle px-sm-2 px-md-4">課堂中的 stem 教育：核心素養與教學實踐。學習的科學，腦科學與 STEM 教育的連結，學習的科學，腦科學與STEM教育的連結，腦科學與STEM教育的連結，新書出版。</h4>
@@ -93,7 +93,7 @@
                 more
               </a>
             </li>
-            <li class="news__item d-flex flex-column justify-content-start flex-sm-row  justify-content-sm-between align-items-start">
+            <li class="news__item d-flex flex-column justify-content-start flex-sm-row  justify-content-sm-between align-items-start align-items-sm-center">
               <p class="news__date d-none d-sm-block">2022<br><span>11.09</span></p>
               <p class="news__date d-sm-none">2022.11.09</p>
               <h4 class="news__subtitle px-sm-2 px-md-4">課堂中的 stem 教育：核心素養與教學實踐。</h4>
@@ -102,7 +102,7 @@
                 more
               </a>
             </li>
-            <li class="news__item d-flex flex-column justify-content-start flex-sm-row  justify-content-sm-between align-items-start">
+            <li class="news__item d-flex flex-column justify-content-start flex-sm-row  justify-content-sm-between align-items-start align-items-sm-center">
               <p class="news__date d-none d-sm-block">2022<br><span>11.09</span></p>
               <p class="news__date d-sm-none">2022.11.09</p>
               <h4 class="news__subtitle px-sm-2 px-md-4">課堂中的 stem 教育：核心素養與教學實踐。</h4>
@@ -111,7 +111,7 @@
                 more
               </a>
             </li>
-            <li class="news__item d-flex flex-column justify-content-start flex-sm-row  justify-content-sm-between align-items-start">
+            <li class="news__item d-flex flex-column justify-content-start flex-sm-row  justify-content-sm-between align-items-start align-items-sm-center">
               <p class="news__date d-none d-sm-block">2022<br><span>11.09</span></p>
               <p class="news__date d-sm-none">2022.11.09</p>
               <h4 class="news__subtitle px-sm-2 px-md-4">課堂中的 stem 教育：核心素養與教學實踐。學習的科學，腦科學與 STEM 教育的連結，學習的科學，腦科學與STEM教育的連結，腦科學與STEM教育的連結，新書出版。</h4>
