@@ -6,7 +6,7 @@
     <!-- 導航欄 結束 -->
 
     <!-- header 開始 -->
-    <header class="container-fluid">
+    <header class="cu__container">
       <div class="row">
         <div class="col position-relative">
           <div class="header__block position-absolute"></div>

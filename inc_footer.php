@@ -1,7 +1,7 @@
 <!-- 頁尾 開始 -->
 <footer class="footer mt-5">
-    <div class="container-fluid">
-        <ul class="row footer__list text-white">
+    <div class="cu__container">
+        <ul class="row footer__list text-white justify-content-between">
             <li class="col-12 col-md-6 footer__item">
                 <p class="footer__title h2 mb-md-4  mb-2">Contact Us</p>
                 <p class="footer__text">

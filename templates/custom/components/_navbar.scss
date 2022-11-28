@@ -4,8 +4,10 @@
     }
 
     &__nav {
-        justify-content: space-around;
-        width: 60%;
+        justify-content:end;
+        width: 100%;
+        padding-right: 20px;
+        
 
         @media screen and (max-width: 1399px) {
             // 1400px
@@ -55,8 +57,9 @@
 // Logo 圖片取代文字
 .logo__text a {
     background-image: url(../../storage/images/logo.svg);
-    height: 70px;
-    width: 350px;
+    
+    height: 62px;
+    width: 400px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -65,6 +68,11 @@
     text-indent: 101%;
     overflow: hidden;
     white-space: nowrap;
+
+    @media screen and (max-width:1490px) {
+        height: auto;
+        width: 350px;
+    }
 
     @media screen and (max-width:768px) {
         height: 40px;
@@ -78,11 +86,6 @@
 }
 
 // 調整 bs 本身 class
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
 .nav-link {
     letter-spacing: 3px;
 
@@ -94,6 +97,13 @@
 
 .navbar-light .navbar-nav .nav-link {
     color: $gray-900;
+    font-size: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media screen and (max-width:1460px) {
+        font-size: 18px;
+    }
 }
 
 .navbar-light .navbar-nav .show>.nav-link,
@@ -106,9 +116,13 @@
     color: $primary;
 }
 
-.dropdown-menu {
-    min-width: 13rem;
+
+@media (min-width: 1400px){
+    .navbar-expand-xxl .navbar-nav .dropdown-menu {
+        width: 100%;
+    }
 }
+
 
 .dropdown-item {
     padding: 0.6rem 1.5rem;
