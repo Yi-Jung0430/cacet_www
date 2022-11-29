@@ -69,9 +69,7 @@
 </div>
 
 <!-- 頁尾 結束 -->
-<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-<script src="templates/bootstrap/js/bootstrap.js"></script>
-<script src="dist/owlcarousel/owl.carousel.min.js"></script>
+
 <!-- 共用js 開始 -->
 <script>
     $('.owl-carousel').owlCarousel({
