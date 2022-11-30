@@ -1,0 +1,33 @@
+.forget {
+    &__bg01 {
+        background-image: url(../images/login-bg.svg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+}
+
+.forget .logo__text {
+    margin-top: inherit; 
+    margin-bottom: 0; 
+    font-weight: 0; 
+    line-height:0;
+}
+// Logo 圖片取代文字
+.forget .logo__text a {
+    background-image: url(../../storage/images/logo.svg);
+    height: 100px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+

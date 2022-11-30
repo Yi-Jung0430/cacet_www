@@ -13,7 +13,7 @@ body {
 
 // 自訂 container
 .cu__container {
-    max-width: 1512px;
+    max-width: 1440px;
     width: 100%;
     padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem);
@@ -21,21 +21,21 @@ body {
     margin-left: auto;
 }
 
-@media (max-width: 1512px) {
+@media (max-width: 1440px) {
     .cu__container {
-        max-width: 1500px;
+        max-width: 1280px;
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1368px) {
     .cu__container {
-        max-width: 1320px;
+        max-width: 1152px;
     }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1199px){
     .cu__container {
-        max-width: 1140px;
+        max-width: 1024px;
     }
 }
 

@@ -10379,7 +10379,7 @@ body {
 }
 
 .cu__container {
-  max-width: 1512px;
+  max-width: 1440px;
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
@@ -10387,19 +10387,19 @@ body {
   margin-left: auto;
 }
 
-@media (max-width: 1512px) {
+@media (max-width: 1440px) {
   .cu__container {
-    max-width: 1500px;
+    max-width: 1280px;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1368px) {
   .cu__container {
-    max-width: 1320px;
+    max-width: 1152px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .cu__container {
-    max-width: 1140px;
+    max-width: 1024px;
   }
 }
 @media (max-width: 992px) {
@@ -10424,7 +10424,7 @@ body {
 }
 
 .cu__navbar {
-  padding-top: 56px;
+  padding-top: 40px;
 }
 .cu__nav {
   justify-content: end;
@@ -10457,36 +10457,22 @@ body {
     margin-top: 1rem;
   }
 }
-
-.logo__text {
-  margin-top: inherit;
-  margin-bottom: 0;
-  font-weight: 0;
-  line-height: 0;
+.cu__logo {
+  height: 60px;
 }
-
-.logo__text a {
-  background-image: url(../../storage/images/logo.svg);
-  height: 56px;
-  width: 150%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: inline-block;
-  vertical-align: middle;
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
-}
-@media screen and (max-width: 1280px) {
-  .logo__text a {
-    height: 48px;
-    width: 100%;
+@media screen and (max-width: 1200px) {
+  .cu__logo {
+    height: 40px;
   }
 }
 
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 20ms linear;
+}
+
 .nav-link {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 @media screen and (max-width: 991px) {
   .nav-link {
@@ -10498,23 +10484,17 @@ body {
 .navbar-light .navbar-nav .nav-link {
   color: #212529;
   font-size: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 @media screen and (max-width: 1550px) {
   .navbar-light .navbar-nav .nav-link {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1200px) {
   .navbar-light .navbar-nav .nav-link {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 1152px) {
-  .navbar-light .navbar-nav .nav-link {
-    font-size: 14px;
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -10628,7 +10608,7 @@ $grid-breakpoints: (
 */
 .home__bg01 {
   background-image: url("../images/desktop-1440.png");
-  background-size: contain;
+  background-size: cover;
   background-position: top right;
   width: 100%;
   height: 100%;
@@ -10685,11 +10665,12 @@ $grid-breakpoints: (
   line-height: 180%;
   margin-left: 24px;
   letter-spacing: 4px;
+  font-size: 2.3rem;
 }
 @media screen and (max-width: 1399px) {
   .header__title {
     margin-top: 60px;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 .header__text {
@@ -10880,10 +10861,9 @@ $grid-breakpoints: (
 .news {
   background-image: url(../images/news-1440.png);
   background-size: contain;
-  background-position: 0 0;
+  background-position: 20px 30%;
   background-repeat: no-repeat;
-  margin-top: 250px;
-  padding-top: 50px;
+  padding-top: 300px;
 }
 .news__title {
   letter-spacing: 12px;
@@ -11025,6 +11005,10 @@ $grid-breakpoints: (
   }
 }
 
+li.news__item:first-child {
+  padding-top: 0;
+}
+
 .login__bg01 {
   background-image: url(../images/login-bg.svg);
   width: 100%;
@@ -11088,4 +11072,34 @@ $grid-breakpoints: (
 
 .form-control.cu__form-control {
   width: 50%;
+}
+
+.forget__bg01 {
+  background-image: url(../images/login-bg.svg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.forget .logo__text {
+  margin-top: inherit;
+  margin-bottom: 0;
+  font-weight: 0;
+  line-height: 0;
+}
+
+.forget .logo__text a {
+  background-image: url(../../storage/images/logo.svg);
+  height: 100px;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
 }/*# sourceMappingURL=all.css.map */

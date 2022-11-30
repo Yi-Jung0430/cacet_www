@@ -1,10 +1,8 @@
-<div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-transparent cu__navbar">
-        <div class="container-fluid">
-            <h1 class="logo__text">
-                <a class="navbar-brand cu__logo" href="home.php">中華資訊與科技教育學會</a>
-            </h1>
-            
+<nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-fixed-top cu__navbar">
+    <div class="container d-lg-flex justify-content-between ">
+            <a class="navbar-brand" href="home.php">
+                <img src="storage/images/logo.svg" alt="logo" class="cu__logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -56,12 +54,13 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown2">
                             <li><a class="dropdown-item" href="member.php">個人資料</a></li>
                             <li><a class="dropdown-item" href="progress.php">稿件進度</a></li>
-                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </hr>
                             <li><a class="dropdown-item" href="#">登出</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-</div>
+    </div>
+</nav>
