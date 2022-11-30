@@ -29,6 +29,20 @@
                         <td></td>
                         <td></td>
                     </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>忘記密碼</td>
+                        <td><a href="forget_password.php">檢視</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>新密碼已寄出</td>
+                        <td><a href="msg_forget.php">檢視</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </tbody>
             </table>
 

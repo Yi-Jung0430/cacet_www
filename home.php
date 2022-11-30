@@ -59,11 +59,11 @@
     <!-- 最新消息 開始 -->
     <div class="news">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-between">
           <div class="col-12">
             <h3 class="h1 news__title">最新消息</h3>
           </div>
-          <div class="col-12 col-sm-5 position-relative">
+          <div class="col-12 col-sm-6 position-relative">
             <div class="news__dot position-absolute"></div>
             <div class="owl-carousel owl-theme">
               <div class="item">
@@ -77,7 +77,7 @@
               </div>
             </div>
           </div>
-          <ul class="col-12 col-sm-7 news__list">
+          <ul class="col-12 col-sm-5 news__list">
             <li class="news__item d-flex flex-column justify-content-start flex-sm-row  justify-content-sm-between align-items-start align-items-sm-center">
               <p class="news__date d-none d-sm-block">2022<br><span>11.09</span></p>
               <p class="news__date d-sm-none">2022.11.09</p>

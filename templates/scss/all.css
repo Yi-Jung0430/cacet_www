@@ -10872,6 +10872,16 @@ $grid-breakpoints: (
   background-repeat: no-repeat;
   padding-top: 300px;
 }
+@media (max-width: 768px) {
+  .news {
+    padding-top: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .news {
+    padding-top: 100px;
+  }
+}
 .news__title {
   letter-spacing: 12px;
   text-align: center;

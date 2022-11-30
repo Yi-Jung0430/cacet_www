@@ -282,6 +282,14 @@
     background-repeat: no-repeat;
     padding-top: 300px;
 
+    @include md {
+        padding-top: 200px;
+    }
+
+    @include sm {
+        padding-top: 100px;
+    }
+
     &__title {
         letter-spacing: 12px;
         text-align: center;
