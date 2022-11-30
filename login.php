@@ -2,9 +2,9 @@
 <div class="login bg-gray02">
   <div class="login__bg01">
     <!-- 錯誤訊息 開始 -->
-    <div class="container mb-3">
-      <div class="row position-relative">
-        <div class="cu__alert position-absolute">
+    <div class="container my-3">
+      <div class="row justify-content-center position-relative">
+        <div class="col-8 position-absolute">
           <!-- 錯誤訊息1 -->
           <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
             <i class="bi bi-exclamation-triangle-fill me-2"></i>
@@ -37,7 +37,7 @@
         </div>
 
         <!-- 登入表單 開始 -->
-        <div class="col-12 col-lg-6 bg-white rounded-3 shadow">
+        <div class="col-12 col-lg-5 bg-white rounded-3 shadow">
           <form class="px-3 py-5" method="post" enctype="multipart/form-data" onSubmit="return form_submit()" action="home.php">
             <h3 class="mb-3"><i class="bi bi-person-circle pe-1"></i>會員登入</h3>
             <div class="form-floating mb-3">

@@ -10417,9 +10417,16 @@ body {
     max-width: 540px;
   }
 }
-.cu__alert {
-  top: 20px;
-  z-index: 100;
+.alert {
+  padding: 0.5rem 0.5rem;
+}
+
+.alert-dismissible .btn-close {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  z-index: 2;
   padding: 0;
 }
 
