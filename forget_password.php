@@ -2,9 +2,9 @@
 <div class="forget bg-gray02">
   <div class="forget__bg01">
     <!-- 錯誤訊息 開始 -->
-    <div class="container mb-3">
-      <div class="row position-relative">
-        <div class="cu__alert position-absolute">
+    <div class="container my-3">
+      <div class="row justify-content-center position-relative">
+        <div class="col-8 position-absolute">
           <!-- 錯誤訊息1 -->
           <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
             <i class="bi bi-exclamation-triangle-fill me-2"></i>
