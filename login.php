@@ -1,38 +1,47 @@
 <?php include("inc_head.php"); ?>
 <div class="login bg-gray02">
   <div class="login__bg01">
-    <!-- 訊息 開始 -->
-    <div class="container">
+    <!-- 錯誤訊息 開始 -->
+    <div class="container mb-3">
       <div class="row position-relative">
-
-
-        <div class="alert alert-danger d-flex align-items-center position-absolute alert-dismissible fade show" role="alert">
-          <i class="bi bi-exclamation-triangle-fill"></i>
-          <div>
-            帳號或密碼錯誤。
+        <div class="cu__alert position-absolute">
+          <!-- 錯誤訊息1 -->
+          <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            <div>
+              帳號或密碼錯誤。
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
 
+          <!-- 錯誤訊息2 -->
+          <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            <div>
+              驗證碼錯誤。
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- 訊息 結束 -->
-    <div class="container h-100">
+    <!-- 錯誤訊息 結束 -->
+
+    <!-- 內容 開始 -->
+    <div class="container py-5 py-lg-0 h-100">
       <div class="row align-items-center h-100 justify-content-between">
-        <div class="col-12 col-md-5">
+        <div class="col-12 col-lg-5  my-3 my-lg-0  ">
           <h1 class="logo__text">
             <a class="navbar-brand cu__logo" href="home.php">中華資訊與科技教育學會</a>
           </h1>
         </div>
 
-
         <!-- 登入表單 開始 -->
-        <div class="col-12 col-md-6 bg-white rounded-3 shadow">
-
-          <form class="px-3 py-5 " method="post" enctype="multipart/form-data" onSubmit="return form_submit()" action="home.php">
-            <h3 class="mb-3">會員登入</h3>
+        <div class="col-12 col-lg-6 bg-white rounded-3 shadow">
+          <form class="px-3 py-5" method="post" enctype="multipart/form-data" onSubmit="return form_submit()" action="home.php">
+            <h3 class="mb-3"><i class="bi bi-person-circle pe-1"></i>會員登入</h3>
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
               <label for="floatingInput">請輸入您的帳號</label>
             </div>
             <div class="form-floating mb-3 position-relative art_password">
@@ -41,10 +50,10 @@
               <label for="floatingPassword">請輸入您的密碼</label>
             </div>
             <div class="form-floating mb-3  d-flex justify-content-between align-items-center">
-              <input type="number" class="form-control cu__form-control  flex-grow-1 me-3" id="floatingVerification" placeholder="請輸入驗證碼">
+              <input type="number" class="form-control cu__form-control  flex-grow-1 me-3" id="floatingVerification" placeholder="請輸入驗證碼" required>
               <label for="floatingVerification" class="">驗證碼</label>
-              <div class="">
-                <img src="storage/images/checkcode.jpg" alt="checkcode" class="">
+              <div class="w-auto">
+                <img src="storage/images/checkcode.jpg" alt="checkcode" >
                 <a href="javascript:void(0);" class=" align-middle">
                   <i class="bi bi-arrow-clockwise fs-3 text-primary"></i>
                 </a>
@@ -61,8 +70,6 @@
         </div>
       </div>
     </div>
-
-
-
+    <!-- 內容 結束 -->
   </div>
 </div>

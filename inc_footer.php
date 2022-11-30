@@ -1,7 +1,7 @@
 <!-- 頁尾 開始 -->
 <footer class="footer mt-5">
     <div class="cu__container">
-        <ul class="d-flex footer__list text-white justify-content-between  flex-nowrap">
+        <ul class="d-flex flex-column flex-md-row footer__list text-white justify-content-between  flex-nowrap">
             <li class="footer__item">
                 <p class="footer__title h2 mb-md-4  mb-2">Contact Us</p>
                 <p class="footer__text">
@@ -17,7 +17,7 @@
                     傳真：​​02-8226-5022
                 </p>
             </li>
-            <li class="footer__item mt-3 mt-md-0">
+            <li class="footer__item mt-3 mt-md-0 ms-md-4">
                 <p class="footer__title h2 mb-md-4 mb-2">About Us</p>
                 <p class="footer__text">
                     中華資訊與科技教育學會
