@@ -91,13 +91,20 @@
         }
     });
 
-    // navbar
+    // navbar 滾動時新增背景顏色
     $(function() {
         $(document).scroll(function() {
             var $nav = $(".navbar-fixed-top");
             $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         });
     });
+
+    // 登出
+    function logout(){
+        if(confirm('您確認要登出嗎？')){
+            location.href = "home.php";
+        }
+    }
 </script>
 <!-- 共用js 結束 -->
 </body>

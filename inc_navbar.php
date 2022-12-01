@@ -60,7 +60,7 @@
                         <li>
                             <hr class="dropdown-divider">
                             </hr>
-                        <li><a class="dropdown-item" href="#">登出</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);" onClick="logout();">登出</a></li>
                     </ul>
                 </li>
             </ul>
