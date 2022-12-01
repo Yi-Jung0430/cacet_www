@@ -30,6 +30,16 @@
         &:hover {
             transform: translateY(-10px);
         }
+
+        @include md {
+            width: 60px;
+            height: 60px;
+        }
+
+        @include sm {
+            width: 40px;
+            height: 40px;
+        }
     }
 }
 

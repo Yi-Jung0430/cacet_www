@@ -10587,6 +10587,18 @@ body {
 .footer__icon svg:hover {
   transform: translateY(-10px);
 }
+@media (max-width: 768px) {
+  .footer__icon svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .footer__icon svg {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 .copyright {
   background-color: #B52121;
@@ -10615,18 +10627,18 @@ $grid-breakpoints: (
 */
 .home__bg01 {
   background-image: url("../images/desktop-1440.png");
-  background-size: cover;
+  background-size: contain;
   background-position: top right;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 744px) {
+@media (max-width: 768px) {
   .home__bg01 {
     background-image: url("../images/pad-744.png");
   }
 }
-@media screen and (max-width: 428px) {
+@media (max-width: 576px) {
   .home__bg01 {
     background-image: url("../images/phone-428.png");
   }
@@ -10870,16 +10882,24 @@ $grid-breakpoints: (
   background-size: contain;
   background-position: 20px 30%;
   background-repeat: no-repeat;
-  padding-top: 300px;
+  padding-top: 380px;
+}
+@media (max-width: 992px) {
+  .news {
+    padding-top: 280px;
+    background-position: 20px 35%;
+  }
 }
 @media (max-width: 768px) {
   .news {
     padding-top: 200px;
+    background-position: 20px 20%;
   }
 }
 @media (max-width: 576px) {
   .news {
-    padding-top: 100px;
+    padding-top: 150px;
+    background-position: 20px 10%;
   }
 }
 .news__title {

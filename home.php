@@ -59,11 +59,11 @@
     <!-- 最新消息 開始 -->
     <div class="news">
       <div class="container">
-        <div class="row justify-content-between">
+        <div class="row g-2 g-md-3 g-lg-5">
           <div class="col-12">
             <h3 class="h1 news__title">最新消息</h3>
           </div>
-          <div class="col-12 col-sm-6 position-relative">
+          <div class="col-12 col-md-6 position-relative">
             <div class="news__dot position-absolute"></div>
             <div class="owl-carousel owl-theme">
               <div class="item">
@@ -77,13 +77,13 @@
               </div>
             </div>
           </div>
-          <ul class="col-12 col-sm-5 news__list">
+          <ul class="col-12 col-md-6 news__list">
             <li class="news__item d-flex flex-column justify-content-start flex-sm-row  justify-content-sm-between align-items-start align-items-sm-center">
               <p class="news__date d-none d-sm-block">2022<br><span>11.09</span></p>
               <p class="news__date d-sm-none">2022.11.09</p>
               <h4 class="news__subtitle px-sm-2 px-md-4">課堂中的 stem 教育：核心素養與教學實踐。學習的科學，腦科學與 STEM 教育的連結，學習的科學，腦科學與STEM教育的連結，腦科學與STEM教育的連結，新書出版。</h4>
               <a href="#" class="news__link d-flex justify-content-start align-items-center">
-                <span class="news__arrow position-relative"></span>
+                <span class="news__arrow position-relative mt-1"></span>
                 more
               </a>
             </li>
@@ -92,7 +92,7 @@
               <p class="news__date d-sm-none">2022.11.09</p>
               <h4 class="news__subtitle px-sm-2 px-md-4">課堂中的 stem 教育：核心素養與教學實踐。學習的科學，腦科學與 STEM 教育的連結，學習的科學，腦科學與STEM教育的連結，腦科學與STEM教育的連結，新書出版。</h4>
               <a href="#" class="news__link d-flex justify-content-start align-items-center">
-                <span class="news__arrow position-relative"></span>
+                <span class="news__arrow position-relative mt-1" ></span>
                 more
               </a>
             </li>
@@ -101,7 +101,7 @@
               <p class="news__date d-sm-none">2022.11.09</p>
               <h4 class="news__subtitle px-sm-2 px-md-4">課堂中的 stem 教育：核心素養與教學實踐。</h4>
               <a href="#" class="news__link d-flex justify-content-start align-items-center">
-                <span class="news__arrow position-relative"></span>
+                <span class="news__arrow position-relative mt-1"></span>
                 more
               </a>
             </li>
