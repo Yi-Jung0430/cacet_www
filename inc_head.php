@@ -24,4 +24,4 @@
     <script src="templates/js/art.js"></script>
 </head>
 
-<body style="background-image: url(../../images/bg-lg-1.png); height:100vh;">
+<body>

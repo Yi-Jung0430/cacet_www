@@ -653,7 +653,7 @@ function art_upload_raw_change(){
 		//
 		$(this).closest(".art_upload_raw").find("input[type='text']").val(fileName);
 		//控制清空按鈕顯不顯示
-		$(this).closest(".art_upload_raw").find("a").show();
+		$(this).closest(".art_upload_raw").find(".icon-cancel").show();
 	});
 }
 /*刪除上傳檔案之值*/
@@ -1872,10 +1872,10 @@ function _cal(year, month){
 
 /*===== 表單設計 結束 =====*/
 
-/*驗證8~99碼英文與數字組合的密碼*/
+/*驗證624碼英文與數字組合的密碼*/
 function checkPassword(arg){
-	if(arg.match(/^[0-9a-zA-Z]{8,99}$/)){
-		if(arg.match(/^[0-9]{8,99}$/) || arg.match(/^[a-zA-Z]{8,99}$/)){
+	if(arg.match(/^[0-9a-zA-Z]{6,24}$/)){
+		if(arg.match(/^[0-9]{6,24}$/) || arg.match(/^[a-zA-Z]{6,24}$/)){
 			return false;
 		}else{
 			return true;
@@ -2045,7 +2045,7 @@ function message_show(arg,arg2){
 	}else{
 		$(".message .message_text").html(arg);
 		$(".message").show();
-		$('html, body').animate({scrollTop:0}, 'fase');
+		$('html, body').animate({scrollTop:0}, 'false');
 	}
 }
 function message_hide(arg){
@@ -2638,6 +2638,49 @@ function art_items_resize(){
 	document.documentElement.style.setProperty('--art_items_modal_top_box_height', ($(".art_items_modal .top_box").height() + 40) + "px");
 }
 /* 選擇項目設計 結束 */
+
+
+/* 上傳檔案功能的刪除舊檔案 開始 */
+async function oldfile_del(arg1, arg2, arg3){
+	if(!await art_confirm(arg2, arg3)){
+		return false;
+	}
+	var t = $(arg1).closest(".oldfile_box").find(".file_is_del");
+	if(t.val() == 0){
+		t.val(1);
+		$(arg1).closest(".oldfile_box").addClass("none");
+	}else{
+		t.val(0);
+		$(arg1).closest(".oldfile_box").removeClass("none");
+	}
+}
+/* 上傳檔案功能的刪除舊檔案 結束 */
+
+
+/* 自訂對話框 開始 */
+function art_confirm(title, message){
+	//
+	var new_html = '<div class="art_confirm"><div class="overlay" onclick="$(\'.art_confirm\').remove();"></div><div class="main"><div class="top">' + title + '</div><div class="msg">...</div><div class="bottom"><input type="button" class="btn_yes" value="確認" /><input type="button" class="btn_no" value="取消" /></div></div></div>';
+	$("body").append(new_html);
+	//
+	return new Promise(function(complete, failed){
+		$('.art_confirm .main .msg').text(message);
+		//
+		$('.art_confirm .main .btn_yes').off('click');
+		$('.art_confirm .main .btn_no').off('click');
+		//
+		$('.art_confirm .main .btn_yes').on('click', function(){
+			$('.art_confirm').remove();
+			complete(true);
+		});
+		$('.art_confirm .main .btn_no').on('click', function(){
+			$('.art_confirm').remove();
+			complete(false);
+		});
+	});
+}
+/* 自訂對話框 結束 */
+
 
 //
 Array.prototype.max = function() {

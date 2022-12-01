@@ -1,0 +1,26 @@
+.register {
+    &__bg01 {
+        background-image: url('../images/desktop-1440.png');
+        background-size: cover;
+        background-position: top right ;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    @include md {
+        &__bg01 {
+            background-image: url('../images/pad-744.png');
+        }
+    }
+
+    @include sm {
+        &__bg01 {
+            background-image: url('../images/phone-428.png');
+        }
+    }
+
+    th {
+        width: 20%;
+    }
+}
