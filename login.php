@@ -29,7 +29,7 @@
 
     <!-- 內容 開始 -->
     <div class="container mb-5 mb-lg-0 h-100">
-      <div class="row align-items-center h-100 justify-content-lg-between">
+      <div class="row align-items-center h-100 justify-content-lg-between justify-content-start">
         <div class="col-12 col-lg-5">
           <h1 class="logo__text">
             <a class="navbar-brand cu__logo" href="home.php">中華資訊與科技教育學會</a>
