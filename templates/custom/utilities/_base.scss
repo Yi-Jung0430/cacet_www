@@ -110,6 +110,42 @@ sup {
     margin-bottom: 0;
 }
 
+
+.message_print_ok{
+	border:1px solid #21ac66;
+	border-radius:4px;
+	background:#fff;
+	margin:10px 10px 10px 10px;
+	padding:0;
+}
+.message_print_ok table{
+	width:100%;
+}
+.message_print_ok table .message_text{
+	font-size:15px;
+	padding:10px;
+	color:#21ac66;
+	position:relative;
+}
+.message_print_ok table .message_text:before{
+	content:url(images/icon_sucess_0fa958.svg);
+	width:16px;
+	height:16px;
+	display:block;
+	position:absolute;
+	top:50%;
+	left:15px;
+	transform:translateY(-50%);
+}
+.message_print_ok table .message_text p{
+	margin:0 0 10px 40px;
+}
+.message_print_ok table .message_text p:last-child{
+	margin-bottom:0;
+}
+
+/* 訊息 結束 */
+
 // icon 
 
 .art_icon.r {

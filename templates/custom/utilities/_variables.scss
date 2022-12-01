@@ -3,6 +3,7 @@
 // custom
 $primary:       #B52121; //custom
 $secondary:     #5D5D5D ; //深灰
+$third:         #0A1D37; //深藍
 $gray01:        #E2E1E4;// 淺灰
 $gray02:        #EEEEEE;// 最淺的灰
 
@@ -37,6 +38,7 @@ $black:    #000 !default;
 $colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "third":      $third,
   "gray01":     $gray01,
   "gray02":     $gray02,
   "blue":       $blue,
@@ -59,6 +61,7 @@ $colors: (
 // custom
 $primary:       #B52121; //custom
 $secondary:     #5D5D5D ; //深灰
+$third:         #0A1D37 ; //深藍
 $gray01:        #E2E1E4;// 淺灰
 $gray02:        #EEEEEE;// 最淺的灰
 
@@ -75,6 +78,7 @@ $theme-colors: (
   // custom
   "primary":    $primary,
   "secondary":  $secondary,
+  "third":      $third,
   "gray01":     $gray01,
   "gray02":     $gray02,
   // custom-end

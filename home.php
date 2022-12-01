@@ -5,6 +5,19 @@
     <?php include("inc_navbar.php"); ?>
     <!-- 導航欄 結束 -->
 
+    <!-- 訊息 開始 -->
+    <div class="message_print_ok">
+      <table>
+        <tr valign="top">
+          <td class="message_text">
+            <p>您的註冊已成功，請至信箱收取驗證信！</p>
+          </td>
+          <td class="message_close" valign="middle"><a href="javascript:void(0);" onClick="message_print_ok_hide(this);"> </a></td>
+        </tr>
+      </table>
+    </div>
+    <!-- 訊息 開始 -->
+
     <!-- header 開始 -->
     <header class="container">
       <div class="row">
@@ -67,13 +80,13 @@
             <div class="news__dot position-absolute"></div>
             <div class="owl-carousel owl-theme">
               <div class="item">
-                <img class="news__paper" src="../web/storage/images/news01.jpg" alt="paper"/>
+                <img class="news__paper" src="../web/storage/images/news01.jpg" alt="paper" />
               </div>
               <div class="item">
-                <img class="news__paper" src="../web/storage/images/news02.jpg" alt="paper"/>
+                <img class="news__paper" src="../web/storage/images/news02.jpg" alt="paper" />
               </div>
               <div class="item">
-                <img class="news__paper" src="../web/storage/images/news03.jpg" alt="paper"/>
+                <img class="news__paper" src="../web/storage/images/news03.jpg" alt="paper" />
               </div>
             </div>
           </div>
@@ -92,7 +105,7 @@
               <p class="news__date d-sm-none">2022.11.09</p>
               <h4 class="news__subtitle px-sm-2 px-md-4">課堂中的 stem 教育：核心素養與教學實踐。學習的科學，腦科學與 STEM 教育的連結，學習的科學，腦科學與STEM教育的連結，腦科學與STEM教育的連結，新書出版。</h4>
               <a href="#" class="news__link d-flex justify-content-start align-items-center">
-                <span class="news__arrow position-relative mt-1" ></span>
+                <span class="news__arrow position-relative mt-1"></span>
                 more
               </a>
             </li>
