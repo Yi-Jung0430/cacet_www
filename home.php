@@ -6,13 +6,17 @@
     <!-- 導航欄 結束 -->
 
     <!-- 訊息 開始 -->
-    <div class="message_print_ok">
+    <div class="message_print_ok ">
       <table>
         <tr valign="top">
           <td class="message_text">
             <p>您的註冊已成功，請至信箱收取驗證信！</p>
           </td>
-          <td class="message_close" valign="middle"><a href="javascript:void(0);" onClick="message_print_ok_hide(this);"> </a></td>
+          <td class="message_close" valign="middle">
+            <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
+              <i class="bi bi-x-circle text-success"></i>
+            </a>
+          </td>
         </tr>
       </table>
     </div>
@@ -121,8 +125,8 @@
               <a href="#" class="news__link d-flex justify-content-start align-items-center">
                 <h4 class="text-dark news__subtitle px-sm-2 px-md-4">課堂中的 stem 教育：核心素養與教學實踐。</h4>
                 <span class="news__arrow position-relative mt-1"></span>
-              </a> -->
-            </li>
+              </a> 
+            </li>-->
           </ul>
 
         </div>
@@ -133,3 +137,22 @@
   </div>
 </div>
 <?php include("inc_footer.php"); ?>
+<script>
+  // 最新消息輪播
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    // margin:10,
+    // nav:true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      }
+    }
+  });
+</script>

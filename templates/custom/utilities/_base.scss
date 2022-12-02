@@ -86,7 +86,6 @@ sup {
 }
 
 // message
-
 .message {
     border-radius: 4px;
     padding: 0;
@@ -110,39 +109,33 @@ sup {
     margin-bottom: 0;
 }
 
-
+//成功訊息
 .message_print_ok{
-	border:1px solid #21ac66;
-	border-radius:4px;
-	background:#fff;
-	margin:10px 10px 10px 10px;
-	padding:0;
+	// margin:10px 10px 10px 10px;
+	// padding: 0.5rem 0.5rem;
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    
 }
 .message_print_ok table{
 	width:100%;
+
 }
 .message_print_ok table .message_text{
-	font-size:15px;
+	font-size:16px;
 	padding:10px;
-	color:#21ac66;
+	color: #0f5132;
 	position:relative;
 }
-.message_print_ok table .message_text:before{
-	content:url(images/icon_sucess_0fa958.svg);
-	width:16px;
-	height:16px;
-	display:block;
-	position:absolute;
-	top:50%;
-	left:15px;
-	transform:translateY(-50%);
-}
-.message_print_ok table .message_text p{
-	margin:0 0 10px 40px;
-}
-.message_print_ok table .message_text p:last-child{
-	margin-bottom:0;
-}
+// .message_print_ok table .message_text p{
+// 	margin:0 0 10px 40px;
+// }
+// .message_print_ok table .message_text p:last-child{
+// 	margin-bottom:0;
+// }
 
 /* 訊息 結束 */
 
@@ -192,3 +185,60 @@ td.position-relative .art_icon.r {
 .art_textarea {
     height: 180px;
 }
+
+//  確認視窗
+.art_confirm .overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.art_confirm .main {
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.art_confirm .main .top {
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #333;
+}
+
+.art_confirm .main .msg {
+    padding: 10px 10px;
+}
+
+.art_confirm .main .bottom {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.art_confirm .main .bottom .btn_yes, 
+.art_confirm .main .bottom .btn_no {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    color: #333;
+    background: #fff;
+}
+
+
+/* 通知橫幅 開始 */
+.art_notistack{
+	position:fixed;
+	top:15%;
+	left:0;
+	right:0;
+	max-width:550px;
+	margin:0 auto;
+}
+/* 通知橫幅 結束 */

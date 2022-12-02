@@ -2109,7 +2109,7 @@ function art_notistack_init(){
 	art_notistack_timer = setInterval(function(){
 		art_notistack_count += 500;
 		//
-		if(art_notistack_count >= 3000){
+		if(art_notistack_count >= 4000){
 			art_notistack_count = 0;
 			$('.message_print_ok:not(".hide")').first().slideUp("fast",function(){
 				$(this).hide();

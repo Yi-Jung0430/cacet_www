@@ -256,6 +256,10 @@
 <script>
   async function form_submit(arg) {
     event.preventDefault();
+    //自訂對話框
+    if (!await art_confirm("系統訊息", "確認提交此申請嗎?")) {
+      return false;
+    }
 
     message_hide();
     message_print_ok_hide();

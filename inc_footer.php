@@ -73,24 +73,6 @@
 
 <!-- 共用js 開始 -->
 <script>
-    // 最新消息輪播
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        // margin:10,
-        // nav:true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
-
     // navbar 滾動時新增背景顏色
     $(function() {
         $(document).scroll(function() {
