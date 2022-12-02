@@ -9,7 +9,7 @@
       <div class="row">
         <div class="col-12">
           <!-- breadcrumb start -->
-          <nav class="mt-3 mt-md-5" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <nav class="mt-3 mt-md-5"  aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="home.php">首頁</a></li>
               <li class="breadcrumb-item active" aria-current="page">註冊會員</li>
@@ -256,10 +256,7 @@
 <script>
   async function form_submit(arg) {
     event.preventDefault();
-    //自訂對話框
-    if (!await art_confirm("系統訊息", "確認提交此申請嗎?")) {
-      return false;
-    }
+
 
     message_hide();
     message_print_ok_hide();
@@ -324,6 +321,11 @@
 
     if (msg != "") {
       message_show(msg);
+      return false;
+    }
+
+    //自訂對話框
+    if (!await art_confirm("系統訊息", "確認提交此申請嗎?")) {
       return false;
     }
 

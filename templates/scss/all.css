@@ -10646,31 +10646,23 @@ td.position-relative .art_icon.r {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 0.3rem;
 }
 
 .art_confirm .main .top {
-  padding: 5px 10px;
-  text-align: left;
-  font-size: 16px;
-  border-bottom: 1px solid #333;
+  padding: 1rem 1rem;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #dee2e6;
+  letter-spacing: 2px;
 }
 
 .art_confirm .main .msg {
-  padding: 10px 10px;
+  padding: 1rem;
 }
 
 .art_confirm .main .bottom {
   padding: 20px 10px;
   text-align: center;
-}
-
-.art_confirm .main .bottom .btn_yes,
-.art_confirm .main .bottom .btn_no {
-  margin: 0 10px;
-  padding: 5px 10px;
-  border: 1px solid #333;
-  color: #333;
-  background: #fff;
 }
 
 /* 通知橫幅 開始 */

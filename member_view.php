@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-12">
                     <!-- breadcrumb start -->
-                    <nav class="mt-3 mt-md-5" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <nav class="mt-3 mt-md-5" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="home.php">首頁</a></li>
                             <li class="breadcrumb-item active" aria-current="page">個人資料</li>
