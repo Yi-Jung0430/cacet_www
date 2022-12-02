@@ -12,7 +12,7 @@
                     <a class="nav-link active cu__navHover" aria-current="page" href="home.php">首頁</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cu__navHover" href="https://www.cacet.org/web/2022ICEET/">研討會官網</a>
+                    <a class="nav-link cu__navHover" href="https://www.cacet.org/web/2022ICEET/" target="_blank">研討會官網</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle  cu__navHover" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -25,7 +25,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cu__navHover" href="https://portal.cacet.org/">期刊官網</a>
+                    <a class="nav-link cu__navHover" href="https://portal.cacet.org/" target="_blank">期刊官網</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle  cu__navHover" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,7 +55,7 @@
                         會員中心
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown2">
-                        <li><a class="dropdown-item" href="member.php">個人資料</a></li>
+                        <li><a class="dropdown-item" href="member_view.php">個人資料</a></li>
                         <li><a class="dropdown-item" href="progress.php">稿件進度</a></li>
                         <li>
                             <hr class="dropdown-divider">

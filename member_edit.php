@@ -12,7 +12,8 @@
                     <nav class="mt-3 mt-md-5" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="home.php">首頁</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">個人資料</li>
+                            <li class="breadcrumb-item"><a href="member_view.php">個人資料</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">修改</li>
                         </ol>
                     </nav>
                     <!-- breadcrumb end -->
@@ -30,12 +31,10 @@
                             </tr>
                         </table>
                     </div>
-
-
                     <!-- 訊息 結束 -->
 
                     <!-- 表單內容 開始 -->
-                    <h2 class="my-lg-3 h1">個人資料</h2>
+                    <h2 class="my-lg-3 h1">編輯個人資料</h2>
                     <small class="text-small fw-light"><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
                     <form method="post" enctype="multipart/form-data" action="home.php">
                         <table class="table  table-bordered bg-white mt-1">
@@ -45,30 +44,19 @@
                                     <th scope="row" valign="middle" class="register__th ">帳號 (電子信箱)
                                         <sup><i class="bi bi-asterisk text-primary"></i><sup>
                                     </th>
-                                    <td >
-                                        <span >tu@sydt.com.tw</span>
+                                    <td>
+                                        <span>tu@sydt.com.tw</span>
                                     </td>
                                 </tr>
                                 <!-- 密碼v_02 -->
-                                <!-- <tr>
+                                <tr>
                                     <th scope="row" valign="middle" class="register__th">密碼
                                         <sup><i class="bi bi-asterisk text-primary"></i><sup>
                                     </th>
                                     <td class="position-relative art_password">
-                                        <a class="art_icon icon-eye-close r" href="javascript:void(0);" onclick="art_password_eye(this);"></a>
-                                        <input type="password" class="form-control  v_02" placeholder="請輸入6~12碼英文數字，英文有區分大小寫。">
+                                        <a href="member_password.php" class="btn btn-third">修改密碼</a>
                                     </td>
-                                </tr> -->
-                                <!-- 再次輸入密碼v_01 -->
-                                <!-- <tr>
-                                    <th scope="row" valign="middle" class="register__th">再次輸入密碼
-                                        <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                    </th>
-                                    <td class="position-relative art_password">
-                                        <a class="art_icon icon-eye-close r" href="javascript:void(0);" onclick="art_password_eye(this);"></a>
-                                        <input type="password" class="form-control v_01" placeholder="請再次輸入相同密碼。">
-                                    </td>
-                                </tr> -->
+                                </tr>
                                 <!-- 中文名v_04 -->
                                 <tr>
                                     <th scope="row" valign="middle" class="register__th ">中文姓名
@@ -194,7 +182,7 @@
                                         <sup><i class="bi bi-asterisk text-primary"></i><sup>
                                     </th>
                                     <td>
-                                        <input type="text" class="form-control " placeholder="" value="教授">
+                                        <input type="text" class="form-control " placeholder="" value="資訊科學系教授">
                                     </td>
                                 </tr>
                                 <!-- 學歷 -->
@@ -202,7 +190,7 @@
                                     <th scope="row" valign="middle" class="register__th ">學歷
                                     </th>
                                     <td>
-                                        <textarea class="form-control art_textarea" placeholder="">日本北海道大學教育學研究院 博士
+                                        <textarea class="form-control art_textarea">日本北海道大學教育學研究院 博士
                                         </textarea>
                                     </td>
                                 </tr>
@@ -211,7 +199,7 @@
                                     <th scope="row" valign="middle" class="register__th ">經歷
                                     </th>
                                     <td>
-                                        <textarea class="form-control art_textarea" placeholder="">日本北海道大學 校長
+                                        <textarea class="form-control art_textarea">日本北海道大學 校長
                                         </textarea>
                                     </td>
                                 </tr>
@@ -220,7 +208,7 @@
                                     <th scope="row" valign="middle" class="register__th ">著作
                                     </th>
                                     <td>
-                                        <textarea class="form-control art_textarea" placeholder=""></textarea>
+                                        <textarea class="form-control art_textarea"></textarea>
                                     </td>
                                 </tr>
                                 <!-- 驗證碼 -->
@@ -231,7 +219,7 @@
                                     <td>
                                         <div class="row g-3">
                                             <div class="col-sm-12 col-lg-4">
-                                                <input type="number" class="form-control" placeholder="">
+                                                <input type="number" class="form-control">
                                             </div>
                                             <div class="col-sm-12 col-lg-8">
                                                 <img src="storage/images/checkcode.jpg" alt="checkcode">
@@ -248,11 +236,7 @@
                             <a class="btn btn-outline-primary btn-lg mx-auto me-2" href="javascript:history.go(-1);">返回</a>
                             <input class="btn btn-primary btn-lg mx-auto " type="submit" onClick="form_submit(this)" value="確認修改">
                         </div>
-
-
                     </form>
-
-
                 </div>
             </div>
         </div>

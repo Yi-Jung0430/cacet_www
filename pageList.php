@@ -43,6 +43,34 @@
                         <td></td>
                         <td></td>
                     </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>註冊</td>
+                        <td><a href="register.php">檢視</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>個人資料(檢視)</td>
+                        <td><a href="member_view.php">檢視</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>個人資料(編輯)</td>
+                        <td><a href="member_edit.php">檢視</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>個人資料(修改密碼)</td>
+                        <td><a href="member_password.php">檢視</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </tbody>
             </table>
 
