@@ -1,12 +1,11 @@
 <?php include("inc_head.php"); ?>
-<div class="login bg-gray02">
-  <div class="login__bg01">
+<div class="login login__bg01">
     <!-- 錯誤訊息 開始 -->
-    <div class="container my-3">
+    <div class="container">
       <div class="row justify-content-center position-relative">
-        <div class="col-8 position-absolute">
+        <div class="col-5 position-absolute">
           <!-- 錯誤訊息1 -->
-          <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
+          <div class="mt-2 alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
             <i class="bi bi-exclamation-triangle-fill me-2"></i>
             <div>
               帳號或密碼錯誤。
@@ -15,7 +14,7 @@
           </div>
 
           <!-- 錯誤訊息2 -->
-          <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
+          <div class="mt-2 alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
             <i class="bi bi-exclamation-triangle-fill me-2"></i>
             <div>
               驗證碼錯誤。
@@ -28,16 +27,16 @@
     <!-- 錯誤訊息 結束 -->
 
     <!-- 內容 開始 -->
-    <div class="container mb-5 mb-lg-0 h-100">
-      <div class="row align-items-center h-100 justify-content-lg-between justify-content-start">
-        <div class="col-12 col-lg-5">
+    <div class="container h-100">
+      <div class="row flex-column align-items-center justify-content-center h-100">
+        <div class="col-10 col-md-8 col-lg-5 mb-3">
           <h1 class="logo__text">
             <a class="navbar-brand cu__logo" href="home.php">中華資訊與科技教育學會</a>
           </h1>
         </div>
 
         <!-- 登入表單 開始 -->
-        <div class="col-12 col-lg-6 bg-white rounded-3 shadow">
+        <div class="col-12 col-md-8 col-lg-5 bg-white rounded-3 shadow">
           <form class="px-3 py-5" method="post" enctype="multipart/form-data" onSubmit="return form_submit()" action="home.php">
             <h3 class="mb-3"><i class="bi bi-person-circle pe-1"></i>會員登入</h3>
             <div class="form-floating mb-3">
@@ -71,5 +70,4 @@
       </div>
     </div>
     <!-- 內容 結束 -->
-  </div>
 </div>

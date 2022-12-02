@@ -11282,7 +11282,7 @@ li.news__item:first-child {
 
 .login .logo__text a {
   background-image: url(../../storage/images/logo.svg);
-  height: 100px;
+  height: 70px;
   width: 100%;
   background-position: center;
   background-size: contain;
@@ -11316,7 +11316,7 @@ li.news__item:first-child {
 
 .forget .logo__text a {
   background-image: url(../../storage/images/logo.svg);
-  height: 100px;
+  height: 70px;
   width: 100%;
   background-position: center;
   background-size: contain;
