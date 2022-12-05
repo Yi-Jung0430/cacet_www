@@ -62,7 +62,7 @@ body {
 // 頁面背景(長頁面)
 .page {
     &__bg01 {
-        background-image: url('../images/desktop-1440.png');
+        background-image: url('../images/desktop-w-1440.png');
         background-size: contain;
         background-position: right top;
         width: 100%;
@@ -78,7 +78,7 @@ body {
 
     @include sm {
         &__bg01 {
-            background-image: url('../images/phone-428.png');
+            background-image: url('../images/desktop-w-1440.png');
         }
     }
 }
@@ -87,7 +87,7 @@ body {
 // 頁面背景(短頁面)
 .page {
     &__bg02 {
-        background-image: url('../images/desktop-1440.png');
+        background-image: url('../images/desktop-w-1440.png');
         background-size: cover;
         background-position: right top;
         width: 100%;
@@ -290,5 +290,4 @@ td.position-relative .art_icon.r {
     margin: 0 auto;
     z-index: 5000000000;
 }
-
 /* 通知橫幅 結束 */

@@ -17,8 +17,15 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>首頁</td>
+                        <td>首頁(已登入)</td>
                         <td><a href="home.php">檢視</a></td>
+                        <td>12/05</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1-a.</td>
+                        <td>首頁(未登入)</td>
+                        <td><a href="home_noLogin.php">檢視</a></td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -26,35 +33,35 @@
                         <td>2</td>
                         <td>登入頁</td>
                         <td><a href="login.php">檢視</a></td>
-                        <td></td>
+                        <td>12/05</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>忘記密碼</td>
                         <td><a href="forget_password.php">檢視</a></td>
-                        <td></td>
+                        <td>12/05</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>新密碼已寄出</td>
                         <td><a href="msg_forget.php">檢視</a></td>
-                        <td></td>
+                        <td>12/05</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>5</td>
                         <td>註冊</td>
                         <td><a href="register.php">檢視</a></td>
-                        <td></td>
+                        <td>12/05</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>6</td>
                         <td>個人資料(檢視)</td>
                         <td><a href="member_view.php">檢視</a></td>
-                        <td></td>
+                        <td>12/05</td>
                         <td></td>
                     </tr>
                     <tr>
@@ -68,9 +75,18 @@
                         <td>8</td>
                         <td>個人資料(修改密碼)</td>
                         <td><a href="member_password.php">檢視</a></td>
+                        <td>12/05</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>投稿說明</td>
+                        <td><a href="seminar_manual.php">檢視</a></td>
                         <td></td>
                         <td></td>
                     </tr>
+
+                    
                 </tbody>
             </table>
 

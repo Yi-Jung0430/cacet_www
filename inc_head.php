@@ -20,6 +20,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="templates/bootstrap/js/bootstrap.js"></script>
     <script src="dist/owlcarousel/owl.carousel.min.js"></script>
+    <script src="dist/pdfjs/pdf.js"></script>
 
     <script src="templates/js/art.js"></script>
 </head>

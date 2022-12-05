@@ -10519,7 +10519,7 @@ body {
   }
 }
 .page__bg01 {
-  background-image: url("../images/desktop-1440.png");
+  background-image: url("../images/desktop-w-1440.png");
   background-size: contain;
   background-position: right top;
   width: 100%;
@@ -10533,12 +10533,12 @@ body {
 }
 @media (max-width: 576px) {
   .page__bg01 {
-    background-image: url("../images/phone-428.png");
+    background-image: url("../images/desktop-w-1440.png");
   }
 }
 
 .page__bg02 {
-  background-image: url("../images/desktop-1440.png");
+  background-image: url("../images/desktop-w-1440.png");
   background-size: cover;
   background-position: right top;
   width: 100%;
@@ -10896,6 +10896,13 @@ td.position-relative .art_icon.r {
   font-weight: 400;
   text-align: center;
   margin-bottom: 0;
+}
+
+/* PDF容器 */
+#the-canvas {
+  border: 2px solid #0A1D37;
+  direction: ltr;
+  width: 100%;
 }
 
 /*
@@ -11421,4 +11428,106 @@ li.news__item:first-child {
 
 .contact tbody td {
   width: 70%;
+}
+
+.sem__box {
+  position: relative;
+}
+.sem__nav {
+  transition: all 0.4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+.sem__pdf {
+  text-align: center;
+  overflow-y: scroll;
+  height: 800px;
+}
+@media (max-width: 768px) {
+  .sem__nav {
+    left: -170px;
+  }
+  .sem.open .sem__nav {
+    left: 0;
+  }
+}
+
+/*  */
+.sub_nav {
+  list-style: none;
+  margin-right: 40px;
+  background: #FF9;
+}
+
+.sub_nav_btn {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sub_nav_btn {
+    display: block;
+  }
+}
+/**/
+.rule__box {
+  position: relative;
+}
+
+.rule__nav {
+  transition: all 0.4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+
+.rule__pdf {
+  overflow-y: scroll;
+  height: 800px;
+}
+
+.pdf__box {
+  margin-left: 210px;
+}
+
+@media (max-width: 768px) {
+  .rule__nav {
+    left: -170px;
+  }
+  .pdf__box {
+    margin-left: 0;
+  }
+  .rule.open .rule__nav {
+    left: 0;
+  }
+}
+/*  */
+.sub_nav {
+  list-style: none;
+  margin-right: 40px;
+  background: #FF9;
+}
+
+.sub_nav_btn {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sub_nav_btn {
+    display: block;
+  }
 }/*# sourceMappingURL=all.css.map */
