@@ -1,5 +1,5 @@
 <!-- 頁尾 開始 -->
-<footer class="footer mt-5">
+<footer class="footer">
     <div class="container">
         <ul class="d-flex flex-column flex-md-row footer__list text-white justify-content-between  flex-nowrap">
             <li class="footer__item">

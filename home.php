@@ -85,7 +85,7 @@
     <!-- Header 結束 -->
 
     <!-- 最新消息 開始 -->
-    <div class="news">
+    <div class="news pb-3 pb-lg-5">
       <div class="container">
         <div class="row g-2 g-md-3 g-lg-5">
           <div class="col-12">

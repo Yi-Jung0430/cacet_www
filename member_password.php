@@ -5,7 +5,7 @@
     <?php include("inc_navbar.php"); ?>
     <!-- 導航欄 結束 -->
 
-    <div class="container">
+    <div class="container pb-3 pb-lg-5">
       <div class="row">
         <div class="col-12">
           <!-- breadcrumb start -->
