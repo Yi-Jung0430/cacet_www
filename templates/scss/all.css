@@ -10665,14 +10665,15 @@ td.position-relative .art_icon.r {
   text-align: center;
 }
 
-/* 通知橫幅 開始 */
+/* 成功通知橫幅 開始 */
 .art_notistack {
   position: fixed;
-  top: 15%;
+  top: 20%;
   left: 0;
   right: 0;
   max-width: 550px;
   margin: 0 auto;
+  z-index: 5000000000;
 }
 
 /* 通知橫幅 結束 */
