@@ -1,13 +1,15 @@
 * {
     font-family: 'Noto Sans TC', sans-serif;
-    
+
 }
 
 body {
     background-color: $gray02;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
@@ -33,30 +35,78 @@ body {
     }
 }
 
-@media (max-width: 1199px){
+@media (max-width: 1199px) {
     .cu__container {
         max-width: 1024px;
     }
 }
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
     .cu__container {
         max-width: 960px;
-    } 
+    }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .cu__container {
         max-width: 720px;
-    } 
+    }
 }
 
-@media (max-width: 576px){
-   .cu__container {
+@media (max-width: 576px) {
+    .cu__container {
         max-width: 540px;
-    } 
+    }
 }
 
+// 頁面背景(長頁面)
+.page {
+    &__bg01 {
+        background-image: url('../images/desktop-1440.png');
+        background-size: contain;
+        background-position: right top;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    @include md {
+        &__bg01 {
+            background-image: url('../images/pad-744.png');
+        }
+    }
+
+    @include sm {
+        &__bg01 {
+            background-image: url('../images/phone-428.png');
+        }
+    }
+}
+
+
+// 頁面背景(短頁面)
+.page {
+    &__bg02 {
+        background-image: url('../images/desktop-1440.png');
+        background-size: cover;
+        background-position: right top;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    @include md {
+        &__bg02 {
+            background-image: url('../images/pad-744.png');
+        }
+    }
+
+    @include sm {
+        &__bg02 {
+            background-image: url('../images/phone-428.png');
+        }
+    }
+}
 
 .alert {
     padding: .5rem .5rem;
@@ -72,7 +122,7 @@ body {
 }
 
 // table
-.table > :not(caption) > * > * {
+.table> :not(caption)>*>* {
     padding: 1rem 1rem;
 }
 
@@ -98,6 +148,7 @@ sup {
 .message table {
     width: 100%;
 }
+
 .message table .message_text {
     font-size: 15px;
     padding: 10px;
@@ -110,25 +161,27 @@ sup {
 }
 
 //成功訊息
-.message_print_ok{
-	// margin:10px 10px 10px 10px;
-	// padding: 0.5rem 0.5rem;
+.message_print_ok {
+    // margin:10px 10px 10px 10px;
+    // padding: 0.5rem 0.5rem;
     color: #0f5132;
     background-color: #d1e7dd;
     border-color: #badbcc;
     border: 1px solid transparent;
     border-radius: 0.25rem;
-    
-}
-.message_print_ok table{
-	width:100%;
 
 }
-.message_print_ok table .message_text{
-	font-size:16px;
-	padding:10px;
-	color: #0f5132;
-	position:relative;
+
+.message_print_ok table {
+    width: 100%;
+
+}
+
+.message_print_ok table .message_text {
+    font-size: 16px;
+    padding: 10px;
+    color: #0f5132;
+    position: relative;
 }
 
 /* 訊息 結束 */
@@ -150,15 +203,15 @@ td.position-relative .art_icon.r {
 
 .art_icon.icon-eye-close:hover {
     background-image: url(../images/icon/icon_eye_close_hover.svg);
-    
+
 }
 
-.art_icon.icon-eye-open{
-	background-image: url(../images/icon/icon_eye_open.svg);
+.art_icon.icon-eye-open {
+    background-image: url(../images/icon/icon_eye_open.svg);
 }
 
-.art_icon.icon-eye-open:hover{
-	background-image: url(../images/icon/icon_eye_open_hover.svg);
+.art_icon.icon-eye-open:hover {
+    background-image: url(../images/icon/icon_eye_open_hover.svg);
 }
 
 .art_icon {
@@ -228,15 +281,14 @@ td.position-relative .art_icon.r {
 
 
 /* 成功通知橫幅 開始 */
-.art_notistack{
-	position:fixed;
-	top: 20%;
-	left:0;
-	right:0;
-	max-width:550px;
-	margin:0 auto;
+.art_notistack {
+    position: fixed;
+    top: 20%;
+    left: 0;
+    right: 0;
+    max-width: 550px;
+    margin: 0 auto;
     z-index: 5000000000;
 }
+
 /* 通知橫幅 結束 */
-
-
