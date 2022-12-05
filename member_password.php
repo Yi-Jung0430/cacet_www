@@ -6,36 +6,41 @@
     <!-- 導航欄 結束 -->
 
     <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- breadcrumb start -->
-                    <nav class="mt-3 mt-md-5" aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="home.php">首頁</a></li>
-                            <li class="breadcrumb-item"><a href="member_view.php">個人資料</a></li>
-                            <li class="breadcrumb-item"><a href="member_edit.php">修改</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">修改密碼</li>
-                        </ol>
-                    </nav>
-                    <!-- breadcrumb end -->
+      <div class="row">
+        <div class="col-12">
+          <!-- breadcrumb start -->
+          <nav class="mt-3 mt-md-5" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="home.php">首頁</a></li>
+              <li class="breadcrumb-item"><a href="member_view.php">個人資料</a></li>
+              <li class="breadcrumb-item"><a href="member_edit.php">修改</a></li>
+              <li class="breadcrumb-item active" aria-current="page">修改密碼</li>
+            </ol>
+          </nav>
+          <!-- breadcrumb end -->
 
-                    <!-- 訊息 開始 -->
-                    <div class="message">
-                        <table>
-                            <tr valign="top">
-                                <td class="message_text"></td>
-                                <td class="message_close text-end pe-2" valign="middle">
-                                    <a href="javascript:void(0);" onClick="message_hide(this);">
-                                        <i class="bi bi-x-circle"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+          <!-- 訊息 開始 -->
+          <div class="message">
+            <table>
+              <tr valign="top">
+                <td class="message_text"></td>
+                <td class="message_close text-end pe-2" valign="middle">
+                  <a href="javascript:void(0);" onClick="message_hide(this);">
+                    <i class="bi bi-x-circle"></i>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
           <!-- 訊息 結束 -->
+
+
 
           <!-- 表單內容 開始 -->
           <h2 class="my-lg-3 h1">修改密碼</h2>
+          <div class="alert alert-dark" role="alert">
+            提醒您，修改密碼後需重新登入會員。
+          </div>
           <small class="text-small fw-light"><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
           <form method="post" enctype="multipart/form-data" action="home.php">
             <table class="table  table-bordered bg-white mt-1">
