@@ -25,7 +25,7 @@
         <!-- 麵包屑+標題 內容 結束 -->
 
         <!-- 主要內容 開始 -->
-        <div class="container  pb-3 pb-lg-5">
+        <div class="container-md  pb-3 pb-lg-5">
             <div class="row rule">
                 <div class="rule__box box col-12">
                     <section class="card rule__nav">
