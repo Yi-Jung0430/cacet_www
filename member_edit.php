@@ -200,7 +200,7 @@
                   </th>
                   <td>
                     <textarea class="form-control art_textarea">日本北海道大學 校長
-                                        </textarea>
+                    </textarea>
                   </td>
                 </tr>
                 <!-- 學歷 -->
@@ -209,25 +209,6 @@
                   </th>
                   <td>
                     <textarea class="form-control art_textarea"></textarea>
-                  </td>
-                </tr>
-                <!-- 驗證碼 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">驗證碼
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <div class="row g-3">
-                      <div class="col-sm-12 col-lg-4">
-                        <input type="number" class="form-control">
-                      </div>
-                      <div class="col-sm-12 col-lg-8">
-                        <img src="storage/images/checkcode.jpg" alt="checkcode">
-                        <a href="javascript:void(0);" class=" align-middle">
-                          <i class="bi bi-arrow-clockwise fs-3 text-primary"></i>
-                        </a>
-                      </div>
-                    </div>
                   </td>
                 </tr>
               </tbody>

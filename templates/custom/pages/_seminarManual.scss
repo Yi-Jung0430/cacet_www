@@ -17,45 +17,7 @@
         overflow-y: scroll;
         height: 800px;
     }
-
-    @media(max-width:768px) {
-        &__nav {
-            left: -170px;
-        }
-
-        // &__pdf {
-        //     margin-left: 0;
-        // }
-
-        &.open &__nav {
-            left: 0;
-        }
-    }
 }
 
-
-
-/*  */
-.sub_nav {
-    list-style: none;
-    margin-right: 40px;
-    background: #FF9;
-}
-
-.sub_nav_btn {
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    position: absolute;
-    top: 10px;
-    right: 0;
-    display: none;
-}
-
-@media(max-width:768px) {
-    .sub_nav_btn {
-        display: block;
-    }
-}
 
 

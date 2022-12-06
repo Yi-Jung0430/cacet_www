@@ -14,6 +14,9 @@
     <!-- owlCarousel -->
     <link rel="stylesheet" href="dist/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="dist/owlcarousel/owl.theme.default.min.css">
+    <!-- ck editor -->
+    <link rel="stylesheet" href="http://122.147.148.181/cacet_admin/templates/art_ckeditor.css">
+    
     <!-- custom css -->
     <link rel="stylesheet" href="templates/scss/all.css">
 
