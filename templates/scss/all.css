@@ -11450,6 +11450,26 @@ li.news__item:first-child {
   height: 800px;
 }
 
+.semMethod__box {
+  position: relative;
+}
+.semMethod__nav {
+  transition: all 0.4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+.semMethod__pdf {
+  text-align: center;
+  overflow-y: scroll;
+  height: 600px;
+}
+
+.form-check .form-check-input {
+  float: none;
+}
+
 .rule {
   position: relative;
 }

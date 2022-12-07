@@ -19,5 +19,28 @@
     }
 }
 
+.semMethod {
+    &__box {
+        position: relative;
+    }
 
+    &__nav {
+        transition: all 0.4s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+    }
+
+    &__pdf {
+        // margin-left: 210px;
+        text-align: center;
+        overflow-y: scroll;
+        height: 600px;
+    }
+}
+
+.form-check .form-check-input {
+    float: none;
+}
 

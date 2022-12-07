@@ -36,7 +36,7 @@
                                 <td>2023-05-24</td>
                                 <td>開放投稿</td>
                                 <td>
-                                    <a href="#" class="btn btn-outline-primary" >線上投稿</a>
+                                    <a href="seminar_method.php" class="btn btn-outline-primary" >線上投稿</a>
                                 </td>
                             </tr>
                             <tr>
