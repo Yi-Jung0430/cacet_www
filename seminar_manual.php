@@ -14,6 +14,7 @@
                     <nav class="my-3 my-md-4" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="home.php">首頁</a></li>
+                            <li class="breadcrumb-item" aria-current="page">會議投稿</li>
                             <li class="breadcrumb-item active" aria-current="page">投稿說明</li>
                         </ol>
                     </nav>
