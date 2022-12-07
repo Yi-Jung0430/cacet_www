@@ -5,7 +5,7 @@
         <?php include("inc_navbar.php"); ?>
         <!-- 導航欄 結束 -->
 
-        <div class="container">
+        <div class="container pb-3 pb-lg-5">
             <div class="row">
                 <div class="col">
                     <!-- breadcrumb start -->
@@ -18,10 +18,10 @@
                     <!-- breadcrumb end -->
 
                     <!-- 聯絡表格 開始 -->
-                    <table class="contact table table-bordered border-third table-hover mt-3 mt-lg-5">
-                        <thead class="text-white bg-third">
+                    <table class="contact  table table-bordered border-third table-hover mt-3 mt-lg-5 ">
+                        <thead class="text-white bg-secondary">
                             <tr>
-                                <th colspan="2" class="h5 text-center">研討會</th>
+                                <th colspan="2" class="h5">研討會</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -43,9 +43,9 @@
                     </table>
 
                     <table class="contact table table-bordered border-third table-hover mt-1 mt-lg-3">
-                        <thead class="text-white bg-third">
+                        <thead class="text-white bg-secondary">
                             <tr>
-                                <th colspan="2" class="h5 text-center">期刊</th>
+                                <th colspan="2" class="h5">期刊</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -67,7 +67,6 @@
                     </table>
                     <!-- 聯絡表格 結束 -->
                 </div>
-
             </div>
         </div>
     </div>
