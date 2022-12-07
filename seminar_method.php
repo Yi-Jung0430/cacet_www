@@ -37,7 +37,7 @@
                         </div>
                     </div>
                     <!--  -->
-                    <form class="text-center" method="post" enctype="multipart/form-data" action="aaa_browse.php">
+                    <form class="text-center" method="post" enctype="multipart/form-data" action="seminar_inner.php">
                         <div class="mb-3 form-check mt-3 mt-md-5">
                             <input type="checkbox" class="form-check-input " id="exampleCheck1" onClick="toggle_btn()">
                             <label class="form-check-label" for="exampleCheck1">我已閱讀並同意投稿辦法</label>

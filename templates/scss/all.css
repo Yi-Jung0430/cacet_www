@@ -10,6 +10,7 @@
   --bs-primary: #B52121;
   --bs-secondary: #5D5D5D;
   --bs-third: #0A1D37;
+  --bs-four: #3E6D9C;
   --bs-gray01: #E2E1E4;
   --bs-gray02: #EEEEEE;
   --bs-blue: #0d6efd;
@@ -28,6 +29,7 @@
   --bs-primary: #B52121;
   --bs-secondary: #5D5D5D;
   --bs-third: #0A1D37;
+  --bs-four: #3E6D9C;
   --bs-gray01: #E2E1E4;
   --bs-gray02: #EEEEEE;
   --bs-success: #198754;
@@ -2861,6 +2863,36 @@ textarea.form-control-lg {
   border-color: #0A1D37;
 }
 
+.btn-four {
+  color: #fff;
+  background-color: #3E6D9C;
+  border-color: #3E6D9C;
+}
+.btn-four:hover {
+  color: #fff;
+  background-color: #355d85;
+  border-color: #32577d;
+}
+.btn-check:focus + .btn-four, .btn-four:focus {
+  color: #fff;
+  background-color: #355d85;
+  border-color: #32577d;
+  box-shadow: 0 0 0 0.25rem rgba(91, 131, 171, 0.5);
+}
+.btn-check:checked + .btn-four, .btn-check:active + .btn-four, .btn-four:active, .btn-four.active, .show > .btn-four.dropdown-toggle {
+  color: #fff;
+  background-color: #32577d;
+  border-color: #2f5275;
+}
+.btn-check:checked + .btn-four:focus, .btn-check:active + .btn-four:focus, .btn-four:active:focus, .btn-four.active:focus, .show > .btn-four.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(91, 131, 171, 0.5);
+}
+.btn-four:disabled, .btn-four.disabled {
+  color: #fff;
+  background-color: #3E6D9C;
+  border-color: #3E6D9C;
+}
+
 .btn-gray01 {
   color: #000;
   background-color: #E2E1E4;
@@ -3173,6 +3205,31 @@ textarea.form-control-lg {
 }
 .btn-outline-third:disabled, .btn-outline-third.disabled {
   color: #0A1D37;
+  background-color: transparent;
+}
+
+.btn-outline-four {
+  color: #3E6D9C;
+  border-color: #3E6D9C;
+}
+.btn-outline-four:hover {
+  color: #fff;
+  background-color: #3E6D9C;
+  border-color: #3E6D9C;
+}
+.btn-check:focus + .btn-outline-four, .btn-outline-four:focus {
+  box-shadow: 0 0 0 0.25rem rgba(62, 109, 156, 0.5);
+}
+.btn-check:checked + .btn-outline-four, .btn-check:active + .btn-outline-four, .btn-outline-four:active, .btn-outline-four.active, .btn-outline-four.dropdown-toggle.show {
+  color: #fff;
+  background-color: #3E6D9C;
+  border-color: #3E6D9C;
+}
+.btn-check:checked + .btn-outline-four:focus, .btn-check:active + .btn-outline-four:focus, .btn-outline-four:active:focus, .btn-outline-four.active:focus, .btn-outline-four.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(62, 109, 156, 0.5);
+}
+.btn-outline-four:disabled, .btn-outline-four.disabled {
+  color: #3E6D9C;
   background-color: transparent;
 }
 
@@ -4692,6 +4749,15 @@ textarea.form-control-lg {
   color: #050e1a;
 }
 
+.alert-four {
+  color: #25415e;
+  background-color: #d8e2eb;
+  border-color: #c5d3e1;
+}
+.alert-four .alert-link {
+  color: #1e344b;
+}
+
 .alert-gray01 {
   color: #5a5a5b;
   background-color: #f9f9fa;
@@ -5079,6 +5145,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #061121;
   border-color: #061121;
+}
+
+.list-group-item-four {
+  color: #25415e;
+  background-color: #d8e2eb;
+}
+.list-group-item-four.list-group-item-action:hover, .list-group-item-four.list-group-item-action:focus {
+  color: #25415e;
+  background-color: #c2cbd4;
+}
+.list-group-item-four.list-group-item-action.active {
+  color: #fff;
+  background-color: #25415e;
+  border-color: #25415e;
 }
 
 .list-group-item-gray01 {
@@ -6179,6 +6259,13 @@ textarea.form-control-lg {
   color: #08172c;
 }
 
+.link-four {
+  color: #3E6D9C;
+}
+.link-four:hover, .link-four:focus {
+  color: #32577d;
+}
+
 .link-gray01 {
   color: #E2E1E4;
 }
@@ -6599,6 +6686,10 @@ textarea.form-control-lg {
 
 .border-third {
   border-color: #0A1D37 !important;
+}
+
+.border-four {
+  border-color: #3E6D9C !important;
 }
 
 .border-gray01 {
@@ -7442,6 +7533,10 @@ textarea.form-control-lg {
   color: #0A1D37 !important;
 }
 
+.text-four {
+  color: #3E6D9C !important;
+}
+
 .text-gray01 {
   color: #E2E1E4 !important;
 }
@@ -7508,6 +7603,10 @@ textarea.form-control-lg {
 
 .bg-third {
   background-color: #0A1D37 !important;
+}
+
+.bg-four {
+  background-color: #3E6D9C !important;
 }
 
 .bg-gray01 {
@@ -11536,4 +11635,8 @@ li.news__item:first-child {
 
 .box {
   position: relative;
+}
+
+label.seminarInner__label {
+  display: inline;
 }/*# sourceMappingURL=all.css.map */

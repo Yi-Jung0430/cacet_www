@@ -1,6 +1,6 @@
 <?php include("inc_head.php"); ?>
-<div class="home bg-gray02">
-    <div class="home__bg01">
+<div class="page bg-gray02">
+    <div class="page__bg02">
         <!-- 導航欄 開始 -->
         <?php include("inc_navbar.php"); ?>
         <!-- 導航欄 結束 -->
@@ -18,8 +18,8 @@
                     <!-- breadcrumb end -->
 
                     <!-- 聯絡表格 開始 -->
-                    <table class="contact  table table-bordered border-third table-hover mt-3 mt-lg-5 ">
-                        <thead class="text-white bg-secondary">
+                    <table class="contact table-light table table-bordered border-third table-hover mt-3 mt-lg-5 ">
+                        <thead class="text-primary ">
                             <tr>
                                 <th colspan="2" class="h5">研討會</th>
                             </tr>
@@ -42,8 +42,8 @@
                         </tbody>
                     </table>
 
-                    <table class="contact table table-bordered border-third table-hover mt-1 mt-lg-3">
-                        <thead class="text-white bg-secondary">
+                    <table class="contact table  table-bordered border-third table-hover mt-3 mt-lg-5">
+                        <thead class="text-primary ">
                             <tr>
                                 <th colspan="2" class="h5">期刊</th>
                             </tr>

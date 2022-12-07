@@ -85,6 +85,35 @@
                         <td></td>
                         <td></td>
                     </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>投稿原則</td>
+                        <td><a href="seminar_rule.php">檢視</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>會議投稿</td>
+                        <td><a href="seminar_contribute.php">檢視</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>投稿辦法</td>
+                        <td><a href="seminar_method.php">檢視</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>13</td>
+                        <td>聯絡我們</td>
+                        <td><a href="contact.php">檢視</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
 
                     
                 </tbody>

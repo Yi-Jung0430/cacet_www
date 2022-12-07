@@ -25,7 +25,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cu__navHover" href="https://portal.cacet.org/" target="_blank">期刊官網</a>
+                    <a class="nav-link cu__navHover" href="https://www.cacet.org/etl/" target="_blank">期刊官網</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle  cu__navHover" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
