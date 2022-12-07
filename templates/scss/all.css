@@ -11478,7 +11478,7 @@ li.news__item:first-child {
 
 @media (max-width: 768px) {
   .rule__nav {
-    left: -170px;
+    left: -200px;
   }
   .pdf__box {
     margin-left: 0;
