@@ -13,6 +13,19 @@ body {
     box-sizing: border-box;
 }
 
+ul li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
 // 自訂 container
 .cu__container {
     max-width: 1440px;

@@ -2,3 +2,41 @@
 label.seminarInner__label {
     display: inline;
 }
+
+.list_group li::before {
+    content: counters(my_01, " ", decimal);
+    min-width: 13px;
+    line-height: 18px;
+    color: $primary;
+    font-size: 12px;
+    font-weight: 300;
+    background: #fff;
+    border: 1px solid $primary;
+    border-radius: 3px;
+    padding: 0 10px;
+    text-align: center;
+    position: absolute;
+    top: 9%;
+    left: 3%;
+    transform: translateY(-50%);
+}
+
+.list_group li {
+    position: relative;
+    counter-increment: my_01;
+    border-bottom: 1px dashed #ccc !important;
+    
+}
+
+.check-border {
+    padding-left: 40px;
+
+}
+
+.list_group_del {
+    text-decoration: none;
+    color: #FFF;
+    &:hover {
+        color: $primary;
+    }
+}

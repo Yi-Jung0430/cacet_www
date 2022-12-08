@@ -22,7 +22,7 @@
                     <h2 class="my-lg-4 my-2 h3 border-start border-dark ps-2">會議投稿</h2>
                     <!-- 表格 開始 -->
                     <table class="contribute align-middle  table table-bordered border-third table-hover mt-3 mt-lg-5 ">
-                        <thead class="text-white bg-secondary">
+                        <thead class="text-white bg-third">
                             <tr>
                                 <th class="h5">投稿主題</th>
                                 <th class="h5">截稿時間</th>
