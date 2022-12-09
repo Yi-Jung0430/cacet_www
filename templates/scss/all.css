@@ -11687,4 +11687,8 @@ label.seminarInner__label {
 }
 .list_group_del:hover {
   color: #B52121;
+}
+
+.list_group li.li_copy {
+  display: none;
 }/*# sourceMappingURL=all.css.map */

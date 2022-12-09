@@ -41,7 +41,7 @@
           <h2 class="mt-lg-4 mt-2 mb-1 h3 border-start border-dark ps-2">投稿</h2>
           <small class="text-small fw-light"><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
 
-          <form method="post" enctype="multipart/form-data" action="home.php">
+          <form method="post" enctype="multipart/form-data" action="progress.php">
             <!-- 論文資訊 表格 開始 -->
             <div class="table-responsive">
               <table class="table  table-bordered bg-white mt-1 seminarInner align-middle">
@@ -144,12 +144,12 @@
                     </th>
                     <td>
                       <div class="position-relative art_upload_raw">
-                        <input class="form-control v_08" type="file" accept=".doc,.docx,.pdf" multiple>
+                        <input class="form-control v_08" type="file" class="mod_select_file" name="file_01[]" accept=".doc,.docx,.pdf" multiple>
                         <a class="hidden icon-cancel r position-absolute top-50 end-0 translate-middle-y me-2" href="javascript:void(0);" onclick="art_upload_raw_cancel(this);">
                           <i class="bi bi-x-circle"></i>
                         </a>
                       </div>
-                      <small class="form-text">需以 PDF、DOC、或 DOCX 形式上傳，檔案大小不可超過 20MB。</small>
+                      <small class="form-text fileformat">需以 PDF、DOC、或 DOCX 形式上傳，檔案大小不可超過 20MB。</small>
                     </td>
                   </tr>
                   <!-- 附件 v_09 -->
@@ -159,12 +159,12 @@
                     </th>
                     <td>
                       <div class="position-relative art_upload_raw">
-                        <input class="form-control v_09" type="file" accept=".doc,.docx,.pdf" multiple>
+                        <input class="form-control v_09" type="file" accept=".zip,.7z,.WinRAR" multiple>
                         <a class="icon-cancel r position-absolute top-50 end-0 translate-middle-y me-2" href="javascript:void(0);" onclick="art_upload_raw_cancel(this);">
                           <i class="bi bi-x-circle"></i>
                         </a>
                       </div>
-                      <small class="form-text">檔案若有多個，請以壓縮檔上傳，檔案大小不可超過 20MB。</small>
+                      <small class="form-text fileformat">檔案若有多個，請以壓縮檔上傳，檔案大小不可超過 20MB。</small>
                     </td>
                   </tr>
                 </tbody>
@@ -193,15 +193,15 @@
                         </th>
                         <td>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input v_10" type="radio" value="第一作者" id="author01" checked>
+                            <input class="form-check-input v_10" type="radio" value="boss" id="author01" checked>
                             <label class="form-check-label seminarInner__label" for="author01">第一作者</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input v_10" type="radio" value="第二作者" id="author02">
-                            <label class="form-check-label seminarInner__label" for="author02">第二作者</label>
+                            <input class="form-check-input v_10" type="radio" value="team" id="author02">
+                            <label class="form-check-label seminarInner__label" for="author02">共同作者</label>
                           </div>
                           <div class="form-check form-check-inline border-start border-third check-border">
-                            <input class="form-check-input v_11" type="checkbox" value="通訊作者">
+                            <input class="form-check-input v_11" type="checkbox" value="1">
                             <label class="form-check-label seminarInner__label ">通訊作者</label>
                           </div>
                         </td>
@@ -326,15 +326,15 @@
                         </th>
                         <td>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input v_10" type="radio" value="第一作者" id="author01" checked>
-                            <label class="form-check-label seminarInner__label" for="author01">第一作者</label>
+                            <input class="form-check-input v_10" type="radio" value="boss">
+                            <label class="form-check-label seminarInner__label">第一作者</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input v_10" type="radio" value="第二作者" id="author02">
-                            <label class="form-check-label seminarInner__label" for="author02">第二作者</label>
+                            <input class="form-check-input v_10" type="radio" value="team">
+                            <label class="form-check-label seminarInner__label">共同作者</label>
                           </div>
                           <div class="form-check form-check-inline border-start border-third check-border">
-                            <input class="form-check-input v_11" type="checkbox" value="通訊作者">
+                            <input class="form-check-input v_11" type="checkbox" value="1">
                             <label class="form-check-label seminarInner__label ">通訊作者</label>
                           </div>
                         </td>
@@ -485,232 +485,6 @@
 
     var msg = "";
 
-
-
-    // 論文資訊 欄位驗證 開始
-
-    //發表形式v_01
-    if ($(".v_01:checked").length == 0) {
-      msg += "<p>發表形式為必填欄位。</p>";
-    }
-
-    //論文標題(中文) v_02
-    if ($(".v_02").val() == "") {
-      msg += "<p>論文標題(中文)為必填欄位。</p>";
-    }
-
-    //論文標題(英文) v_03
-    if ($(".v_03").val() == "") {
-      msg += "<p>論文標題(英文)為必填欄位。</p>";
-    }
-
-    //論文摘要(中文) v_04
-    if ($(".v_04").val() == "") {
-      msg += "<p>論文摘要 ( 中文 ) 為必填欄位。</p>";
-    }
-
-    if ($(".v_04").val() != "") {
-      var temp = $(".v_04").val();
-      if (temp.length > 200) {
-        msg += "<p>論文摘要 ( 中文 )，字數限制：200字以內。</p>";
-      }
-    }
-
-    //論文摘要(英文) v_05
-    if ($(".v_05").val() == "") {
-      msg += "<p>論文摘要 ( 英文 ) 為必填欄位。</p>";
-    }
-
-    if ($(".v_05").val() != "") {
-      var temp = $(".v_05").val();
-      if (temp.length > 200) {
-        msg += "<p>論文摘要 ( 英文 )，字數限制：200字以內。</p>";
-      }
-    }
-
-    //論文標題(中文) v_06
-    if ($(".v_06").val() == "") {
-      msg += "<p>關鍵字 ( 中文 )為必填欄位。</p>";
-    }
-
-    //論文標題(英文) v_07
-    if ($(".v_07").val() == "") {
-      msg += "<p>關鍵字 ( 英文 )為必填欄位。</p>";
-    }
-
-    //全文 v_08
-    if ($(".v_08").val() == "") {
-      if ($(".v_08").closest(".art_upload_raw").next(".oldfile_box").find(".file_is_del").val() == 0) {
-        /**/
-      } else {
-        msg += "<p>全文為必填欄位。</p>";
-      }
-    }
-    if ($(".v_08").val() != "") {
-      //checkFilesize()之說明:第1參數:對象;第2參數:最大限制MB,如:5MB,則設定為「5」
-      if (!checkFilesize($(".v_08"), 20)) {
-        msg += "<p>全文，檔案大小限制：20MB以內。</p>";
-      }
-    }
-    if ($(".v_08").val() != "") {
-      var format = 'PDF、DOC、DOCX';
-      var arr_format = format.split("、");
-      if (!checkFileFormat($(".v_08").val(), arr_format)) {
-        msg += "<p>全文，檔案格式限制:" + format + "。</p>";
-      }
-    }
-
-    //附件 v_09
-    if ($(".v_09").val() == "") {
-      if ($(".v_09").closest(".art_upload_raw").next(".oldfile_box").find(".file_is_del").val() == 0) {
-        /**/
-      } else {
-        msg += "<p>全文為必填欄位。</p>";
-      }
-    }
-    if ($(".v_09").val() != "") {
-      //checkFilesize()之說明:第1參數:對象;第2參數:最大限制MB,如:5MB,則設定為「5」
-      if (!checkFilesize($(".v_09"), 20)) {
-        msg += "<p>全文，檔案大小限制：20MB以內。</p>";
-      }
-    }
-    if ($(".v_09").val() != "") {
-      var format = 'PDF、DOC、DOCX';
-      var arr_format = format.split("、");
-      if (!checkFileFormat($(".v_09").val(), arr_format)) {
-        msg += "<p>全文，檔案格式限制:" + format + "。</p>";
-      }
-    }
-    // 論文資訊 欄位驗證 結束
-
-
-    // 作者資訊 欄位驗證 開始
-    //作者類型
-    $(".author_list li").each(function(i, e) {
-      if ($(this).hasClass("li_copy")) {
-        return false;
-      }
-      //
-      if ($(this).find(".v_10:checked").length == 0) {
-        msg += "<p><span class='list_group_num'>" + (i + 1) + "</span> 作者類型，必填欄位。</p>";
-      }
-    });
-
-    //電子信箱
-    $(".author_list li").each(function(i, e) {
-      if ($(this).hasClass("li_copy")) {
-        return false;
-      }
-      //
-      if ($(this).find(".v_12").val() == "") {
-        msg += "<p><span class='list_group_num'>" + (i + 1) + "</span> 電子信箱，必填欄位。</p>";
-      } else {
-        if (!checkEmail($(this).find(".v_12").val())) {
-          msg += "<p><span class='list_group_num'>" + (i + 1) + "</span> 電子信箱，資料格式限制：電子信箱格式。</p>";
-        }
-      }
-    });
-
-    //作者中文名
-    $(".author_list li").each(function(i, e) {
-      if ($(this).hasClass("li_copy")) {
-        return false;
-      }
-      //
-      if ($(this).find(".v_13").val() == "") {
-        msg += "<p><span class='list_group_num'>" + (i + 1) + "</span> 作者中文名，必填欄位。</p>";
-      }
-    });
-
-    //作者英文名
-    $(".author_list li").each(function(i, e) {
-      if ($(this).hasClass("li_copy")) {
-        return false;
-      }
-      //
-      if ($(this).find(".v_14").val() == "") {
-        msg += "<p><span class='list_group_num'>" + (i + 1) + "</span> 作者英文名，必填欄位。</p>";
-      }
-    });
-
-    //服務機構
-    $(".author_list li").each(function(i, e) {
-      if ($(this).hasClass("li_copy")) {
-        return false;
-      }
-      //
-      if ($(this).find(".v_15").val() == "") {
-        msg += "<p><span class='list_group_num'>" + (i + 1) + "</span> 服務機構，必填欄位。</p>";
-      }
-    });
-
-    //手機
-    $(".author_list li").each(function(i, e) {
-      if ($(this).hasClass("li_copy")) {
-        return false;
-      }
-      //
-      if ($(this).find(".v_16").val() == "") {
-        msg += "<p><span class='list_group_num'>" + (i + 1) + "</span> 手機，必填欄位。</p>";
-      }
-    });
-
-    //職稱
-    $(".author_list li").each(function(i, e) {
-      if ($(this).hasClass("li_copy")) {
-        return false;
-      }
-      //
-      if ($(this).find(".v_17").val() == "") {
-        msg += "<p><span class='list_group_num'>" + (i + 1) + "</span> 職稱，必填欄位。</p>";
-      }
-    });
-
-    //郵遞區號
-    $(".author_list li").each(function(i, e) {
-      if ($(this).hasClass("li_copy")) {
-        return false;
-      }
-      //
-      if ($(this).find(".v_19").val() == "") {
-        msg += "<p><span class='list_group_num'>" + (i + 1) + "</span> 郵遞區號，必填欄位。</p>";
-      }
-    });
-
-    //通訊地址
-    $(".author_list li").each(function(i, e) {
-      if ($(this).hasClass("li_copy")) {
-        return false;
-      }
-      //
-      if ($(this).find(".v_20").val() == "") {
-        msg += "<p><span class='list_group_num'>" + (i + 1) + "</span> 通訊地址，必填欄位。</p>";
-      }
-    });
-
-    //第一作者只能選擇一個
-    if ($(".v_10[value='boss']:checked").length == 0) {
-      msg += "<p>請選一位第一作者。</p>";
-    }
-
-
-    if ($(".v_10[value='boss']:checked").length >= 2) {
-      msg += "<p>第一作者只能選擇一個。</p>";
-    }
-
-    //通訊作者
-    if ($(".v_11:checked").length == 0) {
-      msg += "<p>通訊作者，至少一個。</p>";
-    }
-
-    // 作者資訊 欄位驗證 結束
-
-
-    if (msg != "") {
-      message_show(msg);
-      return false;
-    }
-
     //自訂對話框
     if (arg2 == "draft") {
       if (!await art_confirm("系統訊息", "確認儲存成草稿嗎？")) {
@@ -718,6 +492,234 @@
       }
     }
     if (arg2 == "finish") {
+
+      // 先進行欄位驗證
+      // 論文資訊 欄位驗證 開始
+
+      //發表形式v_01
+      if ($(".v_01:checked").length == 0) {
+        msg += "<p>發表形式，必填欄位。</p>";
+      }
+
+      //論文標題(中文) v_02
+      if ($(".v_02").val() == "") {
+        msg += "<p>論文標題(中文)，必填欄位。</p>";
+      }
+
+      //論文標題(英文) v_03
+      if ($(".v_03").val() == "") {
+        msg += "<p>論文標題(英文)，必填欄位。</p>";
+      }
+
+      //論文摘要(中文) v_04
+      if ($(".v_04").val() == "") {
+        msg += "<p>論文摘要 ( 中文 )，必填欄位。</p>";
+      }
+
+      if ($(".v_04").val() != "") {
+        var temp = $(".v_04").val();
+        if (temp.length > 200) {
+          msg += "<p>論文摘要 ( 中文 )，字數限制：200字以內。</p>";
+        }
+      }
+
+      //論文摘要(英文) v_05
+      if ($(".v_05").val() == "") {
+        msg += "<p>論文摘要 ( 英文 )，必填欄位。</p>";
+      }
+
+      if ($(".v_05").val() != "") {
+        var temp = $(".v_05").val();
+        if (temp.length > 200) {
+          msg += "<p>論文摘要 ( 英文 )，字數限制：200字以內。</p>";
+        }
+      }
+
+      //論文標題(中文) v_06
+      if ($(".v_06").val() == "") {
+        msg += "<p>關鍵字 ( 中文 )，必填欄位。</p>";
+      }
+
+      //論文標題(英文) v_07
+      if ($(".v_07").val() == "") {
+        msg += "<p>關鍵字 ( 英文 )，必填欄位。</p>";
+      }
+
+      //全文 v_08
+      if ($(".v_08").val() == "") {
+        if ($(".v_08").closest(".art_upload_raw").next(".oldfile_box").find(".file_is_del").val() == 0) {
+          /**/
+        } else {
+          msg += "<p>全文，必填欄位。</p>";
+        }
+      }
+      if ($(".v_08").val() != "") {
+        //checkFilesize()之說明:第1參數:對象;第2參數:最大限制MB,如:5MB,則設定為「5」
+        if (!checkFilesize($(".v_08"), 20)) {
+          msg += "<p>全文，檔案大小限制：20MB以內。</p>";
+        }
+      }
+      // if ($(".v_08").val() != "") {
+      //   var format = 'PDF、DOC、DOCX';
+      //   var arr_format = format.split("、");
+      //   if (!checkFileFormat($(this).val(), arr_format)) {
+      //     msg += "<p>全文，檔案格式限制:" + format + "。</p>";
+      //   }
+      // }
+
+      //附件 v_09
+      if ($(".v_09").val() == "") {
+        if ($(".v_09").closest(".art_upload_raw").next(".oldfile_box").find(".file_is_del").val() == 0) {
+          /**/
+        } else {
+          msg += "<p>附件，必填欄位。</p>";
+        }
+      }
+      if ($(".v_09").val() != "") {
+        //checkFilesize()之說明:第1參數:對象;第2參數:最大限制MB,如:5MB,則設定為「5」
+        if (!checkFilesize($(".v_09"), 20)) {
+          msg += "<p>附件，檔案大小限制：20MB以內。</p>";
+        }
+      }
+      // if ($(".v_09").val() != "") {
+      //   var format = 'zip、7z、WinRAR';
+      //   var arr_format = format.split("、");
+      //   if (!checkFileFormat($(".v_09").val(), arr_format)) {
+      //     msg += "<p>附件，檔案格式限制:" + format + "。</p>";
+      //   }
+      // }
+      // 論文資訊 欄位驗證 結束
+
+
+      // 作者資訊 欄位驗證 開始
+      //作者類型
+      $(".author_list li").each(function(i, e) {
+        if ($(this).hasClass("li_copy")) {
+          return false;
+        }
+        //
+        if ($(this).find(".v_10:checked").length == 0) {
+          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的作者類型，必填欄位。</p>";
+        }
+      });
+
+      //電子信箱
+      $(".author_list li").each(function(i, e) {
+        if ($(this).hasClass("li_copy")) {
+          return false;
+        }
+        //
+        if ($(this).find(".v_12").val() == "") {
+          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的電子信箱，必填欄位。</p>";
+        } else {
+          if (!checkEmail($(this).find(".v_12").val())) {
+            msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的電子信箱，資料格式限制：電子信箱格式。</p>";
+          }
+        }
+      });
+
+      //作者中文名
+      $(".author_list li").each(function(i, e) {
+        if ($(this).hasClass("li_copy")) {
+          return false;
+        }
+        //
+        if ($(this).find(".v_13").val() == "") {
+          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的作者中文名，必填欄位。</p>";
+        }
+      });
+
+      //作者英文名
+      $(".author_list li").each(function(i, e) {
+        if ($(this).hasClass("li_copy")) {
+          return false;
+        }
+        //
+        if ($(this).find(".v_14").val() == "") {
+          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的作者英文名，必填欄位。</p>";
+        }
+      });
+
+      //服務機構
+      $(".author_list li").each(function(i, e) {
+        if ($(this).hasClass("li_copy")) {
+          return false;
+        }
+        //
+        if ($(this).find(".v_15").val() == "") {
+          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的服務機構，必填欄位。</p>";
+        }
+      });
+
+      //手機
+      $(".author_list li").each(function(i, e) {
+        if ($(this).hasClass("li_copy")) {
+          return false;
+        }
+        //
+        if ($(this).find(".v_16").val() == "") {
+          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的手機，必填欄位。</p>";
+        }
+      });
+
+      //職稱
+      $(".author_list li").each(function(i, e) {
+        if ($(this).hasClass("li_copy")) {
+          return false;
+        }
+        //
+        if ($(this).find(".v_17").val() == "") {
+          msg += "<p>第<span class='list_group_num'>" + (i + 1) + "</span> 位的職稱，必填欄位。</p>";
+        }
+      });
+
+      //郵遞區號
+      $(".author_list li").each(function(i, e) {
+        if ($(this).hasClass("li_copy")) {
+          return false;
+        }
+        //
+        if ($(this).find(".v_19").val() == "") {
+          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的郵遞區號，必填欄位。</p>";
+        }
+      });
+
+      //通訊地址
+      $(".author_list li").each(function(i, e) {
+        if ($(this).hasClass("li_copy")) {
+          return false;
+        }
+        //
+        if ($(this).find(".v_20").val() == "") {
+          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的通訊地址，必填欄位。</p>";
+        }
+      });
+
+      //第一作者只能選擇一個
+      if ($(".v_10[value='boss']:checked").length == 0) {
+        msg += "<p>請選一位第一作者。</p>";
+      }
+
+
+      if ($(".v_10[value='boss']:checked").length >= 2) {
+        msg += "<p>第一作者只能選擇一個。</p>";
+      }
+
+      //通訊作者
+      if ($(".v_11:checked").length == 0) {
+        msg += "<p>通訊作者，至少一個。</p>";
+      }
+
+      // 作者資訊 欄位驗證 結束
+
+
+      if (msg != "") {
+        message_show(msg);
+        return false;
+      }
+
+
+      // 跳出系統訊息再次確認---開始
       //取得第一作者的姓名
       var temp_1 = "";
       $(".v_10[value='boss']:checked").each(function(i, e) {

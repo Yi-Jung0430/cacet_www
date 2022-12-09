@@ -2664,7 +2664,7 @@ function art_confirm(title, message){
 	$("body").append(new_html);
 	//
 	return new Promise(function(complete, failed){
-		$('.art_confirm .main .msg').text(message);
+		$('.art_confirm .main .msg').html(message);
 		//
 		$('.art_confirm .main .btn_yes').off('click');
 		$('.art_confirm .main .btn_no').off('click');
