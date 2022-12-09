@@ -32,11 +32,19 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th >ICEET 2023 數位學習與教育科技國際研討會</th>
+                                <th>ICEET 2023 數位學習與教育科技國際研討會</th>
                                 <td>2023-05-24</td>
                                 <td>開放投稿</td>
                                 <td>
-                                    <a href="seminar_method.php" class="btn btn-outline-primary" >線上投稿</a>
+                                    <a href="seminar_method.php" class="btn btn-outline-primary">線上投稿</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ICEET 2023 數位學習與教育科技國際研討會</th>
+                                <td>2023-05-24</td>
+                                <td>開放投稿</td>
+                                <td>
+                                    <span>您的身分您沒有權限投稿此項目</span>
                                 </td>
                             </tr>
                             <tr>
