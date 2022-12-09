@@ -431,7 +431,7 @@
             </ul>
             <!-- 作者資訊 表格 結束 -->
             <div class="text-center mt-5">
-              <a class="btn btn-outline-primary btn-lg mx-auto me-2" href="javascript:history.go(-1);">返回</a>
+              <a class="btn btn-outline-primary btn-lg mx-auto me-2" href="javascript:history.go(-1);" onclick="del()">返回</a>
               <input class="btn btn-primary btn-lg me-2" type="submit" onClick="form_submit(this,'draft')" value="儲存為草稿">
               <input class="btn btn-primary btn-lg" type="submit" onClick="form_submit(this,'finish')" value="確認投稿">
             </div>
@@ -755,6 +755,13 @@
 
 
     $(arg1).closest('form').submit();
+  }
+
+  async function del() {
+    event.preventDefault();
+    if (await art_confirm('系統訊息', '確定要取消投稿嗎？確認後，稿件即將刪除。')) {
+      location.href = "seminar_contribute.php";
+    }
   }
 
 
