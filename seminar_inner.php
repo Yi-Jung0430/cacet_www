@@ -330,7 +330,7 @@
                             <label class="form-check-label seminarInner__label">第一作者</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input v_10" type="radio" value="team">
+                            <input class="form-check-input v_10" type="radio" value="team" checked>
                             <label class="form-check-label seminarInner__label">共同作者</label>
                           </div>
                           <div class="form-check form-check-inline border-start border-third check-border">
@@ -432,8 +432,8 @@
             <!-- 作者資訊 表格 結束 -->
             <div class="text-center mt-5">
               <a class="btn btn-outline-primary btn-lg mx-auto me-2" href="javascript:history.go(-1);" onclick="del()">返回</a>
-              <input class="btn btn-primary btn-lg me-2" type="submit" onClick="form_submit(this,'draft')" value="儲存為草稿">
-              <input class="btn btn-primary btn-lg" type="submit" onClick="form_submit(this,'finish')" value="確認投稿">
+              <input class="btn btn-outline-primary btn-lg me-2" type="submit" onClick="form_submit(this,'draft')" value="儲存為草稿">
+              <input class="btn btn-primary btn-lg" type="submit" onClick="form_submit(this,'finish')" value="送出">
             </div>
           </form>
         </div>
