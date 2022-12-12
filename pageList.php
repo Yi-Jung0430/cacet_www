@@ -22,6 +22,7 @@
                         <td><a href="home.php">檢視</a></td>
                         <td>12/05</td>
                         <td></td>
+                        <td>調整背景灰色與紅點圖</td>
                     </tr>
                     <tr>
                         <td>1-b.</td>
