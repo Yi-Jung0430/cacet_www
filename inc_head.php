@@ -6,7 +6,7 @@
     <meta http-equiv="expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <title>CACET 投稿系統</title>
-    <link rel="icon" href="storage/CACET.ico">
+    <link rel="icon" href="storage/images/favicon.svg">
 
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="dist/bootstrap-icons/font/bootstrap-icons.css">

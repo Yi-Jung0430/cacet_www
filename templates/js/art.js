@@ -2660,7 +2660,7 @@ async function oldfile_del(arg1, arg2, arg3){
 /* 自訂對話框 開始 */
 function art_confirm(title, message){
 	//
-	var new_html = '<div class="art_confirm"><div class="overlay" onclick="$(\'.art_confirm\').remove();"></div><div class="main"><div class="top">' + title + '</div><div class="msg">...</div><div class="bottom"><input type="button" class="btn_no btn btn-outline-primary me-3 " value="取消" /><input type="button" class="btn_yes btn btn-primary" value="確認" /></div></div></div>';
+	var new_html = '<div class="art_confirm"><div class="overlay" onclick="$(\'.art_confirm\').remove();"></div><div class="main"><div class="top">' + title + '</div><div class="msg"></div><div class="bottom"><input type="button" class="btn_no btn btn-outline-primary me-3 " value="取消" /><input type="button" class="btn_yes btn btn-primary" value="確認" /></div></div></div>';
 	$("body").append(new_html);
 	//
 	return new Promise(function(complete, failed){

@@ -26,7 +26,7 @@
                     <!-- breadcrumb end -->
 
                     <!-- 訊息 開始 -->
-                    <div class="message">
+                    <div class="message mb-2">
                         <table>
                             <tr valign="top">
                                 <td class="message_text"></td>
@@ -163,7 +163,6 @@
 
                                         </td>
                                     </tr>
-                                    <!-- 建議發表形式 v_01 -->
                                     <tr>
                                         <th valign="middle">建議發表形式
                                             <sup><i class="bi bi-asterisk text-primary"></i><sup>
@@ -206,7 +205,7 @@
                                         <td>
                                             <div class="row g-3">
                                                 <div class="col-sm-12 col-lg-4">
-                                                    <input type="number" class="form-control" placeholder="">
+                                                    <input type="number" class="form-control v_05" placeholder="">
                                                 </div>
                                             </div>
                                         </td>
@@ -235,6 +234,20 @@
 
             var msg = "";
 
+            //委員建議
+            if ($(".v_04").val() == "") {
+                msg += "<p>委員建議，必填欄位。</p>";
+            }
+            // 分數
+            if ($(".v_05").val() == "") {
+                msg += "<p>評分分數，必填欄位。</p>";
+            }
+
+
+            if (msg != "") {
+                message_show(msg);
+                return false;
+            }
             //自訂對話框
             if (arg2 == "finish") {
                 if (!await art_confirm("系統訊息", "確認提交此審核結果嗎？")) {

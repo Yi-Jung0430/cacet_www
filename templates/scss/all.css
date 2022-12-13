@@ -10828,6 +10828,10 @@ td.position-relative .art_icon.r {
 }
 
 /* 通知橫幅 結束 */
+.oldfile_box.none {
+  display: none;
+}
+
 .cu__navbar {
   padding-top: 40px;
 }
@@ -11768,4 +11772,8 @@ label.seminarInner__label {
   width: 170px;
   background: #f0f6ff;
   color: #555;
+}
+
+.newInner {
+  height: 50vh;
 }/*# sourceMappingURL=all.css.map */

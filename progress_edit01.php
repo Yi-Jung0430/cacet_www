@@ -102,7 +102,7 @@
                                             <sup><i class="bi bi-asterisk text-primary"></i><sup>
                                         </th>
                                         <td>
-                                            <textarea class="form-control v_04" rows="3">本研究旨在探討一位罕見疾病中的海豹肢症大學生。透過皮克斯動畫對其大學學習電腦動畫影響之相關因素。研究方法為敘事研究,研究結果發現家庭的生活與興趣的培養,能奠定其獨立自主的性格,從小的繪圖興趣,以及高中的電腦設計課程初階學習,有助於開啟電腦動畫之興趣,為促進其學習發展的重要因素。
+                                            <textarea class="form-control v_04" rows="3">本研究旨在探討一位罕見疾病中的海豹肢症大學生。透過皮克斯動畫對其大學學習電腦動畫影響之相關因素。
                                             </textarea>
                                             <small class="form-text">請勿超過 200 個字</small>
                                         </td>
@@ -113,7 +113,7 @@
                                             <sup><i class="bi bi-asterisk text-primary"></i><sup>
                                         </th>
                                         <td>
-                                            <textarea class="form-control v_05" rows="3">This study aims to explore the related factors of a Phocomelia students’ study planning on computer animation. The narrative study was adopted. The results showed that parents’ independent discipline and training facilitated the student’s drawing interest. The high school courses provided the computer design and basic animation facilitate her motivation in leaning computer animation. Moreover, the Pixar animation exhibition is the most important factor for enhancing her study planning in computer animation in university.</textarea>
+                                            <textarea class="form-control v_05" rows="3">This study aims to explore the related factors of a Phocomelia students’ study planning on computer animation.  </textarea>
                                             <small class="form-text">請勿超過 200 個字</small>
                                         </td>
                                     </tr>
@@ -144,28 +144,29 @@
                                         </th>
                                         <td>
                                             <div class="position-relative art_upload_raw">
-                                                <input class="form-control v_08" type="file" class="mod_select_file" name="file_01[]" accept=".doc,.docx,.pdf" multiple>
+                                                <input class="form-control v_08 mod_select_file" type="file" name="file_01[]" accept=".doc,.docx,.pdf" multiple>
                                                 <a class="hidden icon-cancel r position-absolute top-50 end-0 translate-middle-y me-2" href="javascript:void(0);" onclick="art_upload_raw_cancel(this);">
                                                     <i class="bi bi-x-circle"></i>
                                                 </a>
                                             </div>
-                                            <small class="form-text fileformat">需以 PDF、DOC、或 DOCX 形式上傳，檔案大小不可超過 20MB。</small>
 
-                                            <div class="file_box_list mt-2">
-                                                <div class="item">
+                                            <div class="file_box_list mt-2 oldfile_box" >
+                                                <div class="item ">
                                                     <div class="l d-inline-block me-2">
                                                         <div>
                                                             <a class="link_download text-third" href="storage/文化部推動社區營造及村落文化補助作業要點(改2).pdf" download>文化部推動社區營造及村落文化補助作業要點(改2).pdf</a>
                                                         </div>
                                                     </div>
                                                     <div class="r d-inline-block">
-                                                        <a class="link_del" href="javascript:void(0);" onClick="file_box_list_del(this);">
+                                                        <a class="link_del file_del" href="javascript:void(0);" onClick="oldfile_del(this,'確認刪除此筆檔案嗎?');">
                                                             <i class="bi bi-x-circle"></i>
                                                         </a>
                                                     </div>
-                                                    <input type="hidden" class="file_old" name="file_old[]" value="storage/文化部推動社區營造及村落文化補助作業要點(改2).pdf">
+                                                    <input type="hidden" class="file_is_del" name="file_old[]" value="0">
                                                 </div>
                                             </div>
+
+                                            <small class="form-text fileformat">需以 PDF、DOC、或 DOCX 形式上傳，檔案大小不可超過 20MB。</small>
                                         </td>
                                     </tr>
                                     <!-- 附件 v_09 -->
@@ -175,14 +176,13 @@
                                         </th>
                                         <td>
                                             <div class="position-relative art_upload_raw">
-                                                <input class="form-control v_09" type="file" accept=".zip,.7z,.WinRAR" multiple>
-                                                <a class="icon-cancel r position-absolute top-50 end-0 translate-middle-y me-2" href="javascript:void(0);" onclick="art_upload_raw_cancel(this);">
+                                                <input class="form-control v_09 mod_select_file" type="file" name="file_01[]" accept=".zip,.7z,.WinRAR" multiple>
+                                                <a class="hidden icon-cancel r position-absolute top-50 end-0 translate-middle-y me-2" href="javascript:void(0);" onclick="art_upload_raw_cancel(this);">
                                                     <i class="bi bi-x-circle"></i>
                                                 </a>
                                             </div>
-                                            <small class="form-text fileformat">檔案若有多個，請以壓縮檔上傳，檔案大小不可超過 20MB。</small>
 
-                                            <div class="file_box_list mt-2">
+                                            <div class="file_box_list mt-2 oldfile_box" >
                                                 <div class="item">
                                                     <div class="l d-inline-block me-2">
                                                         <div>
@@ -190,288 +190,289 @@
                                                         </div>
                                                     </div>
                                                     <div class="r d-inline-block"></div>
-                                                        <a class="link_del" href="javascript:void(0);" onClick="file_box_list_del(this);">
-                                                            <i class="bi bi-x-circle"></i>
-                                                        </a>
-                                                    </div>
-                                                    <input type="hidden" class="file_old" name="file_old[]" value="storage/文化部推動社區營造及村落文化補助作業要點(改2).zip">
+                                                    <a class="link_del file_del" href="javascript:void(0);" onClick="oldfile_del(this,'確認刪除此筆檔案嗎?');">
+                                                        <i class="bi bi-x-circle"></i>
+                                                    </a>
                                                 </div>
+                                                <input type="hidden" class="file_is_del" name="file_old[]" value="0">
                                             </div>
+                                        </div>
+                                    <small class="form-text fileformat">檔案若有多個，請以壓縮檔上傳，檔案大小不可超過 20MB。</small>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 論文資訊 表格 結束 -->
+
+                <!-- 作者資訊 表格 開始 -->
+                <ul class="list_group author_list">
+                    <!-- 第一位 -->
+                    <li>
+                        <section class="table-responsive">
+                            <table class="table table-bordered bg-white mt-2 seminarInner align-middle">
+                                <thead>
+                                    <tr class="bg-third text-light">
+                                        <th colspan="4">第<span class="d-inline-block ms-4">位作者資訊</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- 第一列 -->
+                                    <tr>
+                                        <!-- 作者類型 v_10 v_11 -->
+                                        <th valign="middle">
+                                            作者類型
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input v_10" type="radio" value="boss" id="author01" checked>
+                                                <label class="form-check-label seminarInner__label" for="author01">第一作者</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input v_10" type="radio" value="team" id="author02">
+                                                <label class="form-check-label seminarInner__label" for="author02">共同作者</label>
+                                            </div>
+                                            <div class="form-check form-check-inline border-start border-third check-border">
+                                                <input class="form-check-input v_11" type="checkbox" value="1">
+                                                <label class="form-check-label seminarInner__label ">通訊作者</label>
+                                            </div>
+                                        </td>
+                                        <!-- 電子信箱 v_12 -->
+                                        <th valign="middle">電子信箱
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="email" class="form-control v_12" value="sing@sydt.com.tw">
+                                        </td>
+                                    </tr>
+                                    <!-- 第二列 -->
+                                    <tr>
+                                        <!-- 作者中文名 v_13 -->
+                                        <th valign="middle">
+                                            作者中文名
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_13" value="林北星">
+                                        </td>
+                                        <!-- 作者英文名 v_14 -->
+                                        <th valign="middle">
+                                            作者英文名
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_14" value="sing">
+                                        </td>
+                                    </tr>
+                                    <!-- 第三列 -->
+                                    <tr>
+                                        <!-- 服務機構 v_15 -->
+                                        <th valign="middle">
+                                            服務機構
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_15" value="天堂花園">
+                                        </td>
+                                        <!-- 手機 v_16 -->
+                                        <th valign="middle">
+                                            手機
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_16" value="0912345678">
+                                        </td>
+                                    </tr>
+                                    <!-- 第四列 -->
+                                    <tr>
+                                        <!-- 職稱 v_17 -->
+                                        <th valign="middle">
+                                            職稱
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_17" value="公主">
+                                        </td>
+                                        <!-- 手機 v_18 -->
+                                        <th valign="middle">
+                                            服務機構電話
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_18" value="">
+                                        </td>
+                                    </tr>
+                                    <!-- 第五列 -->
+                                    <tr>
+                                        <!-- 郵遞區號 v_19 -->
+                                        <th valign="middle">
+                                            郵遞區號
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_19" value="777">
+                                        </td>
+                                        <!-- 手機 v_20 -->
+                                        <th valign="middle">
+                                            通訊地址
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_20" value="花園區花見小路166號10樓">
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
-                        <!-- 論文資訊 表格 結束 -->
-
-                        <!-- 作者資訊 表格 開始 -->
-                        <ul class="list_group author_list">
-                            <!-- 第一位 -->
-                            <li>
-                                <section class="table-responsive">
-                                    <table class="table table-bordered bg-white mt-2 seminarInner align-middle">
-                                        <thead>
-                                            <tr class="bg-third text-light">
-                                                <th colspan="4">第<span class="d-inline-block ms-4">位作者資訊</span></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <!-- 第一列 -->
-                                            <tr>
-                                                <!-- 作者類型 v_10 v_11 -->
-                                                <th valign="middle">
-                                                    作者類型
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input v_10" type="radio" value="boss" id="author01" checked>
-                                                        <label class="form-check-label seminarInner__label" for="author01">第一作者</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input v_10" type="radio" value="team" id="author02">
-                                                        <label class="form-check-label seminarInner__label" for="author02">共同作者</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline border-start border-third check-border">
-                                                        <input class="form-check-input v_11" type="checkbox" value="1">
-                                                        <label class="form-check-label seminarInner__label ">通訊作者</label>
-                                                    </div>
-                                                </td>
-                                                <!-- 電子信箱 v_12 -->
-                                                <th valign="middle">電子信箱
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="email" class="form-control v_12" value="sing@sydt.com.tw">
-                                                </td>
-                                            </tr>
-                                            <!-- 第二列 -->
-                                            <tr>
-                                                <!-- 作者中文名 v_13 -->
-                                                <th valign="middle">
-                                                    作者中文名
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_13" value="林北星">
-                                                </td>
-                                                <!-- 作者英文名 v_14 -->
-                                                <th valign="middle">
-                                                    作者英文名
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_14" value="sing">
-                                                </td>
-                                            </tr>
-                                            <!-- 第三列 -->
-                                            <tr>
-                                                <!-- 服務機構 v_15 -->
-                                                <th valign="middle">
-                                                    服務機構
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_15" value="天堂花園">
-                                                </td>
-                                                <!-- 手機 v_16 -->
-                                                <th valign="middle">
-                                                    手機
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_16" value="0912345678">
-                                                </td>
-                                            </tr>
-                                            <!-- 第四列 -->
-                                            <tr>
-                                                <!-- 職稱 v_17 -->
-                                                <th valign="middle">
-                                                    職稱
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_17" value="公主">
-                                                </td>
-                                                <!-- 手機 v_18 -->
-                                                <th valign="middle">
-                                                    服務機構電話
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_18" value="">
-                                                </td>
-                                            </tr>
-                                            <!-- 第五列 -->
-                                            <tr>
-                                                <!-- 郵遞區號 v_19 -->
-                                                <th valign="middle">
-                                                    郵遞區號
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_19" value="777">
-                                                </td>
-                                                <!-- 手機 v_20 -->
-                                                <th valign="middle">
-                                                    通訊地址
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_20" value="花園區花見小路166號10樓">
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </section>
+                        </section>
 
 
-                            </li>
+                    </li>
 
-                            <!-- 新增的空白表格 -->
-                            <li class="li_copy">
-                                <section class="table-responsive">
-                                    <table class="table table-bordered bg-white mt-2 seminarInner align-middle">
-                                        <thead>
-                                            <tr class="bg-third text-light">
-                                                <th colspan="4">
-                                                    <div class="d-flex justify-content-between">
-                                                        <p class="mb-0">
-                                                            第<span class="d-inline-block ms-4">位作者資訊</span>
-                                                        </p>
+                    <!-- 新增的空白表格 -->
+                    <li class="li_copy">
+                        <section class="table-responsive">
+                            <table class="table table-bordered bg-white mt-2 seminarInner align-middle">
+                                <thead>
+                                    <tr class="bg-third text-light">
+                                        <th colspan="4">
+                                            <div class="d-flex justify-content-between">
+                                                <p class="mb-0">
+                                                    第<span class="d-inline-block ms-4">位作者資訊</span>
+                                                </p>
 
-                                                        <a href="javascript:void(0);" class="list_group_del" onClick="list_group_del(this);author_array_reset();">
-                                                            <i class="bi bi-x-circle "></i>
-                                                            刪除
-                                                        </a>
-                                                    </div>
+                                                <a href="javascript:void(0);" class="list_group_del" onClick="list_group_del(this);author_array_reset();">
+                                                    <i class="bi bi-x-circle "></i>
+                                                    刪除
+                                                </a>
+                                            </div>
 
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <!-- 第一列 -->
-                                            <tr>
-                                                <!-- 作者類型 v_10 v_11 -->
-                                                <th valign="middle">
-                                                    作者類型
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input v_10" type="radio" value="boss">
-                                                        <label class="form-check-label seminarInner__label">第一作者</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input v_10" type="radio" value="team" checked>
-                                                        <label class="form-check-label seminarInner__label">共同作者</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline border-start border-third check-border">
-                                                        <input class="form-check-input v_11" type="checkbox" value="1">
-                                                        <label class="form-check-label seminarInner__label ">通訊作者</label>
-                                                    </div>
-                                                </td>
-                                                <!-- 電子信箱 v_12 -->
-                                                <th valign="middle">電子信箱
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="email" class="form-control v_12" value="">
-                                                </td>
-                                            </tr>
-                                            <!-- 第二列 -->
-                                            <tr>
-                                                <!-- 作者中文名 v_13 -->
-                                                <th valign="middle">
-                                                    作者中文名
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_13" value="">
-                                                </td>
-                                                <!-- 作者英文名 v_14 -->
-                                                <th valign="middle">
-                                                    作者英文名
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_14" value="">
-                                                </td>
-                                            </tr>
-                                            <!-- 第三列 -->
-                                            <tr>
-                                                <!-- 服務機構 v_15 -->
-                                                <th valign="middle">
-                                                    服務機構
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_15" value="">
-                                                </td>
-                                                <!-- 手機 v_16 -->
-                                                <th valign="middle">
-                                                    手機
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_16" value="">
-                                                </td>
-                                            </tr>
-                                            <!-- 第四列 -->
-                                            <tr>
-                                                <!-- 職稱 v_17 -->
-                                                <th valign="middle">
-                                                    職稱
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_17" value="">
-                                                </td>
-                                                <!-- 手機 v_18 -->
-                                                <th valign="middle">
-                                                    服務機構電話
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_18" value="">
-                                                </td>
-                                            </tr>
-                                            <!-- 第五列 -->
-                                            <tr>
-                                                <!-- 郵遞區號 v_19 -->
-                                                <th valign="middle">
-                                                    郵遞區號
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_19" value="">
-                                                </td>
-                                                <!-- 手機 v_20 -->
-                                                <th valign="middle">
-                                                    通訊地址
-                                                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control v_20" value="">
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </section>
-                            </li>
-                            <a href="javascript:void(0);" class="list_group_add btn btn-outline-third mt-2" onClick="list_group_add(this);author_array_reset();">
-                                新增作者
-                            </a>
-                        </ul>
-                        <!-- 作者資訊 表格 結束 -->
-                        <div class="text-center mt-5">
-                            <a class="btn btn-outline-primary btn-lg mx-auto me-2" href="javascript:history.go(-1);" onclick="del()">返回</a>
-                            <!-- <input class="btn btn-outline-primary btn-lg me-2" type="submit" onClick="form_submit(this,'draft')" value="儲存為草稿"> -->
-                            <input class="btn btn-primary btn-lg" type="submit" onClick="form_submit(this,'finish')" value="送出">
-                        </div>
-                    </form>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- 第一列 -->
+                                    <tr>
+                                        <!-- 作者類型 v_10 v_11 -->
+                                        <th valign="middle">
+                                            作者類型
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input v_10" type="radio" value="boss">
+                                                <label class="form-check-label seminarInner__label">第一作者</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input v_10" type="radio" value="team" checked>
+                                                <label class="form-check-label seminarInner__label">共同作者</label>
+                                            </div>
+                                            <div class="form-check form-check-inline border-start border-third check-border">
+                                                <input class="form-check-input v_11" type="checkbox" value="1">
+                                                <label class="form-check-label seminarInner__label ">通訊作者</label>
+                                            </div>
+                                        </td>
+                                        <!-- 電子信箱 v_12 -->
+                                        <th valign="middle">電子信箱
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="email" class="form-control v_12" value="">
+                                        </td>
+                                    </tr>
+                                    <!-- 第二列 -->
+                                    <tr>
+                                        <!-- 作者中文名 v_13 -->
+                                        <th valign="middle">
+                                            作者中文名
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_13" value="">
+                                        </td>
+                                        <!-- 作者英文名 v_14 -->
+                                        <th valign="middle">
+                                            作者英文名
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_14" value="">
+                                        </td>
+                                    </tr>
+                                    <!-- 第三列 -->
+                                    <tr>
+                                        <!-- 服務機構 v_15 -->
+                                        <th valign="middle">
+                                            服務機構
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_15" value="">
+                                        </td>
+                                        <!-- 手機 v_16 -->
+                                        <th valign="middle">
+                                            手機
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_16" value="">
+                                        </td>
+                                    </tr>
+                                    <!-- 第四列 -->
+                                    <tr>
+                                        <!-- 職稱 v_17 -->
+                                        <th valign="middle">
+                                            職稱
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_17" value="">
+                                        </td>
+                                        <!-- 手機 v_18 -->
+                                        <th valign="middle">
+                                            服務機構電話
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_18" value="">
+                                        </td>
+                                    </tr>
+                                    <!-- 第五列 -->
+                                    <tr>
+                                        <!-- 郵遞區號 v_19 -->
+                                        <th valign="middle">
+                                            郵遞區號
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_19" value="">
+                                        </td>
+                                        <!-- 手機 v_20 -->
+                                        <th valign="middle">
+                                            通訊地址
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="form-control v_20" value="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </li>
+                    <a href="javascript:void(0);" class="list_group_add btn btn-outline-third mt-2" onClick="list_group_add(this);author_array_reset();">
+                        新增作者
+                    </a>
+                </ul>
+                <!-- 作者資訊 表格 結束 -->
+                <div class="text-center mt-5">
+                    <a class="btn btn-outline-primary btn-lg mx-auto me-2" href="javascript:history.go(-1);" onclick="del()">返回</a>
+                    <!-- <input class="btn btn-outline-primary btn-lg me-2" type="submit" onClick="form_submit(this,'draft')" value="儲存為草稿"> -->
+                    <input class="btn btn-primary btn-lg" type="submit" onClick="form_submit(this,'finish')" value="送出">
                 </div>
+                </form>
             </div>
         </div>
     </div>
+</div>
 </div>
 <?php include("inc_footer.php"); ?>
 
