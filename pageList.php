@@ -194,6 +194,20 @@
                         <td></td>
                         <td></td>
                     </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>請先登入頁面</td>
+                        <td><a href="toLogin.php">檢視</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>最新消息內頁</td>
+                        <td><a href="news.php">檢視</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </tbody>
             </table>
 
