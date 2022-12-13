@@ -70,7 +70,7 @@
                                 <td>科技輔助英語口說學習之分析與探討</td>
                                 <td>林姸安</td>
                                 <td>
-                                    搞件已審查
+                                    稿件已審查
                                 </td>
                                 <td>
                                     <a href="review_view02.php" class="btn btn-outline-third">重新審查</a>
