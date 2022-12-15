@@ -431,9 +431,9 @@
             </ul>
             <!-- 作者資訊 表格 結束 -->
             <div class="text-center mt-5">
-              <a class="btn btn-outline-primary mx-auto me-2" href="javascript:history.go(-1);" onclick="del()">返回</a>
-              <input class="btn btn-outline-primary me-2" type="submit" onClick="form_submit(this,'draft')" value="儲存為草稿">
-              <input class="btn btn-primary" type="submit" onClick="form_submit(this,'finish')" value="送出">
+              <a class="btn btn-outline-third mx-auto me-2" href="javascript:history.go(-1);" onclick="del()">返回</a>
+              <input class="btn btn-outline-third me-2" type="submit" onClick="form_submit(this,'draft')" value="儲存為草稿">
+              <input class="btn btn-third" type="submit" onClick="form_submit(this,'finish')" value="送出">
             </div>
           </form>
         </div>
