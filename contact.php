@@ -18,7 +18,7 @@
                     <!-- breadcrumb end -->
 
                     <!-- 聯絡表格 開始 -->
-                    <table class="contact table-light table table-bordered border-third table-hover mt-3 mt-lg-5 ">
+                    <table class="contact  table table-bordered border-third table-hover mt-3 mt-lg-5 ">
                         <thead class="text-primary ">
                             <tr>
                                 <th colspan="2" class="h5">研討會</th>
