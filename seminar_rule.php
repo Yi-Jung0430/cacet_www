@@ -55,13 +55,13 @@
                         <div id="one" class="tab-inner">
                             <section class="pdf__box">
                                 <div class="py-2 text-center">
-                                    <button id="prev_01" class="btn btn-outline-third me-2">上一頁</button>
-                                    <button id="next_01" class="btn btn-outline-third me-2">下一頁</button>
+                                    <button id="prev_01" class="prev_01 btn btn-outline-third me-2">上一頁</button>
+                                    <button id="next_01" class="next_01 btn btn-outline-third me-2">下一頁</button>
 
                                     <span class="d-block d-sm-inline-block">Page:
-                                        <span id="page_num_01"></span>
+                                        <span id="page_num_01" class="page_num_01"></span>
                                         /
-                                        <span id="page_count_01"></span>
+                                        <span id="page_count_01" class="page_count_01"></span>
                                     </span>
 
                                     <a download href="storage/2-撰稿原則.pdf" class="ms-2">下載</a>
@@ -129,7 +129,14 @@
                             </section>
                         </div>
                     </div>
+
                 </div>
+            </div>
+            <div class="col-12">
+                <!-- go to top -->
+                <a href="#top" class="text-third top-icon d-block position-relative w-100">
+                    <i class="bi bi-arrow-up-circle d-block position-absolute bottom-0 end-0"></i>
+                </a>
             </div>
 
         </div>
@@ -179,6 +186,7 @@
         });
         //
         document.getElementById('page_num_01').textContent = num;
+        // document.getElementsByClassName('page_num_01').textContent = num;
     }
 
     //
@@ -190,6 +198,7 @@
         }
     }
 
+    // 上方
     //上一頁按鈕
     function onPrevPage_01() {
         if (pageNum_01 <= 1) {
@@ -199,6 +208,7 @@
         queueRenderPage_01(pageNum_01);
     }
     document.getElementById('prev_01').addEventListener('click', onPrevPage_01);
+    // document.getElementsByClassName('prev_01').addEventListener('click', onPrevPage_01);
 
     //下一頁按鈕
     function onNextPage_01() {
@@ -209,6 +219,8 @@
         queueRenderPage_01(pageNum_01);
     }
     document.getElementById('next_01').addEventListener('click', onNextPage_01);
+    // document.getElementsByClassName('next_01').addEventListener('click', onNextPage_01);
+
 
     //顯示頁數
     pdfjsLib_01.getDocument(url_01).promise.then(function(pdfDoc_) {

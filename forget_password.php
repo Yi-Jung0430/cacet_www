@@ -54,8 +54,8 @@
               </a>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary btn-lg d-block w-100">送出</button>
-          <a href="login.php" class="btn btn-outline-primary btn-lg d-block w-100 mt-3">返回登入頁</a>
+          <button type="submit" class="btn btn-primary d-block w-100">送出</button>
+          <a href="login.php" class="btn btn-outline-primary d-block w-100 mt-3">返回登入頁</a>
         </form>
         <!-- 登入表單 結束 -->
 

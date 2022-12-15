@@ -6,7 +6,7 @@
     <!-- 導航欄 結束 -->
 
     <!-- 成功訊息 開始 -->
-    <div class="message_print_ok ">
+    <div class="message_print_ok">
       <table>
         <tr valign="top">
           <td class="message_text">
@@ -22,6 +22,17 @@
         <tr valign="top">
           <td class="message_text">
             <p>您的個人資料已修改成功！</p>
+          </td>
+          <td class="message_close" valign="middle">
+            <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
+              <i class="bi bi-x-circle text-success"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr valign="top">
+          <td class="message_text">
+            <p>您已成功登出！</p>
           </td>
           <td class="message_close" valign="middle">
             <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">

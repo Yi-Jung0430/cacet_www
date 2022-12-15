@@ -139,7 +139,7 @@
                         </div>
                         <form method="post" enctype="multipart/form-data" action="review.php">
                             <!-- 論文資訊 表格 開始 -->
-                            <div class="table-responsive">
+                            <div class="">
                                 <table class="table">
                                     <tr>
                                         <td colspan="2">
@@ -198,7 +198,7 @@
                                     </tr>
                                 </table>
                                 <div class="text-center">
-                                    <a class="btn btn-outline-primary btn-lg me-2" href="javascript:history.go(-1);">返回</a>
+                                    <a class="btn btn-outline-primary me-2" href="javascript:history.go(-1);">返回</a>
                                 </div>
                             </div>
                             <!-- 詳細內容 結束 -->

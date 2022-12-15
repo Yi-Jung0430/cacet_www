@@ -43,7 +43,7 @@
 
           <form method="post" enctype="multipart/form-data" action="progress.php">
             <!-- 論文資訊 表格 開始 -->
-            <div class="table-responsive">
+            <div class="">
               <table class="table  table-bordered bg-white mt-1 seminarInner align-middle">
                 <thead>
                   <tr class="bg-third text-light">
@@ -104,7 +104,7 @@
                     </th>
                     <td>
                       <textarea class="form-control v_04" rows="3"></textarea>
-                      <small class="form-text">請勿超過 200 個字</small>
+                      <small class="form-text">請勿超過 500 個字</small>
                     </td>
                   </tr>
                   <!-- 論文摘要(英文) v_05 -->
@@ -114,7 +114,7 @@
                     </th>
                     <td>
                       <textarea class="form-control v_05" rows="3"></textarea>
-                      <small class="form-text">請勿超過 200 個字</small>
+                      <small class="form-text">請勿超過 500 個字</small>
                     </td>
                   </tr>
                   <!-- 關鍵字 ( 中文 ) v_06 -->
@@ -176,11 +176,11 @@
             <ul class="list_group author_list">
               <!-- 第一位 -->
               <li>
-                <section class="table-responsive">
+                <section class="">
                   <table class="table table-bordered bg-white mt-2 seminarInner align-middle">
                     <thead>
                       <tr class="bg-third text-light">
-                        <th colspan="4">第<span class="d-inline-block ms-4">位作者資訊</span></th>
+                        <th colspan="4">第<span class="d-inline-block ms-3">位作者資訊</span></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -297,14 +297,14 @@
 
               <!-- 新增的空白表格 -->
               <li class="li_copy">
-                <section class="table-responsive">
+                <section class="">
                   <table class="table table-bordered bg-white mt-2 seminarInner align-middle">
                     <thead>
                       <tr class="bg-third text-light">
                         <th colspan="4">
                           <div class="d-flex justify-content-between">
                             <p class="mb-0">
-                              第<span class="d-inline-block ms-4">位作者資訊</span>
+                              第<span class="d-inline-block ms-3">位作者資訊</span>
                             </p>
 
                             <a href="javascript:void(0);" class="list_group_del" onClick="list_group_del(this);author_array_reset();">
@@ -431,9 +431,9 @@
             </ul>
             <!-- 作者資訊 表格 結束 -->
             <div class="text-center mt-5">
-              <a class="btn btn-outline-primary btn-lg mx-auto me-2" href="javascript:history.go(-1);" onclick="del()">返回</a>
-              <input class="btn btn-outline-primary btn-lg me-2" type="submit" onClick="form_submit(this,'draft')" value="儲存為草稿">
-              <input class="btn btn-primary btn-lg" type="submit" onClick="form_submit(this,'finish')" value="送出">
+              <a class="btn btn-outline-primary mx-auto me-2" href="javascript:history.go(-1);" onclick="del()">返回</a>
+              <input class="btn btn-outline-primary me-2" type="submit" onClick="form_submit(this,'draft')" value="儲存為草稿">
+              <input class="btn btn-primary" type="submit" onClick="form_submit(this,'finish')" value="送出">
             </div>
           </form>
         </div>
@@ -518,8 +518,8 @@
 
       if ($(".v_04").val() != "") {
         var temp = $(".v_04").val();
-        if (temp.length > 200) {
-          msg += "<p>論文摘要 ( 中文 )，字數限制：200字以內。</p>";
+        if (temp.length > 500) {
+          msg += "<p>論文摘要 ( 中文 )，字數限制：500字以內。</p>";
         }
       }
 
@@ -530,8 +530,8 @@
 
       if ($(".v_05").val() != "") {
         var temp = $(".v_05").val();
-        if (temp.length > 200) {
-          msg += "<p>論文摘要 ( 英文 )，字數限制：200字以內。</p>";
+        if (temp.length > 500) {
+          msg += "<p>論文摘要 ( 英文 )，字數限制：500字以內。</p>";
         }
       }
 

@@ -22,7 +22,7 @@
                         <td><a href="home.php">檢視</a></td>
                         <td>12/05</td>
                         <td></td>
-                        <td>調整背景灰色與紅點圖</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>1-b.</td>
@@ -80,7 +80,7 @@
                         <td><a href="member_edit.php">檢視</a></td>
                         <td></td>
                         <td></td>
-                        <td>刪除驗證碼欄位</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>8</td>
@@ -116,7 +116,7 @@
                         <td><a href="seminar_method.php">檢視</a></td>
                         <td></td>
                         <td></td>
-                        <td>從 pdf.js 改成 ck editor</td>
+                        <td></td>
                     </tr>
                    
                     <tr>
@@ -125,7 +125,7 @@
                         <td><a href="contact.php">檢視</a></td>
                         <td></td>
                         <td></td>
-                        <td>更改表格背景(待確認)</td>
+                        <td></td>
                     </tr>
 
                     <tr>

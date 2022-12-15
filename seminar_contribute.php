@@ -36,7 +36,7 @@
                                 <td>2023-05-24</td>
                                 <td>開放投稿</td>
                                 <td>
-                                    <a href="seminar_method.php" class="btn btn-outline-primary">線上投稿</a>
+                                    <a href="seminar_method.php" class="btn btn-outline-third">線上投稿</a>
                                 </td>
                             </tr>
                             <tr>
@@ -44,7 +44,10 @@
                                 <td>2023-05-24</td>
                                 <td>開放投稿</td>
                                 <td>
-                                    <span>您的身分您沒有權限投稿此項目</span>
+                                    <p class="border-0 bg-transparent mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="您的身分為委員，故無法投稿，若要切換身分為一般會員，請聯繫學會。">
+                                        您沒有權限投稿此項目
+                                        <i class="bi bi-exclamation-circle text-primary fs-5"></i>
+                                    </p>
                                 </td>
                             </tr>
                             <tr>
@@ -53,12 +56,6 @@
                                 <td>投稿已截止</td>
                                 <td>
                                 </td>
-                            </tr>
-                            <tr>
-                                <th>ICEET 2021 數位學習與教育科技國際研討會</th>
-                                <td>2021-05-24</td>
-                                <td>投稿已截止</td>
-                                <td></td>
                             </tr>
                         </tbody>
                     </table>

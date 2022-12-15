@@ -78,8 +78,8 @@
           <div class="mb-3">
             <a href="forget_password.php">忘記密碼?</a>
           </div>
-          <button type="submit" class="btn btn-primary btn-lg d-block w-100">登入</button>
-          <a href="register.php" class="btn btn-outline-primary btn-lg d-block w-100 mt-3">註冊</a>
+          <button type="submit" class="btn btn-third btn-lg d-block w-100">登入</button>
+          <a href="register.php" class="btn btn-outline-third btn-lg d-block w-100 mt-3">註冊</a>
         </form>
         <!-- 登入表單 結束 -->
 

@@ -19,9 +19,9 @@
 
                     <!-- 聯絡表格 開始 -->
                     <table class="contact  table table-bordered border-third table-hover mt-3 mt-lg-5 ">
-                        <thead class="text-primary ">
-                            <tr>
-                                <th colspan="2" class="h5">研討會</th>
+                        <thead>
+                            <tr class="bg-third text-white">
+                                <th colspan="2" class="fs-6 py-2">研討會</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -42,10 +42,10 @@
                         </tbody>
                     </table>
 
-                    <table class="contact table  table-bordered border-third table-hover mt-3 mt-lg-5">
-                        <thead class="text-primary ">
-                            <tr>
-                                <th colspan="2" class="h5">期刊</th>
+                    <table class="contact table table-bordered border-third table-hover mt-3 mt-lg-5">
+                        <thead class="text-primary">
+                            <tr class="bg-third text-white">
+                                <th colspan="2" class="fs-6 py-2">期刊</th>
                             </tr>
                         </thead>
                         <tbody>

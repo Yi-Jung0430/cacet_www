@@ -36,7 +36,7 @@
 
                     <!-- 表單內容 開始 -->
                     <h2 class="my-lg-3 h1 ">個人資料 
-                        <a href="member_edit.php" class="btn btn-outline-primary btn-lg ms-2 mb-1">修改</a>
+                        <a href="member_edit.php" class="btn btn-outline-third btn-lg ms-2 mb-1">修改</a>
                     </h2>
                     
                     <small class="text-small fw-light"><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>

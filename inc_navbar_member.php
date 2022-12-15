@@ -11,9 +11,7 @@
                 <li class="nav-item">
                     <a class="nav-link active cu__navHover" aria-current="page" href="home.php">首頁</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link cu__navHover" href="https://www.cacet.org/web/2022ICEET/" target="_blank">研討會官網</a>
-                </li>
+            
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle  cu__navHover" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         會議投稿
@@ -24,9 +22,7 @@
                         <li><a class="dropdown-item" href="seminar_contribute.php">會議投稿</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link cu__navHover" href="https://www.cacet.org/etl/" target="_blank">期刊官網</a>
-                </li>
+                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle  cu__navHover" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         期刊投稿
@@ -41,6 +37,14 @@
                 <li class="nav-item">
                     <a class="nav-link cu__navHover" href="contact.php">聯絡我們</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link cu__navHover" href="https://www.cacet.org/web/2022ICEET/" target="_blank">研討會活動</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link cu__navHover" href="https://www.cacet.org/etl/" target="_blank">期刊官網</a>
+                </li>
             </ul>
 
             <!-- 登入前/後 兩種按鈕 -->
@@ -52,7 +56,7 @@
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
                         </svg>
-                        會員中心
+                        委員中心
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown2">
                         <li><a class="dropdown-item" href="member_view.php">個人資料</a></li>

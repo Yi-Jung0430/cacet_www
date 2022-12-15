@@ -139,7 +139,7 @@
                         </div>
                         <form method="post" enctype="multipart/form-data" action="review.php">
                             <!-- 論文資訊 表格 開始 -->
-                            <div class="table-responsive">
+                            <div class="">
                                 <table class="table">
                                     <tr>
                                         <td colspan="2">
@@ -212,8 +212,8 @@
                                     </tr>
                                 </table>
                                 <div class="text-center">
-                                    <a class="btn btn-outline-primary btn-lg me-2" href="javascript:history.go(-1);" onclick="del()">返回</a>
-                                    <input class="btn btn-primary btn-lg" type="submit" onClick="form_submit(this,'finish')" value="提交審查">
+                                    <a class="btn btn-outline-primary me-2" href="javascript:history.go(-1);" onclick="del()">返回</a>
+                                    <input class="btn btn-primary" type="submit" onClick="form_submit(this,'finish')" value="提交審查">
                                 </div>
                             </div>
                             <!-- 詳細內容 結束 -->

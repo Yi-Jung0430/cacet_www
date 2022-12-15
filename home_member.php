@@ -10,7 +10,7 @@
       <table>
         <tr valign="top">
           <td class="message_text">
-            <p>您的註冊已成功，請至信箱收取驗證信！</p>
+            <p>您的個人資料已修改成功！</p>
           </td>
           <td class="message_close" valign="middle">
             <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
@@ -21,7 +21,7 @@
 
         <tr valign="top">
           <td class="message_text">
-            <p>您的個人資料已修改成功！</p>
+            <p>您已成功登出！</p>
           </td>
           <td class="message_close" valign="middle">
             <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
@@ -29,6 +29,7 @@
             </a>
           </td>
         </tr>
+
       </table>
     </div>
     <!-- 成功訊息 開始 -->

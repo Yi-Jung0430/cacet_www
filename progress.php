@@ -7,7 +7,7 @@
         <!-- 導航欄 結束 -->
 
         <!-- 成功訊息 開始 -->
-        <div class="message_print_ok ">
+        <div class="message_print_ok">
             <table>
                 <tr valign="top">
                     <td class="message_text">

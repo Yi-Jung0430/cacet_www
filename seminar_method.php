@@ -20,23 +20,25 @@
                     </nav>
                     <!-- breadcrumb end -->
                     <!-- 子HTML 開始 -->
-                    <div class="sub_html">
+                    <div class="subhtml">
                         <h3 style="text-align: center;">中華資訊與科技教育學會</h3>
 
                         <h4 style="text-align: center;">會議論文投稿辦法</h4>
 
-                        <ul>
-                            <li>(一)口頭發表 (8-10頁為限)</li>
-                            <li>(二)海報發表 (2-4頁為限)</li>
-                            <li>(三)全文截稿日：2023年04月28日(五)</li>
-                            <li>(四)備註說明：
-                                <ol>
-                                    <li>海報及口頭發表內容皆須含中英文篇名、中英文摘要、中英文關鍵字、作者中英文姓名、作者中英文單位名稱、正文、圖表、參考文獻、附錄等，中文字體為標楷體、英文字體為Times New Roman）。</li>
-                                    <li>檔案上傳至投稿連結，檔案名稱請寫上【論文名稱（投稿者姓名+發表方式）】例如：頭前溪數位導覽員培育(林小明海報)。投稿者發表方式，本研討會將根據來稿議題安排議程，故保留變更投稿者發表方式權利，如造成不便，還請見諒！</li>
-                                    <li>投稿後，稿件一但接受並且錄取，一律不可增減共同作者，請於投稿送出前做好確認。</li>
-                                </ol>
-                            </li>
-                        </ul>
+                        <p>(一)口頭發表 (8-10頁為限)</p>
+
+                        <p>(二)海報發表 (2-4頁為限)</p>
+
+                        <p>(三)全文截稿日：2023年04月28日(五)</p>
+
+                        <p>(四)備註說明：</p>
+
+                        <ol>
+                            <li>海報及口頭發表內容皆須含中英文篇名、中英文摘要、中英文關鍵字、作者中英文姓名、作者中英文單位名稱、正文、圖表、參考文獻、附錄等，中文字體為標楷體、英文字體為Times New Roman）。</li>
+                            <li>檔案上傳至投稿連結，檔案名稱請寫上【論文名稱（投稿者姓名+發表方式）】例如：頭前溪數位導覽員培育(林小明海報)。投稿者發表方式，本研討會將根據來稿議題安排議程，故保留變更投稿者發表方式權利，如造成不便，還請見諒！</li>
+                            <li>投稿後，稿件一但接受並且錄取，一律不可增減共同作者，請於投稿送出前做好確認。</li>
+                        </ol>
+
                     </div>
 
                     <!-- 我同意 -->
@@ -45,8 +47,8 @@
                             <input type="checkbox" class="form-check-input v_10" id="exampleCheck1" value="agree" onClick="">
                             <label class="form-check-label" for="exampleCheck1">我已閱讀並同意投稿辦法</label>
                         </div>
-                        <a class="btn btn-outline-primary me-2" href="javascript:history.go(-1);">返回</a>
-                        <button type="submit" class="btn btn-primary disabled" id="toggleBtn">投稿</button>
+                        <a class="btn btn-outline-third me-2" href="javascript:history.go(-1);">返回</a>
+                        <button type="submit" class="btn btn-third disabled" id="toggleBtn">投稿</button>
                     </form>
                 </div>
             </div>

@@ -278,22 +278,22 @@
 .news {
     background-image: url(../images/news-1440.png);
     background-size: contain;
-    background-position: 20px 30%;
+    background-position: -4% 20%;
     background-repeat: no-repeat;
-    padding-top: 380px;
+    padding-top: 300px;
 
     @include lg {
-        padding-top: 280px;
+        padding-top: 200px;
         background-position: 20px 35%;
     }
 
     @include md {
-        padding-top: 200px;
+        padding-top: 150px;
         background-position: 20px 20%;
     }
 
     @include sm {
-        padding-top: 150px;
+        padding-top: 100px;
         background-position: 20px 10%;
     }
 
@@ -301,18 +301,7 @@
         letter-spacing: 12px;
         text-align: center;
         font-weight: 400;
-        margin-bottom: 80px;
-
-        @include md {
-            margin-bottom: 40px;
-        }
-
-        @include sm {
-            margin-bottom: 20px;
-        }
     }
-
-   
 
     &__list {
         list-style-type: none;

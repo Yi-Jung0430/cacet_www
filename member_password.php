@@ -68,8 +68,8 @@
               </tbody>
             </table>
             <div class="text-center">
-              <a class="btn btn-outline-primary btn-lg mx-auto me-2" href="javascript:history.go(-1);">返回</a>
-              <input class="btn btn-primary btn-lg mx-auto " type="submit" onClick="form_submit(this)" value="確認修改">
+              <a class="btn btn-outline-primary mx-auto me-2" href="javascript:history.go(-1);">返回</a>
+              <input class="btn btn-primary mx-auto " type="submit" onClick="form_submit(this)" value="確認修改">
             </div>
           </form>
         </div>
