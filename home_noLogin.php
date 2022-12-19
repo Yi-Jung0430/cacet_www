@@ -6,24 +6,27 @@
     <!-- 導航欄 結束 -->
 
     <!-- 成功訊息 開始 -->
-    <div class="message_print_ok ">
+    <div class="message_print_ok">
       <table>
         <tr valign="top">
           <td class="message_text">
             <p>您的註冊已成功，請至信箱收取驗證信！</p>
           </td>
-          <td class="message_close" valign="middle">
+          <td class="message_close text-end" valign="middle">
             <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
               <i class="bi bi-x-circle text-success"></i>
             </a>
           </td>
         </tr>
-
+      </table>
+    </div>
+    <div class="message_print_ok">
+      <table>
         <tr valign="top">
           <td class="message_text">
             <p>您的個人資料已修改成功！</p>
           </td>
-          <td class="message_close" valign="middle">
+          <td class="message_close text-end" valign="middle">
             <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
               <i class="bi bi-x-circle text-success"></i>
             </a>
@@ -54,7 +57,7 @@
             <!-- header 標題文字區 end -->
             <!-- header 書本區 start -->
             <div class="col-12 col-sm-10 col-lg-7">
-              <div class="row justify-content-sm-evenly justify-content-center">
+              <div class="row justify-content-sm-evenly justify-content-center align-items-end">
                 <!-- 第一本書 start -->
                 <div class="col-4 header__area me-3 me-sm-0">
                   <a href="" class="header__link position-relative ">

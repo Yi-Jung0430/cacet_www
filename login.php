@@ -33,7 +33,7 @@
         <td class="message_text">
           <p>您的密碼已成功修改，請重新登入。</p>
         </td>
-        <td class="message_close" valign="middle">
+        <td class="message_close text-end" valign="middle">
           <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
             <i class="bi bi-x-circle text-success"></i>
           </a>

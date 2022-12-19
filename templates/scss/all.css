@@ -10719,7 +10719,7 @@ sup {
 
 .message_print_ok {
   margin: 10px 10px 10px 10px;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 16px 0.5rem 0.5rem;
   color: #0f5132;
   background-color: #d1e7dd;
   border-color: #badbcc;
@@ -11050,10 +11050,8 @@ $grid-breakpoints: (
 */
 .home__bg01 {
   background-image: url("../images/desktop-1440.png");
-  background-size: contain;
+  background-size: auto;
   background-position: right top;
-  width: 100%;
-  height: 100%;
   background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
@@ -11197,6 +11195,7 @@ $grid-breakpoints: (
   margin-left: 8%;
   border: 3px solid #B52121;
   background-color: #fff;
+  max-height: 400px;
 }
 .header__contribute {
   top: -5px;
@@ -11302,27 +11301,28 @@ $grid-breakpoints: (
 }
 .news {
   background-image: url(../images/news-1440.png);
-  background-size: contain;
-  background-position: -4% 20%;
+  background-size: auto;
+  background-position: -6px 14%;
   background-repeat: no-repeat;
   padding-top: 300px;
 }
 @media (max-width: 992px) {
   .news {
     padding-top: 200px;
-    background-position: 20px 35%;
   }
 }
 @media (max-width: 768px) {
   .news {
     padding-top: 150px;
-    background-position: 20px 20%;
+    background-position: -10px 10%;
+    background-image: url(../images/news-744.png);
   }
 }
 @media (max-width: 576px) {
   .news {
-    padding-top: 100px;
-    background-position: 20px 10%;
+    padding-top: 140px;
+    background-position: -6px 10%;
+    background-image: url(../images/news-428.png);
   }
 }
 .news__title {

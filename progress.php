@@ -1,7 +1,7 @@
 <!-- 每頁模板 複製用 -->
 <?php include("inc_head.php"); ?>
 <div class="bg-gray02">
-    <div class="page__bg02">
+    <div class="home__bg01">
         <!-- 導航欄 開始 -->
         <?php include("inc_navbar.php"); ?>
         <!-- 導航欄 結束 -->
@@ -13,29 +13,35 @@
                     <td class="message_text">
                         <p>您的投稿已成功！ 您可以在此查詢所有稿件進度。</p>
                     </td>
-                    <td class="message_close" valign="middle">
+                    <td class="message_close text-end" valign="middle">
                         <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
                             <i class="bi bi-x-circle text-success"></i>
                         </a>
                     </td>
                 </tr>
-
+            </table>
+        </div>
+        <div class="message_print_ok">
+            <table>
                 <tr valign="top">
                     <td class="message_text">
                         <p>您的草稿已儲存成功！ 您可以在此查詢所有稿件進度。</p>
                     </td>
-                    <td class="message_close" valign="middle">
+                    <td class="message_close text-end" valign="middle">
                         <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
                             <i class="bi bi-x-circle text-success"></i>
                         </a>
                     </td>
                 </tr>
-
+            </table>
+        </div>
+        <div class="message_print_ok">
+            <table>
                 <tr valign="top">
                     <td class="message_text">
                         <p>稿件刪除成功，您已取消投稿！ </p>
                     </td>
-                    <td class="message_close" valign="middle">
+                    <td class="message_close text-end" valign="middle">
                         <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
                             <i class="bi bi-x-circle text-success"></i>
                         </a>
@@ -95,7 +101,7 @@
                                 <td>
                                     已投稿
                                     <span class="text-primary">[審稿中]</span>
-                                    
+
                                 </td>
                                 <td>
                                     <!-- <a href="seminar_method.php" class="btn btn-outline-primary">線上投稿</a> -->

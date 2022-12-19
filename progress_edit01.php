@@ -3,7 +3,7 @@
 <!-- 每頁模板 複製用 -->
 <?php include("inc_head.php"); ?>
 <div class="bg-gray02">
-    <div class="page__bg01">
+    <div class="home__bg01">
         <!-- 導航欄 開始 -->
         <?php include("inc_navbar.php"); ?>
         <!-- 導航欄 結束 -->
@@ -30,7 +30,7 @@
                         <table>
                             <tr valign="top">
                                 <td class="message_text"></td>
-                                <td class="message_close" valign="middle"><a href="javascript:void(0);" onClick="message_hide(this);"> </a></td>
+                                <td class="message_close text-end" valign="middle"><a href="javascript:void(0);" onClick="message_hide(this);"> </a></td>
                             </tr>
                         </table>
                     </div>
