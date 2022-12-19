@@ -33,9 +33,6 @@
             </table>
           </div>
           <!-- 訊息 結束 -->
-
-
-
           <!-- 表單內容 開始 -->
           <h2 class="my-lg-3 h1">修改密碼</h2>
           <div class="alert alert-dark" role="alert">
@@ -43,33 +40,35 @@
           </div>
           <small class="text-small fw-light"><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
           <form method="post" enctype="multipart/form-data" action="home.php">
-            <table class="table  table-bordered bg-white mt-1">
-              <tbody>
-                <!-- 密碼v_02 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th">新密碼
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td class="position-relative art_password">
-                    <a class="art_icon icon-eye-close r" href="javascript:void(0);" onclick="art_password_eye(this);"></a>
-                    <input type="password" class="form-control  v_02" placeholder="請輸入6~12碼英文數字，英文有區分大小寫。">
-                  </td>
-                </tr>
-                <!-- 再次輸入密碼v_01 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th">再次輸入新密碼
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td class="position-relative art_password">
-                    <a class="art_icon icon-eye-close r" href="javascript:void(0);" onclick="art_password_eye(this);"></a>
-                    <input type="password" class="form-control v_01" placeholder="請再次輸入相同密碼。">
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="detail_box">
+              <table class="table  table-bordered bg-white mt-1">
+                <tbody>
+                  <!-- 密碼v_02 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th">新密碼
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td class="position-relative art_password">
+                      <a class="art_icon icon-eye-close r" href="javascript:void(0);" onclick="art_password_eye(this);"></a>
+                      <input type="password" class="form-control  v_02" placeholder="請輸入6~12碼英文數字，英文有區分大小寫。">
+                    </td>
+                  </tr>
+                  <!-- 再次輸入密碼v_01 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th">再次輸入新密碼
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td class="position-relative art_password">
+                      <a class="art_icon icon-eye-close r" href="javascript:void(0);" onclick="art_password_eye(this);"></a>
+                      <input type="password" class="form-control v_01" placeholder="請再次輸入相同密碼。">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <div class="text-center">
-              <a class="btn btn-outline-primary mx-auto me-2" href="javascript:history.go(-1);">返回</a>
-              <input class="btn btn-primary mx-auto " type="submit" onClick="form_submit(this)" value="確認修改">
+              <a class="btn btn-outline-third mx-auto me-2" href="javascript:history.go(-1);">返回</a>
+              <input class="btn btn-third mx-auto " type="submit" onClick="form_submit(this)" value="確認修改">
             </div>
           </form>
         </div>

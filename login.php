@@ -57,16 +57,16 @@
         <form class="px-3 py-5" method="post" enctype="multipart/form-data" onSubmit="return form_submit()" action="home.php">
           <h3 class="mb-3"><i class="bi bi-person-circle pe-1"></i>會員登入</h3>
           <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+            <input type="email" class="form-control v_01" id="floatingInput" placeholder="name@example.com" required>
             <label for="floatingInput">請輸入您的帳號</label>
           </div>
           <div class="form-floating mb-3 position-relative art_password">
             <a class="art_icon icon-eye-close r" href="javascript:void(0);" onclick="art_password_eye(this);"></a>
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control v_02" id="floatingPassword" placeholder="Password">
             <label for="floatingPassword">請輸入您的密碼</label>
           </div>
           <div class="form-floating mb-3  d-flex justify-content-between align-items-center">
-            <input type="number" class="form-control cu__form-control  flex-grow-1 me-3" id="floatingVerification" placeholder="請輸入驗證碼" required>
+            <input type="number" class="form-control cu__form-control flex-grow-1 me-3 v_03" id="floatingVerification" placeholder="請輸入驗證碼" required>
             <label for="floatingVerification" class="">驗證碼</label>
             <div class="w-auto">
               <img src="storage/images/checkcode.jpg" alt="checkcode">
@@ -88,3 +88,49 @@
   </div>
   <!-- 內容 結束 -->
 </div>
+
+
+<!-- js 開始 -->
+<script>
+  async function form_submit(arg) {
+    event.preventDefault();
+
+    message_hide();
+    message_print_ok_hide();
+    message_print_errer_hide();
+
+    var msg = "";
+    var alertIcon = '<i class="bi bi-exclamation-circle text-primary me-2"></i>';
+
+    //v_01_帳號
+    if ($(".v_01").val() == "") {
+      msg += "<p>" + alertIcon + "帳號為必填欄位。</p>";
+    } else {
+      if (!checkEmail($(".v_03").val())) {
+        msg += "<p>" + alertIcon + "帳號欄位不符合電子信箱格式。</p>";
+      }
+    }
+
+    //v_02_密碼
+    if ($(".v_02").val() == "") {
+      msg += "<p>" + alertIcon + "密碼為必填欄位。</p>";
+    } else {
+      if (!checkPassword($(".v_02").val())) {
+        msg += "<p>" + alertIcon + "未符合密碼格式：6~12碼，含英文和數字。</p>";
+      }
+    }
+
+    //v_03_驗證碼
+    if ($(".v_03").val() == "") {
+      msg += "<p>" + alertIcon + "驗證碼為必填欄位。</p>";
+    }
+
+
+    if (msg != "") {
+      message_show(msg);
+      return false;
+    }
+
+    $(arg).closest('form').submit();
+  }
+</script>

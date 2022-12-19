@@ -30,151 +30,153 @@
                             </tr>
                         </table>
                     </div>
-
-
                     <!-- 訊息 結束 -->
 
                     <!-- 表單內容 開始 -->
-                    <h2 class="my-lg-3 h1 ">個人資料 
+                    <h2 class="my-lg-3 h1 ">個人資料
                         <a href="member_edit.php" class="btn btn-outline-third btn-lg ms-2 mb-1">修改</a>
                     </h2>
-                    
+
                     <small class="text-small fw-light"><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
                     <form method="post" enctype="multipart/form-data" action="home.php">
-                        <table class="table  table-bordered bg-white mt-1">
-                            <tbody>
-                                <!-- 帳號v_03 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">帳號 (電子信箱)
-                                        <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                    </th>
-                                    <td >
-                                        <span >tu@sydt.com.tw</span>
-                                    </td>
-                                </tr>
-                                <!-- 中文名v_04 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">中文姓名
-                                        <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                    </th>
-                                    <td>
-                                        <span>杜展宇</span>
-                                    </td>
-                                </tr>
-                                <!-- 英文名v_05 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">英文姓名
-                                        <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                    </th>
-                                    <td>
-                                    <span>Tu</span>
-                                    </td>
-                                </tr>
-                                <!-- 性別 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">性別
-                                        <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                    </th>
-                                    <td>
-                                        <span>男</span> 
-                                    </td>
-                                </tr>
-                                <!-- 郵遞區號v_06 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">通訊郵遞區號
-                                        <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                    </th>
-                                    <td>
-                                        <span>909</span>
-                                    </td>
-                                </tr>
-                                <!-- 通訊地址v_07 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">通訊地址
-                                        <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                    </th>
-                                    <td>
-                                        <span>日本北海道札幌市北區北八條西64號</span>
-                                    </td>
-                                </tr>
-                                <!-- 服務機構電話 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">服務機構電話
-                                    </th>
-                                    <td>
-                                        <span></span>
-                                    </td>
-                                </tr>
-                                <!-- 傳真電話 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">傳真電話
-                                    </th>
-                                    <td>
-                                        <span></span>
-                                    </td>
-                                </tr>
-                                <!-- 行動電話v_08 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">行動電話
-                                        <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                    </th>
-                                    <td>
-                                        <span>0911666222</span>
-                                    </td>
-                                </tr>
-                                <!-- 服務母機構v_09 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">服務母機構名稱
-                                        <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                    </th>
-                                    <td>
-                                        <span>日本北海道大學</span>
-                                    </td>
-                                </tr>
-                                <!-- 服務子機構 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">服務子機構名稱
-                                    </th>
-                                    <td>
-                                        <span></span>
-                                    </td>
-                                </tr>
-                                <!-- 職稱 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">職稱
-                                        <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                                    </th>
-                                    <td>
-                                        <span>資訊科學系教授</span>            
-                                    </td>
-                                </tr>
-                                <!-- 學歷 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">學歷
-                                    </th>
-                                    <td>
-                                        <span>日本北海道大學教育學研究院 博士</span>
-                                    </td>
-                                </tr>
-                                <!-- 經歷 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">經歷
-                                    </th>
-                                    <td>
-                                        <span>日本北海道大學 校長</span>
-                                    </td>
-                                </tr>
-                                <!-- 學歷 -->
-                                <tr>
-                                    <th scope="row" valign="middle" class="register__th ">著作
-                                    </th>
-                                    <td>
-                                       <span></span>
-                                    </td>
-                                </tr>
-                                
-                            </tbody>
-                        </table>
+                        <div class="detail_box">
+                            <table class="table  table-bordered bg-white mt-1">
+                                <tbody>
+                                    <!-- 帳號v_03 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">帳號 (電子信箱)
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <span>tu@sydt.com.tw</span>
+                                        </td>
+                                    </tr>
+                                    <!-- 中文名v_04 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">中文姓名
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <span>杜展宇</span>
+                                        </td>
+                                    </tr>
+                                    <!-- 英文名v_05 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">英文姓名
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <span>James Chih-Hsin Yang</span>
+                                        </td>
+                                    </tr>
+                                    <!-- 性別 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">性別
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <span>男</span>
+                                        </td>
+                                    </tr>
+                                    <!-- 郵遞區號v_06 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">通訊郵遞區號
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <span>909</span>
+                                        </td>
+                                    </tr>
+                                    <!-- 通訊地址v_07 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">通訊地址
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <span>日本北海道札幌市北區北八條西64號</span>
+                                        </td>
+                                    </tr>
+                                    <!-- 服務機構電話 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">服務機構電話
+                                        </th>
+                                        <td>
+                                            <span></span>
+                                        </td>
+                                    </tr>
+                                    <!-- 傳真電話 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">傳真電話
+                                        </th>
+                                        <td>
+                                            <span></span>
+                                        </td>
+                                    </tr>
+                                    <!-- 行動電話v_08 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">行動電話
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <span>0911666222</span>
+                                        </td>
+                                    </tr>
+                                    <!-- 服務母機構v_09 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">服務母機構名稱
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <span>日本北海道大學</span>
+                                        </td>
+                                    </tr>
+                                    <!-- 服務子機構 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">服務子機構名稱
+                                        </th>
+                                        <td>
+                                            <span></span>
+                                        </td>
+                                    </tr>
+                                    <!-- 職稱 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">職稱
+                                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                                        </th>
+                                        <td>
+                                            <span>資訊科學系教授</span>
+                                        </td>
+                                    </tr>
+                                    <!-- 學歷 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">學歷
+                                        </th>
+                                        <td>
+                                            <span>日本北海道大學教育學研究院 博士</span>
+                                        </td>
+                                    </tr>
+                                    <!-- 經歷 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">經歷
+                                        </th>
+                                        <td>
+                                            <span>日本北海道大學 校長</span>
+                                        </td>
+                                    </tr>
+                                    <!-- 學歷 -->
+                                    <tr>
+                                        <th scope="row" valign="middle" class="register__th ">著作
+                                        </th>
+                                        <td>
+                                            <span></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-outline-third mx-auto me-2" href="javascript:history.go(-1);">返回</a>
+                        </div>
                     </form>
                 </div>
             </div>

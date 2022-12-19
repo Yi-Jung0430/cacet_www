@@ -9,7 +9,7 @@
       <div class="row">
         <div class="col-12">
           <!-- breadcrumb start -->
-          <nav class="mt-3 mt-md-5"  aria-label="breadcrumb">
+          <nav class="mt-3 mt-md-5" aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="home.php">首頁</a></li>
               <li class="breadcrumb-item active" aria-current="page">註冊會員</li>
@@ -36,213 +36,222 @@
           <h2 class="my-lg-3 h1">填寫會員資料</h2>
           <small class="text-small fw-light"><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
           <form method="post" enctype="multipart/form-data" action="home.php">
-            <table class="table  table-bordered bg-white mt-1">
-              <tbody>
-                <!-- 帳號v_03 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">帳號 (電子信箱)
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <input type="email" class="form-control v_03" placeholder="請輸入正確的電子信箱格式">
-                  </td>
-                </tr>
-                <!-- 密碼v_02 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th">密碼
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td class="position-relative art_password">
-                    <a class="art_icon icon-eye-close r" href="javascript:void(0);" onclick="art_password_eye(this);"></a>
-                    <input type="password" class="form-control  v_02" placeholder="請輸入6~12碼英文數字，英文有區分大小寫。">
-                  </td>
-                </tr>
-                <!-- 再次輸入密碼v_01 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th">再次輸入密碼
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td class="position-relative art_password">
-                    <a class="art_icon icon-eye-close r" href="javascript:void(0);" onclick="art_password_eye(this);"></a>
-                    <input type="password" class="form-control v_01" placeholder="請再次輸入相同密碼。">
-                  </td>
-                </tr>
-                <!-- 中文名v_04 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">中文姓名
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <input type="text" class="form-control v_04" placeholder="">
-                  </td>
-                </tr>
-                <!-- 英文名v_05 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">英文姓名
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <input type="text" class="form-control v_05" placeholder="">
-                  </td>
-                </tr>
-                <!-- 性別 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">性別
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" checked>
-                      <label class="form-check-label">
-                        男
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault">
-                      <label class="form-check-label">
-                        女
-                      </label>
-                    </div>
-                  </td>
-                </tr>
-                <!-- 郵遞區號v_06 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">通訊郵遞區號
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <div class="row">
-                      <div class="col">
-                        <input type="number" class="form-control v_06" placeholder="">
+            <div class="detail_box">
+              <table class="table  table-bordered bg-white mt-1">
+                <tbody>
+                  <!-- 帳號v_03 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">帳號 (電子信箱)
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <input type="email" class="form-control v_03" placeholder="請輸入正確的電子信箱格式">
+                    </td>
+                  </tr>
+                  <!-- 密碼v_02 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th">密碼
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td class="position-relative art_password">
+                      <a class="art_icon icon-eye-close r" href="javascript:void(0);" onclick="art_password_eye(this);"></a>
+                      <input type="password" class="form-control  v_02" placeholder="請輸入6~12碼英文數字，英文有區分大小寫。">
+                    </td>
+                  </tr>
+                  <!-- 再次輸入密碼v_01 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th">再次輸入密碼
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td class="position-relative art_password">
+                      <a class="art_icon icon-eye-close r" href="javascript:void(0);" onclick="art_password_eye(this);"></a>
+                      <input type="password" class="form-control v_01" placeholder="請再次輸入相同密碼。">
+                    </td>
+                  </tr>
+                  <!-- 中文名v_04 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">中文姓名
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <input type="text" class="form-control v_04" placeholder="">
+                    </td>
+                  </tr>
+                  <!-- 英文名v_05 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">英文姓名
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <input type="text" class="form-control v_05" placeholder="">
+                      <small class="form-text fileformat">
+                        範例 : James Chih-Hsin Yang
+                      </small>
+                    </td>
+                  </tr>
+                  <!-- 性別 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">性別
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" checked>
+                        <label class="form-check-label">
+                          男
+                        </label>
                       </div>
-                      <div class="col">
-                        <a href="#" class="align-middle">郵遞區號查詢</a>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label">
+                          女
+                        </label>
                       </div>
-                      <div class="col">
+                    </td>
+                  </tr>
+                  <!-- 郵遞區號v_06 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">通訊郵遞區號
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <input type="number" class="form-control v_06" placeholder="">
+                          <small class="form-text fileformat">
+                            最多六位數字
+                          </small>
+                        </div>
+
+                        <div class="col">
+                          <a href="https://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208" class="align-middle">郵遞區號查詢</a>
+                        </div>
+                        <div class="col">
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <!-- 通訊地址v_07 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">通訊地址
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <input type="text" class="form-control v_07" placeholder="">
-                  </td>
-                </tr>
-                <!-- 服務機構電話 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">服務機構電話
-                  </th>
-                  <td>
-                    <div class="row g-3">
-                      <div class="col-sm-12 col-lg-4">
-                        <input type="tel" class="form-control" placeholder="">
+                    </td>
+                  </tr>
+                  <!-- 通訊地址v_07 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">通訊地址
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <input type="text" class="form-control v_07" placeholder="">
+                    </td>
+                  </tr>
+                  <!-- 服務機構電話 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">服務機構電話
+                    </th>
+                    <td>
+                      <div class="row g-3">
+                        <div class="col-sm-12 col-lg-4">
+                          <input type="tel" class="form-control" placeholder="">
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <!-- 傳真電話 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">傳真電話
-                  </th>
-                  <td>
-                    <div class="row g-3">
-                      <div class="col-sm-12 col-lg-4">
-                        <input type="tel" class="form-control" placeholder="">
+                    </td>
+                  </tr>
+                  <!-- 傳真電話 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">傳真電話
+                    </th>
+                    <td>
+                      <div class="row g-3">
+                        <div class="col-sm-12 col-lg-4">
+                          <input type="tel" class="form-control" placeholder="">
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <!-- 行動電話v_08 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">行動電話
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <div class="row g-3">
-                      <div class="col-sm-12 col-lg-4">
-                        <input type="tel" class="form-control v_08" placeholder="">
+                    </td>
+                  </tr>
+                  <!-- 行動電話v_08 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">行動電話
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <div class="row g-3">
+                        <div class="col-sm-12 col-lg-4">
+                          <input type="tel" class="form-control v_08" placeholder="">
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <!-- 服務母機構v_09 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">服務母機構名稱
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <input type="text" class="form-control v_09" placeholder="">
-                  </td>
-                </tr>
-                <!-- 服務子機構 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">服務子機構名稱
-                  </th>
-                  <td>
-                    <input type="text" class="form-control " placeholder="">
-                  </td>
-                </tr>
-                <!-- 職稱 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">職稱
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <input type="text" class="form-control " placeholder="">
-                  </td>
-                </tr>
-                <!-- 學歷 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">學歷
-                  </th>
-                  <td>
-                    <textarea class="form-control art_textarea" placeholder=""></textarea>
-                  </td>
-                </tr>
-                <!-- 經歷 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">經歷
-                  </th>
-                  <td>
-                    <textarea class="form-control art_textarea" placeholder=""></textarea>
-                  </td>
-                </tr>
-                <!-- 學歷 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">著作
-                  </th>
-                  <td>
-                    <textarea class="form-control art_textarea" placeholder=""></textarea>
-                  </td>
-                </tr>
-                <!-- 驗證碼 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">驗證碼
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <div class="row g-3">
-                      <div class="col-sm-12 col-lg-4">
-                        <input type="number" class="form-control" placeholder="">
+                    </td>
+                  </tr>
+                  <!-- 服務母機構v_09 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">服務母機構名稱
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <input type="text" class="form-control v_09" placeholder="">
+                    </td>
+                  </tr>
+                  <!-- 服務子機構 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">服務子機構名稱
+                    </th>
+                    <td>
+                      <input type="text" class="form-control " placeholder="">
+                    </td>
+                  </tr>
+                  <!-- 職稱 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">職稱
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <input type="text" class="form-control v_10" placeholder="">
+                    </td>
+                  </tr>
+                  <!-- 學歷 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">學歷
+                    </th>
+                    <td>
+                      <textarea class="form-control art_textarea" placeholder=""></textarea>
+                    </td>
+                  </tr>
+                  <!-- 經歷 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">經歷
+                    </th>
+                    <td>
+                      <textarea class="form-control art_textarea" placeholder=""></textarea>
+                    </td>
+                  </tr>
+                  <!-- 學歷 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">著作
+                    </th>
+                    <td>
+                      <textarea class="form-control art_textarea" placeholder=""></textarea>
+                    </td>
+                  </tr>
+                  <!-- 驗證碼 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">驗證碼
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <div class="row g-3">
+                        <div class="col-sm-12 col-lg-4">
+                          <input type="number" class="form-control v_11" placeholder="">
+                        </div>
+                        <div class="col-sm-12 col-lg-8">
+                          <img src="storage/images/checkcode.jpg" alt="checkcode">
+                          <a href="javascript:void(0);" class=" align-middle">
+                            <i class="bi bi-arrow-clockwise fs-3 text-primary"></i>
+                          </a>
+                        </div>
                       </div>
-                      <div class="col-sm-12 col-lg-8">
-                        <img src="storage/images/checkcode.jpg" alt="checkcode">
-                        <a href="javascript:void(0);" class=" align-middle">
-                          <i class="bi bi-arrow-clockwise fs-3 text-primary"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <div class="text-center">
-              <a class="btn btn-outline-primary mx-auto me-2" href="javascript:history.go(-1);">返回</a>
-              <input class="btn btn-primary mx-auto " type="submit" onClick="form_submit(this)" value="註冊">
+              <a class="btn btn-outline-third mx-auto me-2" href="javascript:history.go(-1);">返回</a>
+              <input class="btn btn-third mx-auto " type="submit" onClick="form_submit(this)" value="註冊">
             </div>
           </form>
         </div>
@@ -317,6 +326,18 @@
       msg += "<p>" + alertIcon + "行動電話為必填欄位。</p>";
     }
 
+    //v_09_母機構
+    if ($(".v_09").val() == "") {
+      msg += "<p>" + alertIcon + "服務母機構名稱為必填欄位。</p>";
+    }
+    //v_10_職稱
+    if ($(".v_10").val() == "") {
+      msg += "<p>" + alertIcon + "職稱為必填欄位。</p>";
+    }
+    //v_11_驗證碼
+    if ($(".v_11").val() == "") {
+      msg += "<p>" + alertIcon + "驗證碼為必填欄位。</p>";
+    }
 
 
     if (msg != "") {

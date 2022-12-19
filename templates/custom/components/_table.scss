@@ -1,0 +1,139 @@
+// RWD table
+.browse_box {
+    padding: 0;
+    overflow-x: auto;
+    clear: both;
+}
+
+.cu {
+    &__table {
+        th {
+            width: 20%;
+            background-color: #fafafa;
+        }
+    }
+}
+
+.browse_box>table tr td {
+    min-width: 100px;
+}
+
+.browse_box>table tr th {
+    white-space: nowrap;
+}
+
+.detail_box table tr th {
+    width: 200px;
+    min-width: 200px;
+    background: #fafafa;
+    padding: 10px 20px;
+}
+
+@include md {
+
+    .browse_box .sub_table,
+    .browse_box .sub_table tbody,
+    .browse_box .sub_table tbody tr,
+    .browse_box .sub_table tbody tr th,
+    .browse_box .sub_table tbody tr td,
+    .detail_box .sub_table,
+    .detail_box .sub_table tbody,
+    .detail_box .sub_table tbody tr,
+    .detail_box .sub_table tbody tr th,
+    .detail_box .sub_table tbody tr td {
+        display: block;
+        width: 100%;
+    }
+
+    .detail_box table tr th,
+    .detail_box table tr td {
+        width: 100%;
+        display: block;
+        white-space: normal;
+    }
+}
+
+.detail_box {
+    font-size: 16px;
+}
+
+.detail_box table {
+    border-collapse: collapse;
+    background: #fff;
+    width: 100%;
+}
+
+.detail_box table,
+.detail_box table tr th,
+.detail_box table tr td {
+    border: 1px solid #d8dadc;
+
+    & p {
+        margin: 0;
+        // padding: 0;
+    }
+}
+
+.detail_box table tr td[colspan] {
+    background: #0a1d37;
+    color: #fff;
+
+    & p {
+        margin: 0;
+        // padding: 0;
+    }
+}
+
+
+.art_word,
+.art_radio_ico,
+.art_checkbox_ico {
+    min-width: 24px;
+}
+
+// .art_word, .art_word span, .art_text, .art_text input, .art_password, .art_password input, .art_num, .art_num input, .art_select, .art_select select, .art_upload_raw, .art_upload_raw input[type='text'], .art_radio_ico, .art_radio_ico span, .art_checkbox_ico, .art_checkbox_ico span, .art_radio_own, .art_radio_own span, .art_checkbox_own, .art_checkbox_own span, .art_switch, .art_switch span, .art_textarea, .art_textarea textarea, .art_button {
+//     display: inline-block;
+// }
+
+.art_pre {
+    font-family: inherit;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    white-space: break-spaces;
+}
+
+.detail_box .sub_table,
+.detail_box .sub_table tr th,
+.detail_box .sub_table tr td {
+    border: 1px solid #d1d9e4;
+}
+
+.detail_box table, 
+.detail_box table tr th, 
+.detail_box table tr td {
+    border: 1px solid #d8dadc;
+    padding: 1rem 1rem;
+}
+
+.browse_box .sub_table,
+.detail_box .sub_table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+}
+
+.browse_box .sub_table tr th[colspan],
+.detail_box .sub_table tr th[colspan] {
+    text-align: center;
+    background: #e5ebf4;
+    color: #555;
+}
+
+.browse_box .sub_table tr th,
+.detail_box .sub_table tr th {
+    width: 170px;
+    background: #f0f6ff;
+    color: #555;
+    padding: 10px 20px;
+}

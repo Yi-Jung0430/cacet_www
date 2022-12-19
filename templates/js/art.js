@@ -2660,7 +2660,7 @@ async function oldfile_del(arg1, arg2, arg3){
 /* 自訂對話框 開始 */
 function art_confirm(title, message){
 	//
-	var new_html = '<div class="art_confirm"><div class="overlay" onclick="$(\'.art_confirm\').remove();"></div><div class="main"><div class="top">' + title + '</div><div class="msg"></div><div class="bottom"><input type="button" class="btn_no btn btn-outline-third me-3 " value="取消" /><input type="button" class="btn_yes btn btn-third" value="確認" /></div></div></div>';
+	var new_html = '<div class="art_confirm"><div class="overlay" onclick="$(\'.art_confirm\').remove();"></div><div class="main"><div class="top">' + title + '</div><div class="msg">'+ message +'</div><div class="bottom"><input type="button" class="btn_no btn btn-outline-third me-3 " value="取消" /><input type="button" class="btn_yes btn btn-third" value="確認" /></div></div></div>';
 	$("body").append(new_html);
 	//
 	return new Promise(function(complete, failed){
@@ -2710,7 +2710,7 @@ $(function() {
 		transitionSupported = typeof document.body.style.transitionProperty === "string", // detect CSS transition support
 		scrollTime = 1; // scroll time in seconds
 
-	$(document).on("click", "a[href*=#]:not([href=#])", function(e) {
+	$(document).on("click", "a[href*='#']:not([href='#'])", function(e) {
 		var target, avail, scroll, deltaScroll;
     
 		if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {

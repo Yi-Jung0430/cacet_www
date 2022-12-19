@@ -66,7 +66,7 @@
     </div>
 </footer>
 <div class="copyright py-3">
-    <p>Copyright © 2022. All Rights Reserved. Chinese Association of Computer and Educational Technology (CACET)</p>
+    <p>Copyright © 2023. All Rights Reserved. Chinese Association of Computer and Educational Technology (CACET)</p>
 </div>
 
 <!-- 頁尾 結束 -->

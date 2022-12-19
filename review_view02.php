@@ -212,8 +212,8 @@
                                     </tr>
                                 </table>
                                 <div class="text-center">
-                                    <a class="btn btn-outline-primary me-2" href="javascript:history.go(-1);" onclick="del()">返回</a>
-                                    <input class="btn btn-primary" type="submit" onClick="form_submit(this,'finish')" value="提交審查">
+                                    <a class="btn btn-outline-third me-2" href="javascript:history.go(-1);" onclick="del()">返回</a>
+                                    <input class="btn btn-third" type="submit" onClick="form_submit(this,'finish')" value="提交審查">
                                 </div>
                             </div>
                             <!-- 詳細內容 結束 -->

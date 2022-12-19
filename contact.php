@@ -18,53 +18,56 @@
                     <!-- breadcrumb end -->
 
                     <!-- 聯絡表格 開始 -->
-                    <table class="contact  table table-bordered border-third table-hover mt-3 mt-lg-5 ">
-                        <thead>
-                            <tr class="bg-third text-white">
-                                <th colspan="2" class="fs-6 py-2">研討會</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">聯絡人</th>
-                                <td>彭佳惠秘書、廖敏蕙秘書</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">電話</th>
-                                <td>02-8226-5021#3013、#3014</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">信箱</th>
-                                <td colspan="2">
-                                    <a href="mailto: iceet@cacet.org">iceet@cacet.org</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table class="contact table table-bordered border-third table-hover mt-3 mt-lg-5">
-                        <thead class="text-primary">
-                            <tr class="bg-third text-white">
-                                <th colspan="2" class="fs-6 py-2">期刊</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">聯絡人</th>
-                                <td>廖敏蕙秘書</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">電話</th>
-                                <td>02-8226-5021#3014</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">信箱</th>
-                                <td colspan="2">
-                                    <a href="mailto: etl@cacet.org">etl@cacet.org</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="contact table table-bordered border-third table-hover mt-3 mt-lg-5 ">
+                            <thead>
+                                <tr class="bg-third text-white">
+                                    <th colspan="2" class="fs-6 py-2 text-nowrap">研討會</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="text-nowrap">聯絡人</th>
+                                    <td>廖敏蕙助理秘書</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-nowrap">電話</th>
+                                    <td class="text-nowrap">02-8226-5021#3014</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-nowrap">信箱</th>
+                                    <td colspan="2" class="text-nowrap">
+                                        <a href="mailto: iceet@cacet.org">iceet@cacet.org</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="contact table table-bordered border-third table-hover mt-3 mt-lg-5">
+                            <thead class="text-primary">
+                                <tr class="bg-third text-white">
+                                    <th colspan="2" class="fs-6 py-2 text-nowrap">期刊</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="text-nowrap">聯絡人</th>
+                                    <td class="text-nowrap">廖敏蕙秘書</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-nowrap">電話</th>
+                                    <td class="text-nowrap">02-8226-5021#3014</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-nowrap">信箱</th>
+                                    <td colspan="2" class="text-nowrap">
+                                        <a href="mailto: etl@cacet.org">etl@cacet.org</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <!-- 聯絡表格 結束 -->
                 </div>
             </div>

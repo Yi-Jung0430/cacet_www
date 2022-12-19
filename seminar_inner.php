@@ -43,14 +43,14 @@
 
           <form method="post" enctype="multipart/form-data" action="progress.php">
             <!-- 論文資訊 表格 開始 -->
-            <div class="">
+            <div class="detail_box">
               <table class="table  table-bordered bg-white mt-1 seminarInner align-middle">
                 <thead>
-                  <tr class="bg-third text-light">
-                    <th colspan="2">論文資訊</th>
+                  <tr>
+                    <th colspan="2" class="bg-third text-light">論文資訊</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody class="cu__table">
                   <!-- 投稿項目 span -->
                   <tr>
                     <th scope="row" valign="middle">投稿項目
@@ -146,7 +146,8 @@
                       <div class="position-relative art_upload_raw">
                         <input class="form-control v_08" type="file" class="mod_select_file" name="file_01[]" accept=".doc,.docx,.pdf" multiple>
                         <a class="hidden icon-cancel r position-absolute top-50 end-0 translate-middle-y me-2" href="javascript:void(0);" onclick="art_upload_raw_cancel(this);">
-                          <i class="bi bi-x-circle"></i>
+                          <i class="bi bi-x-circle">
+                          </i>
                         </a>
                       </div>
                       <small class="form-text fileformat">需以 PDF、DOC、或 DOCX 形式上傳，檔案大小不可超過 20MB。</small>
@@ -155,16 +156,19 @@
                   <!-- 附件 v_09 -->
                   <tr>
                     <th valign="middle">附件上傳
-                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                      <!-- <sup><i class="bi bi-asterisk text-primary"></i><sup> -->
                     </th>
                     <td>
                       <div class="position-relative art_upload_raw">
-                        <input class="form-control v_09" type="file" accept=".zip,.7z,.WinRAR" multiple>
+                        <input class="form-control v_09" type="file" accept=".zip,.7z,.WinRAR,.jpg,.jpeg,.png" multiple>
                         <a class="icon-cancel r position-absolute top-50 end-0 translate-middle-y me-2" href="javascript:void(0);" onclick="art_upload_raw_cancel(this);">
                           <i class="bi bi-x-circle"></i>
                         </a>
                       </div>
-                      <small class="form-text fileformat">檔案若有多個，請以壓縮檔上傳，檔案大小不可超過 20MB。</small>
+                      <small class="form-text fileformat">
+                        需以 jpg、jpeg、或 png 形式上傳。<br />
+                        檔案若有多個，請以壓縮檔上傳，檔案大小不可超過 20MB。
+                      </small>
                     </td>
                   </tr>
                 </tbody>
@@ -176,14 +180,16 @@
             <ul class="list_group author_list">
               <!-- 第一位 -->
               <li>
-                <section class="">
+                <section class="detail_box">
                   <table class="table table-bordered bg-white mt-2 seminarInner align-middle">
                     <thead>
-                      <tr class="bg-third text-light">
-                        <th colspan="4">第<span class="d-inline-block ms-3">位作者資訊</span></th>
+                      <tr>
+                        <th colspan="4" class="bg-third text-light">
+                          <div class="d-flex justify-content-between author_th"></div>
+                        </th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="cu__table">
                       <!-- 第一列 -->
                       <tr>
                         <!-- 作者類型 v_10 v_11 -->
@@ -193,16 +199,24 @@
                         </th>
                         <td>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input v_10" type="radio" value="boss" id="author01" checked>
-                            <label class="form-check-label seminarInner__label" for="author01">第一作者</label>
+                            <label class="form-check-label seminarInner__label" for="author01">
+                              <input class="form-check-input v_10" type="radio" value="boss" id="author01" checked>
+                              <span>第一作者</span>
+                            </label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input v_10" type="radio" value="team" id="author02">
-                            <label class="form-check-label seminarInner__label" for="author02">共同作者</label>
+                            <label class="form-check-label seminarInner__label" for="author02">
+                              <input class="form-check-input v_10" type="radio" value="team" id="author02">
+                              <span>共同作者</span>
+                            </label>
                           </div>
                           <div class="form-check form-check-inline border-start border-third check-border">
-                            <input class="form-check-input v_11" type="checkbox" value="1">
-                            <label class="form-check-label seminarInner__label ">通訊作者</label>
+                            <label class="form-check-label seminarInner__label ">
+                              <input class="form-check-input v_11" type="checkbox" value="1">
+                              <span>
+                                通訊作者
+                              </span>
+                            </label>
                           </div>
                         </td>
                         <!-- 電子信箱 v_12 -->
@@ -210,7 +224,7 @@
                           <sup><i class="bi bi-asterisk text-primary"></i><sup>
                         </th>
                         <td>
-                          <input type="email" class="form-control v_12" value="sing@sydt.com.tw">
+                          <input type="email" class="form-control v_12" value="James Chih-Hsin Yang@sydt.com.tw">
                         </td>
                       </tr>
                       <!-- 第二列 -->
@@ -229,7 +243,10 @@
                           <sup><i class="bi bi-asterisk text-primary"></i><sup>
                         </th>
                         <td>
-                          <input type="text" class="form-control v_14" value="sing">
+                          <input type="text" class="form-control v_14" value="James Chih-Hsin Yang">
+                          <small class="form-text fileformat">
+                            範例 : James Chih-Hsin Yang
+                          </small>
                         </td>
                       </tr>
                       <!-- 第三列 -->
@@ -278,6 +295,9 @@
                         </th>
                         <td>
                           <input type="text" class="form-control v_19" value="777">
+                          <small class="form-text fileformat">
+                            最多六位數字
+                          </small>
                         </td>
                         <!-- 手機 v_20 -->
                         <th valign="middle">
@@ -291,32 +311,25 @@
                     </tbody>
                   </table>
                 </section>
-
-
               </li>
 
               <!-- 新增的空白表格 -->
               <li class="li_copy">
-                <section class="">
+                <section class="detail_box">
                   <table class="table table-bordered bg-white mt-2 seminarInner align-middle">
                     <thead>
-                      <tr class="bg-third text-light">
-                        <th colspan="4">
-                          <div class="d-flex justify-content-between">
-                            <p class="mb-0">
-                              第<span class="d-inline-block ms-3">位作者資訊</span>
-                            </p>
-
+                      <tr>
+                        <th colspan="4" class="bg-third text-light">
+                          <div class="d-flex justify-content-between author_th">
                             <a href="javascript:void(0);" class="list_group_del" onClick="list_group_del(this);author_array_reset();">
                               <i class="bi bi-x-circle "></i>
                               刪除
                             </a>
                           </div>
-
                         </th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="cu__table">
                       <!-- 第一列 -->
                       <tr>
                         <!-- 作者類型 v_10 v_11 -->
@@ -326,16 +339,34 @@
                         </th>
                         <td>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input v_10" type="radio" value="boss">
-                            <label class="form-check-label seminarInner__label">第一作者</label>
+                            <label class="form-check-label seminarInner__label">
+                              <input class="form-check-input v_10" type="radio" value="boss">
+                              <span>
+                                第一作者
+                              </span>
+                            </label>
+                            <label class="form-check-label seminarInner__label">
+                              <input class="form-check-input v_10" type="radio" value="team" checked>
+                              <span>
+                                共同作者
+                              </span>
+                            </label>
                           </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input v_10" type="radio" value="team" checked>
-                            <label class="form-check-label seminarInner__label">共同作者</label>
-                          </div>
+                          <!-- <div class="form-check form-check-inline">
+                            <label class="form-check-label seminarInner__label">
+                              <input class="form-check-input v_10" type="radio" value="team" checked>
+                              <span>
+                                共同作者
+                              </span>
+                            </label>
+                          </div> -->
                           <div class="form-check form-check-inline border-start border-third check-border">
-                            <input class="form-check-input v_11" type="checkbox" value="1">
-                            <label class="form-check-label seminarInner__label ">通訊作者</label>
+                            <label class="form-check-label seminarInner__label ">
+                              <input class="form-check-input v_11" type="checkbox" value="1">
+                              <span>
+                                通訊作者
+                              </span>
+                            </label>
                           </div>
                         </td>
                         <!-- 電子信箱 v_12 -->
@@ -363,6 +394,9 @@
                         </th>
                         <td>
                           <input type="text" class="form-control v_14" value="">
+                          <small class="form-text fileformat">
+                            範例 : James Chih-Hsin Yang
+                          </small>
                         </td>
                       </tr>
                       <!-- 第三列 -->
@@ -411,6 +445,9 @@
                         </th>
                         <td>
                           <input type="text" class="form-control v_19" value="">
+                          <small class="form-text fileformat">
+                            最多六位數字
+                          </small>
                         </td>
                         <!-- 手機 v_20 -->
                         <th valign="middle">
@@ -568,13 +605,13 @@
       // }
 
       //附件 v_09
-      if ($(".v_09").val() == "") {
-        if ($(".v_09").closest(".art_upload_raw").next(".oldfile_box").find(".file_is_del").val() == 0) {
-          /**/
-        } else {
-          msg += "<p>附件，必填欄位。</p>";
-        }
-      }
+      // if ($(".v_09").val() == "") {
+      //   if ($(".v_09").closest(".art_upload_raw").next(".oldfile_box").find(".file_is_del").val() == 0) {
+      //     /**/
+      //   } else {
+      //     msg += "<p>附件，必填欄位。</p>";
+      //   }
+      // }
       if ($(".v_09").val() != "") {
         //checkFilesize()之說明:第1參數:對象;第2參數:最大限制MB,如:5MB,則設定為「5」
         if (!checkFilesize($(".v_09"), 20)) {

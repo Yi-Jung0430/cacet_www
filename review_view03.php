@@ -198,7 +198,7 @@
                                     </tr>
                                 </table>
                                 <div class="text-center">
-                                    <a class="btn btn-outline-primary me-2" href="javascript:history.go(-1);">返回</a>
+                                    <a class="btn btn-outline-third me-2" href="javascript:history.go(-1);">返回</a>
                                 </div>
                             </div>
                             <!-- 詳細內容 結束 -->

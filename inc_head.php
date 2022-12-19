@@ -6,7 +6,7 @@
     <meta http-equiv="expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <title>CACET 投稿系統</title>
-    <link rel="icon" href="storage/images/favicon.svg">
+    <link rel="icon" href="http://122.147.148.181/cacet_admin/storage/favicon.svg">
 
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="dist/bootstrap-icons/font/bootstrap-icons.css">
@@ -28,4 +28,4 @@
     <script src="templates/js/art.js"></script>
 </head>
 
-<body>
+<body ontouchstart="">

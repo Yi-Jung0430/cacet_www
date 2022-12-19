@@ -37,62 +37,62 @@
                     </nav>
                     <!-- breadcrumb end -->
 
-                    <!-- <h2 class="my-lg-4 my-2 h3 border-start border-dark ps-2">稿件進度</h2> -->
                     <!-- 表格 開始 -->
-                    <table class="align-middle  table table-bordered border-third table-hover mt-3 mt-lg-5 ">
-                        <thead class="text-white bg-third">
-                            <tr>
-                                <th class="fs-6">論文編號</th>
-                                <th class="fs-6">投稿項目</th>
-                                <th class="fs-6">論文標題</th>
-                                <th class="fs-6">第一作者</th>
-                                <th class="fs-6">稿件狀態</th>
-                                <th class="fs-6">功能</th>
-                            </tr>
-                        </thead>
-                        <tbody class="fs-6">
-                            <!-- 會議論文 會有的狀態列表 開始 -->
-                            <tr>
-                                <td>20220812409</td>
-                                <td>會議論文</td>
-                                <td>科技輔助英語口說學習之分析與探討</td>
-                                <td>林姸安</td>
-                                <td>
-                                    待委員審查
-                                </td>
-                                <td>
-                                    <a href="review_view01.php" class="btn btn-outline-third">審查</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>20220812409</td>
-                                <td>會議論文</td>
-                                <td>科技輔助英語口說學習之分析與探討</td>
-                                <td>林姸安</td>
-                                <td>
-                                    稿件已審查
-                                </td>
-                                <td>
-                                    <a href="review_view02.php" class="btn btn-outline-third">重新審查</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>20220812409</td>
-                                <td>會議論文</td>
-                                <td>科技輔助英語口說學習之分析與探討</td>
-                                <td>林姸安</td>
-                                <td>
-                                    稿件已審查
-                                    <span class="text-primary">[稿件已通過]</span>
-                                </td>
-                                <td>
-                                    <a href="review_view03.php" class="btn btn-outline-third">檢視</a>
-                                </td>
-                            </tr>
-                            
-                            <!-- 會議論文 會有的狀態列表 開始 -->
-                        </tbody>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="align-middle  table table-bordered border-third table-hover mt-3 mt-lg-5 ">
+                            <thead class="text-white bg-third text-nowrap">
+                                <tr>
+                                    <th class="fs-6">論文編號</th>
+                                    <th class="fs-6">投稿項目</th>
+                                    <th class="fs-6">論文標題</th>
+                                    <th class="fs-6">第一作者</th>
+                                    <th class="fs-6">稿件狀態</th>
+                                    <th class="fs-6">功能</th>
+                                </tr>
+                            </thead>
+                            <tbody class="fs-6">
+                                <!-- 會議論文 會有的狀態列表 開始 -->
+                                <tr>
+                                    <td class="text-nowrap">20220812409</td>
+                                    <td class="text-nowrap">會議論文</td>
+                                    <td class="text-nowrap">科技輔助英語口說學習之分析與探討</td>
+                                    <td class="text-nowrap">林姸安</td>
+                                    <td class="text-nowrap">
+                                        待委員審查
+                                    </td>
+                                    <td>
+                                        <a href="review_view01.php" class="btn btn-outline-third">審查</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-nowrap">20220812409</td>
+                                    <td class="text-nowrap">會議論文</td>
+                                    <td class="text-nowrap">科技輔助英語口說學習之分析與探討</td>
+                                    <td class="text-nowrap">林姸安</td>
+                                    <td class="text-nowrap">
+                                        稿件已審查
+                                    </td>
+                                    <td>
+                                        <a href="review_view02.php" class="btn btn-outline-third">重新審查</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-nowrap">20220812409</td>
+                                    <td class="text-nowrap">會議論文</td>
+                                    <td class="text-nowrap">科技輔助英語口說學習之分析與探討</td>
+                                    <td class="text-nowrap">林姸安</td>
+                                    <td class="text-nowrap">
+                                        稿件已審查
+                                        <span class="text-primary">[稿件已通過]</span>
+                                    </td>
+                                    <td>
+                                        <a href="review_view03.php" class="btn btn-outline-third">檢視</a>
+                                    </td>
+                                </tr>
+                                <!-- 會議論文 會有的狀態列表 開始 -->
+                            </tbody>
+                        </table>
+                    </div>
                     <!-- 表格 結束 -->
 
                 </div>

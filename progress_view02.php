@@ -1,5 +1,4 @@
 <!-- 會議論文>檢視(不通過) -->
-<!-- 會議論文>檢視(通過) -->
 
 <!-- 每頁模板 複製用 -->
 <?php include("inc_head.php"); ?>
@@ -201,6 +200,9 @@
                                 <td>
                                     <div class="art_word">
                                         <span>012</span>
+                                        <small class="form-text fileformat">
+                                            最多六位數字
+                                        </small>
                                     </div>
                                 </td>
                                 <th>通訊地址</th>
@@ -275,6 +277,9 @@
                                 <td>
                                     <div class="art_word">
                                         <span>012</span>
+                                        <small class="form-text fileformat">
+                                            最多六位數字
+                                        </small>
                                     </div>
                                 </td>
                                 <th>通訊地址</th>
@@ -405,7 +410,7 @@
                             </tr>
                         </table>
                         <div class="text-center">
-                            <a class="btn btn-outline-primary" href="javascript:history.go(-1);">返回</a>
+                            <a class="btn btn-outline-third" href="javascript:history.go(-1);">返回</a>
                         </div>
                     </div>
                     <!-- 詳細內容 結束 -->

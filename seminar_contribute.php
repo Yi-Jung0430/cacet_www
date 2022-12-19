@@ -20,50 +20,55 @@
                     </nav>
                     <!-- breadcrumb end -->
                     <h2 class="my-lg-4 my-2 h3 border-start border-dark ps-2">會議投稿</h2>
+                </div>
+                <div class="col-12">
                     <!-- 表格 開始 -->
-                    <table class="contribute align-middle  table table-bordered border-third table-hover mt-3 mt-lg-5 ">
-                        <thead class="text-white bg-third">
-                            <tr>
-                                <th class="h5">投稿主題</th>
-                                <th class="h5">截稿時間</th>
-                                <th class="h5">投稿狀態</th>
-                                <th class="h5">功能</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>ICEET 2023 數位學習與教育科技國際研討會</th>
-                                <td>2023-05-24</td>
-                                <td>開放投稿</td>
-                                <td>
-                                    <a href="seminar_method.php" class="btn btn-outline-third">線上投稿</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>ICEET 2023 數位學習與教育科技國際研討會</th>
-                                <td>2023-05-24</td>
-                                <td>開放投稿</td>
-                                <td>
-                                    <p class="border-0 bg-transparent mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="您的身分為委員，故無法投稿，若要切換身分為一般會員，請聯繫學會。">
-                                        您沒有權限投稿此項目
-                                        <i class="bi bi-exclamation-circle text-primary fs-5"></i>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>ICEET 2022 數位學習與教育科技國際研討會</th>
-                                <td>2022-05-24</td>
-                                <td>投稿已截止</td>
-                                <td>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table contribute align-middle table-bordered border-third table-hover mt-1 mt-lg-3 ">
+                            <thead class="text-white bg-third">
+                                <tr>
+                                    <th class="text-nowrap">投稿主題</th>
+                                    <th class="text-nowrap">截稿時間</th>
+                                    <th class="text-nowrap">投稿狀態</th>
+                                    <th class="text-nowrap">功能</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="text-nowrap">ICEET 2023 數位學習與教育科技國際研討會</th>
+                                    <td class="text-nowrap">2023-05-24</td>
+                                    <td class="text-nowrap">開放投稿</td>
+                                    <td class="text-nowrap">
+                                        <a href="seminar_method.php" class="btn btn-outline-third">線上投稿</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap">ICEET 2023 數位學習與教育科技國際研討會</th>
+                                    <td class="text-nowrap">2023-05-24</td>
+                                    <td class="text-nowrap">開放投稿</td>
+                                    <td>
+                                        <p class="border-0 bg-transparent mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="此帳號為委員，如您需投稿，請註冊新的帳號。">
+                                            您沒有權限投稿此項目
+                                            <i class="bi bi-exclamation-circle text-primary fs-5"></i>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap">ICEET 2022 數位學習與教育科技國際研討會</th>
+                                    <td class="text-nowrap">2022-05-24</td>
+                                    <td class="text-nowrap">投稿已截止</td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <!-- 表格 結束 -->
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 <?php include("inc_footer.php"); ?>
 <script>

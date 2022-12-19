@@ -9,7 +9,7 @@
       <div class="row">
         <div class="col-12">
           <!-- breadcrumb start -->
-          <nav class="mt-3 mt-md-5"  aria-label="breadcrumb">
+          <nav class="mt-3 mt-md-5" aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="home.php">首頁</a></li>
               <li class="breadcrumb-item"><a href="member_view.php">個人資料</a></li>
@@ -37,185 +37,193 @@
           <h2 class="my-lg-3 h1">編輯個人資料</h2>
           <small class="text-small fw-light"><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
           <form method="post" enctype="multipart/form-data" action="home.php">
-            <table class="table  table-bordered bg-white mt-1">
-              <tbody>
-                <!-- 帳號v_03 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">帳號 (電子信箱)
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <span>tu@sydt.com.tw</span>
-                  </td>
-                </tr>
-                <!-- 密碼v_02 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th">密碼
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td class="position-relative art_password">
-                    <a href="member_password.php" class="btn btn-third">修改密碼</a>
-                  </td>
-                </tr>
-                <!-- 中文名v_04 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">中文姓名
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <input type="text" class="form-control v_04" placeholder="" value="杜展宇">
-                  </td>
-                </tr>
-                <!-- 英文名v_05 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">英文姓名
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <input type="text" class="form-control v_05" placeholder="" value="Tu">
-                  </td>
-                </tr>
-                <!-- 性別 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">性別
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" checked>
-                      <label class="form-check-label">
-                        男
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault">
-                      <label class="form-check-label">
-                        女
-                      </label>
-                    </div>
-                  </td>
-                </tr>
-                <!-- 郵遞區號v_06 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">通訊郵遞區號
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <div class="row">
-                      <div class="col">
-                        <input type="number" class="form-control v_06" placeholder="" value="909">
+            <div class="detail_box">
+              <table class="table  table-bordered bg-white mt-1">
+                <tbody>
+                  <!-- 帳號v_03 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">帳號 (電子信箱)
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <span>tu@sydt.com.tw</span>
+                    </td>
+                  </tr>
+                  <!-- 密碼v_02 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th">密碼
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td class="position-relative art_password">
+                      <a href="member_password.php" class="btn btn-third">修改密碼</a>
+                    </td>
+                  </tr>
+                  <!-- 中文名v_04 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">中文姓名
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <input type="text" class="form-control v_04" placeholder="" value="杜展宇">
+                    </td>
+                  </tr>
+                  <!-- 英文名v_05 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">英文姓名
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <input type="text" class="form-control v_05" placeholder="" value="James Chih-Hsin Yang">
+                      <small class="form-text fileformat">
+                        範例 : James Chih-Hsin Yang
+                      </small>
+                    </td>
+                  </tr>
+                  <!-- 性別 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">性別
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" checked>
+                        <label class="form-check-label">
+                          男
+                        </label>
                       </div>
-                      <div class="col">
-                        <a href="#" class="align-middle">郵遞區號查詢</a>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label">
+                          女
+                        </label>
                       </div>
-                      <div class="col">
+                    </td>
+                  </tr>
+                  <!-- 郵遞區號v_06 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">通訊郵遞區號
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <input type="number" class="form-control v_06" placeholder="" value="909">
+                          <small class="form-text fileformat">
+                            最多六位數字
+                          </small>
+                        </div>
+                        <div class="col">
+                          <a href="https://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208" class="align-middle">郵遞區號查詢</a>
+                        </div>
+                        <div class="col">
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <!-- 通訊地址v_07 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">通訊地址
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <input type="text" class="form-control v_07" placeholder="" value="日本北海道札幌市北區北八條西64號">
-                  </td>
-                </tr>
-                <!-- 服務機構電話 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">服務機構電話
-                  </th>
-                  <td>
-                    <div class="row g-3">
-                      <div class="col-sm-12 col-lg-4">
-                        <input type="tel" class="form-control" placeholder="">
+                    </td>
+                  </tr>
+                  <!-- 通訊地址v_07 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">通訊地址
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <input type="text" class="form-control v_07" placeholder="" value="日本北海道札幌市北區北八條西64號">
+                    </td>
+                  </tr>
+                  <!-- 服務機構電話 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">服務機構電話
+                    </th>
+                    <td>
+                      <div class="row g-3">
+                        <div class="col-sm-12 col-lg-4">
+                          <input type="tel" class="form-control" placeholder="">
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <!-- 傳真電話 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">傳真電話
-                  </th>
-                  <td>
-                    <div class="row g-3">
-                      <div class="col-sm-12 col-lg-4">
-                        <input type="tel" class="form-control" placeholder="">
+                    </td>
+                  </tr>
+                  <!-- 傳真電話 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">傳真電話
+                    </th>
+                    <td>
+                      <div class="row g-3">
+                        <div class="col-sm-12 col-lg-4">
+                          <input type="tel" class="form-control" placeholder="">
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <!-- 行動電話v_08 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">行動電話
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <div class="row g-3">
-                      <div class="col-sm-12 col-lg-4">
-                        <input type="tel" class="form-control v_08" placeholder="" value="0911666222">
+                    </td>
+                  </tr>
+                  <!-- 行動電話v_08 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">行動電話
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <div class="row g-3">
+                        <div class="col-sm-12 col-lg-4">
+                          <input type="tel" class="form-control v_08" placeholder="" value="0911666222">
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <!-- 服務母機構v_09 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">服務母機構名稱
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <input type="text" class="form-control v_09" placeholder="" value="日本北海道大學">
-                  </td>
-                </tr>
-                <!-- 服務子機構 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">服務子機構名稱
-                  </th>
-                  <td>
-                    <input type="text" class="form-control " placeholder="">
-                  </td>
-                </tr>
-                <!-- 職稱 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">職稱
-                    <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                  </th>
-                  <td>
-                    <input type="text" class="form-control " placeholder="" value="資訊科學系教授">
-                  </td>
-                </tr>
-                <!-- 學歷 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">學歷
-                  </th>
-                  <td>
-                    <textarea class="form-control art_textarea">日本北海道大學教育學研究院 博士
-                                        </textarea>
-                  </td>
-                </tr>
-                <!-- 經歷 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">經歷
-                  </th>
-                  <td>
-                    <textarea class="form-control art_textarea">日本北海道大學 校長
-                    </textarea>
-                  </td>
-                </tr>
-                <!-- 學歷 -->
-                <tr>
-                  <th scope="row" valign="middle" class="register__th ">著作
-                  </th>
-                  <td>
-                    <textarea class="form-control art_textarea"></textarea>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="text-center">
-              <a class="btn btn-outline-primary mx-auto me-2" href="javascript:history.go(-1);">返回</a>
-              <input class="btn btn-primary mx-auto " type="submit" onClick="form_submit(this)" value="確認修改">
+                    </td>
+                  </tr>
+                  <!-- 服務母機構v_09 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">服務母機構名稱
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <input type="text" class="form-control v_09" placeholder="" value="日本北海道大學">
+                    </td>
+                  </tr>
+                  <!-- 服務子機構 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">服務子機構名稱
+                    </th>
+                    <td>
+                      <input type="text" class="form-control " placeholder="">
+                    </td>
+                  </tr>
+                  <!-- 職稱 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">職稱
+                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                    </th>
+                    <td>
+                      <input type="text" class="form-control " placeholder="" value="資訊科學系教授">
+                    </td>
+                  </tr>
+                  <!-- 學歷 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">學歷
+                    </th>
+                    <td>
+                      <textarea class="form-control art_textarea">日本北海道大學教育學研究院 博士
+                                          </textarea>
+                    </td>
+                  </tr>
+                  <!-- 經歷 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">經歷
+                    </th>
+                    <td>
+                      <textarea class="form-control art_textarea">日本北海道大學 校長
+                      </textarea>
+                    </td>
+                  </tr>
+                  <!-- 學歷 -->
+                  <tr>
+                    <th scope="row" valign="middle" class="register__th ">著作
+                    </th>
+                    <td>
+                      <textarea class="form-control art_textarea"></textarea>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="text-center">
+                <a class="btn btn-outline-third mx-auto me-2" href="javascript:history.go(-1);">返回</a>
+                <input class="btn btn-third mx-auto " type="submit" onClick="form_submit(this)" value="確認修改">
+              </div>
             </div>
           </form>
         </div>
@@ -237,7 +245,7 @@
     var msg = "";
     var alertIcon = '<i class="bi bi-exclamation-circle text-primary me-2"></i>';
 
-  
+
 
     //v_04_中文姓名
     if ($(".v_04").val() == "") {
