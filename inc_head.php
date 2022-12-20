@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    <title>CACET 投稿系統</title>
+    <title>中華資訊與科技教育學會 CACET 投稿系統</title>
     <link rel="icon" href="http://122.147.148.181/cacet_admin/storage/favicon.svg">
 
     <!-- bootstrap icons -->
