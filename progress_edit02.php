@@ -248,7 +248,7 @@
                           <td>
                             <div class="form-check form-check-inline">
                               <label class="form-check-label seminarInner__label" for="author01">
-                                <input class="form-check-input v_10" type="radio" value="boss" id="author01" checked>
+                                <input class="form-check-input v_10" type="radio" value="boss" id="author01">
                                 <span>
                                   第一作者
                                 </span>
@@ -256,7 +256,7 @@
                             </div>
                             <div class="form-check form-check-inline">
                               <label class="form-check-label seminarInner__label" for="author02">
-                                <input class="form-check-input v_10" type="radio" value="team" id="author02">
+                                <input class="form-check-input v_10" type="radio" value="team" id="author02" checked>
                                 <span>
                                   共同作者
                                 </span>

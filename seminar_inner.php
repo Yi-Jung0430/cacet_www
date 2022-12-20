@@ -200,13 +200,13 @@
                         <td>
                           <div class="form-check form-check-inline">
                             <label class="form-check-label seminarInner__label" for="author01">
-                              <input class="form-check-input v_10" type="radio" value="boss" id="author01" checked>
+                              <input class="form-check-input v_10" type="radio" value="boss" id="author01">
                               <span>第一作者</span>
                             </label>
                           </div>
                           <div class="form-check form-check-inline">
                             <label class="form-check-label seminarInner__label" for="author02">
-                              <input class="form-check-input v_10" type="radio" value="team" id="author02">
+                              <input class="form-check-input v_10" type="radio" value="team" id="author02" checked>
                               <span>共同作者</span>
                             </label>
                           </div>
@@ -345,6 +345,8 @@
                                 第一作者
                               </span>
                             </label>
+                          </div>
+                          <div class="form-check form-check-inline">
                             <label class="form-check-label seminarInner__label">
                               <input class="form-check-input v_10" type="radio" value="team" checked>
                               <span>
@@ -352,14 +354,6 @@
                               </span>
                             </label>
                           </div>
-                          <!-- <div class="form-check form-check-inline">
-                            <label class="form-check-label seminarInner__label">
-                              <input class="form-check-input v_10" type="radio" value="team" checked>
-                              <span>
-                                共同作者
-                              </span>
-                            </label>
-                          </div> -->
                           <div class="form-check form-check-inline border-start border-third check-border">
                             <label class="form-check-label seminarInner__label ">
                               <input class="form-check-input v_11" type="checkbox" value="1">
