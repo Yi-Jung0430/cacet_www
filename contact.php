@@ -53,7 +53,7 @@
                             <tbody>
                                 <tr>
                                     <th scope="row" class="text-nowrap">聯絡人</th>
-                                    <td class="text-nowrap">廖敏蕙秘書</td>
+                                    <td class="text-nowrap">廖敏蕙助理秘書</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-nowrap">電話</th>

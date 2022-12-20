@@ -36,7 +36,7 @@
           <!-- 表單內容 開始 -->
           <h2 class="my-lg-3 h1">編輯個人資料</h2>
           <small class="text-small fw-light"><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
-          <form method="post" enctype="multipart/form-data" action="home.php">
+          <form method="post" enctype="multipart/form-data" action="member_view.php">
             <div class="detail_box">
               <table class="table  table-bordered bg-white mt-1">
                 <tbody>
