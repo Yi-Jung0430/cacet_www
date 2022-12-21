@@ -65,7 +65,6 @@
                     </nav>
                     <!-- breadcrumb end -->
 
-                    <!-- <h2 class="my-lg-4 my-2 h3 border-start border-dark ps-2">稿件進度</h2> -->
                     <!-- 表格 開始 -->
                     <div class="table-responsive">
                         <table class="align-middle  table table-bordered border-third table-hover mt-3 mt-lg-5 ">
@@ -91,7 +90,6 @@
                                         <span class="text-primary">[形式審查中]</span>
                                     </td>
                                     <td>
-                                        <!-- <a href="seminar_method.php" class="btn btn-outline-primary">線上投稿</a> -->
                                     </td>
                                 </tr>
                                 <tr>
@@ -104,7 +102,6 @@
                                         <span class="text-primary">[審稿中]</span>
                                     </td>
                                     <td>
-                                        <!-- <a href="seminar_method.php" class="btn btn-outline-primary">線上投稿</a> -->
                                     </td>
                                 </tr>
                                 <tr>
@@ -160,6 +157,9 @@
                                     </td>
                                 </tr>
                                 <!-- 會議論文 會有的狀態列表 結束 -->
+
+
+                                <!-- 期刊論文 -->
                             </tbody>
                         </table>
                     </div>
