@@ -180,13 +180,35 @@
                         <td>22</td>
                         <td>最新消息內頁</td>
                         <td><a href="news.php">檢視</a></td>
-
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 第二階段期刊相關頁面 -->
+            <h5>第二階段期刊相關頁面</h5>
+            <table class="table table-hover">
+            <thead class="bg-light">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">頁面</th>
+                        <th scope="col">連結</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>23</td>
+                        <td>期刊投稿-投稿列表</td>
+                        <td><a href="periodicals_contribute.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>期刊投稿-投稿內頁</td>
+                        <td><a href="periodicals_inner.php">檢視</a></td>
                     </tr>
                 </tbody>
             </table>
             <!-- 電子郵件 -->
             <table class="table table-hover">
-                <thead  class="bg-light">
+                <thead class="bg-light">
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">電子郵件</th>
@@ -194,11 +216,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- <tr>
-                        <td>1</td>
-                        <td>註冊成功</td>
-                        <td><a href="mail_03.html">檢視</a></td>
-                    </tr> -->
+                    
                     <tr>
                         <td>2</td>
                         <td>密碼已修改成功</td>
