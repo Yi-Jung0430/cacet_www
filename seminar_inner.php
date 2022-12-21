@@ -36,7 +36,6 @@
             </table>
           </div>
           <!-- 訊息 結束 -->
-          <!-- <h2 class="mt-lg-4 mt-2 mb-1 h3 border-start border-dark ps-2">投稿</h2> -->
           <div class="mt-3 mt-lg-5">
             <small class="text-small fw-light "><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
           </div>
