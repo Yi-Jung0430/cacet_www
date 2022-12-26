@@ -1,6 +1,5 @@
 <!-- 期刊論文>修改稿件(草稿) -->
 
-
 <?php include("inc_head.php"); ?>
 <div class="bg-gray02">
   <div class="home__bg01">
@@ -16,9 +15,11 @@
           <nav class="mt-3 mt-md-5" aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="home.php">首頁</a></li>
-              <li class="breadcrumb-item"><a href="periodicals_contribute.php">期刊投稿</a></li>
-              <li class="breadcrumb-item"><a href="periodicals_method.php">投稿辦法</a></li>
-              <li class="breadcrumb-item active" aria-current="page">投稿</li>
+              <li class="breadcrumb-item">會員中心</li>
+              <li class="breadcrumb-item"><a href="progress.php">稿件進度</a></li>
+              <li class="breadcrumb-item active" aria-current="page">稿件修改
+                <span>(期刊論文)</span>
+              </li>
             </ol>
           </nav>
           <!-- breadcrumb end -->
@@ -85,7 +86,7 @@
                     <td>
                       <textarea class="form-control v_04" rows="3">本研究以 ADDIE 教學設計模式與虛擬實境結合軟體教材研發一款「愛惜水資源」VR 教材，提供國小學童使用該軟體教材，並調查學童使用該教材的滿意度與接受度。研究對象為參加國立科學工藝博物館「環境永續 ~ 水是高手」活動之 107 位國小學童，並採用 HTC VIVE 沉浸式頭盔 VR 進行學習體驗。透過滿意度問卷調查結果顯示，學童對該 VR 教材「愛惜水資源」以五點滿意度量表之總體平均值為 4.69，表示對於該軟體是喜歡的、有興趣的， 願意推薦 VR 教材給其他人使用，且軟體操作容易上手，也不需耗過多時間來學習。藉此經驗，提供博物館使用 VR 教材作為推廣科教之參考。
                       </textarea>
-                      <small class="form-text">請勿超過 200 個字</small>
+                      <small class="form-text">請勿超過500 個字</small>
                     </td>
                   </tr>
                   <!-- 論文摘要(英文) v_05 -->
@@ -95,7 +96,7 @@
                     </th>
                     <td>
                       <textarea class="form-control v_05" rows="3">This research used the ADDIE model and virtual reality (VR) to develop a water resource VR teaching material called＂Cherishing Water＂. The research sub- jects were 107 elementary school students who attended 「Sustainable Environ- ment: Save Water」in National Science and Technology Museum. </textarea>
-                      <small class="form-text">請勿超過 200 個字</small>
+                      <small class="form-text">請勿超過500 個字</small>
                     </td>
                   </tr>
                   <!-- 關鍵字 ( 中文 ) v_06 -->
@@ -779,8 +780,8 @@
 
   async function del() {
     event.preventDefault();
-    if (await art_confirm('系統訊息', '確定要取消投稿嗎？確認後，稿件即將刪除。')) {
-      location.href = "seminar_contribute.php";
+    if (await art_confirm('系統訊息', '您剛剛的異動將不會儲存，確定要返回嗎?')) {
+      location.href = "progress.php";
     }
   }
 

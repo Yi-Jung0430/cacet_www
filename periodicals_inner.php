@@ -35,7 +35,7 @@
                         </table>
                     </div>
                     <!-- 訊息 結束 -->
-                    <div class="mt-3 mt-lg-5">
+                    <div class="mt-1 mt-lg-3">
                         <small class="text-small fw-light "><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
                     </div>
 

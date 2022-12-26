@@ -84,7 +84,7 @@
 
                         <ol>
                             <li>本研討會結束後，請於2023年06月16日(五) 前繳交正式論文，供大會製作正式論文電子全集。</li>
-                            <li>正式論文格式如下：全文撰寫須遵循APA格式(見下方)，文稿之編排順序為中英文篇名、中英文摘要、正文、附錄、參考文獻。中文摘要請勿超過350字，英文摘要請勿超過200字，並請列出中、英文關鍵字各3至5個。中文字體為標楷體、英文字體為Times New Roman。</li>
+                            <li>正式論文格式如下：全文撰寫須遵循APA格式(見下方)，文稿之編排順序為中英文篇名、中英文摘要、正文、附錄、參考文獻。中文摘要請勿超過350字，英文摘要請勿超過500字，並請列出中、英文關鍵字各3至5個。中文字體為標楷體、英文字體為Times New Roman。</li>
                             <li>詳細撰寫體例請見以下檔案說明。<br />
                                 <a href="http://122.147.148.181/cacet_admin/storage/writing%20principles.pdf" target="_blank">撰寫原則</a>、 <a href="http://122.147.148.181/cacet_admin/storage/apa.pdf" target="_blank">APA格式範例</a>、 <a href="http://122.147.148.181/cacet_admin/storage/writing%20format.pdf" target="_blank">正文文稿書寫格式說明</a>、 <a href="http://122.147.148.181/cacet_admin/storage/example.pdf" target="_blank">論文內文範例</a>
                             </li>

@@ -1,6 +1,5 @@
 <!-- 會議論文>修改稿件(草稿) -->
 
-<!-- 每頁模板 複製用 -->
 <?php include("inc_head.php"); ?>
 <div class="bg-gray02">
   <div class="home__bg01">
@@ -35,7 +34,6 @@
             </table>
           </div>
           <!-- 訊息 結束 -->
-          <!-- <h2 class="mt-lg-4 mt-2 mb-1 h3 border-start border-dark ps-2">投稿</h2> -->
           <div class="mt-1 mt-lg-3">
             <small class="text-small fw-light "><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
           </div>
@@ -104,7 +102,7 @@
                     <td>
                       <textarea class="form-control v_04" rows="3">本研究旨在探討一位罕見疾病中的海豹肢症大學生。透過皮克斯動畫對其大學學習電腦動畫影響之相關因素。
                                             </textarea>
-                      <small class="form-text">請勿超過 200 個字</small>
+                      <small class="form-text">請勿超過500 個字</small>
                     </td>
                   </tr>
                   <!-- 論文摘要(英文) v_05 -->
@@ -114,7 +112,7 @@
                     </th>
                     <td>
                       <textarea class="form-control v_05" rows="3">This study aims to explore the related factors of a Phocomelia students’ study planning on computer animation.  </textarea>
-                      <small class="form-text">請勿超過 200 個字</small>
+                      <small class="form-text">請勿超過500 個字</small>
                     </td>
                   </tr>
                   <!-- 關鍵字 ( 中文 ) v_06 -->
@@ -471,7 +469,6 @@
             <!-- 作者資訊 表格 結束 -->
             <div class="text-center mt-5">
               <a class="btn btn-outline-third mx-auto me-2" href="javascript:history.go(-1);" onclick="del()">返回</a>
-              <!-- <input class="btn btn-outline-primary me-2" type="submit" onClick="form_submit(this,'draft')" value="儲存為草稿"> -->
               <input class="btn btn-third" type="submit" onClick="form_submit(this,'finish')" value="送出">
             </div>
           </form>
@@ -557,8 +554,8 @@
 
       if ($(".v_04").val() != "") {
         var temp = $(".v_04").val();
-        if (temp.length > 200) {
-          msg += "<p>論文摘要 ( 中文 )，字數限制：200字以內。</p>";
+        if (temp.length > 500) {
+          msg += "<p>論文摘要 ( 中文 )，字數限制：500字以內。</p>";
         }
       }
 
@@ -569,8 +566,8 @@
 
       if ($(".v_05").val() != "") {
         var temp = $(".v_05").val();
-        if (temp.length > 200) {
-          msg += "<p>論文摘要 ( 英文 )，字數限制：200字以內。</p>";
+        if (temp.length > 500) {
+          msg += "<p>論文摘要 ( 英文 )，字數限制：500字以內。</p>";
         }
       }
 

@@ -11062,8 +11062,8 @@ td.position-relative .art_icon.r {
 }
 
 .detail_box table tr th {
-  width: 200px;
-  min-width: 200px;
+  width: 230px;
+  min-width: 230px;
   background: #fafafa;
   padding: 10px 20px;
 }
@@ -11173,6 +11173,15 @@ td.position-relative .art_icon.r {
 
 .top-icon i {
   font-size: 36px;
+}
+
+.nav-tabs .nav-link.active {
+  border: 0;
+}
+
+.cu_tabs {
+  margin-top: -2.5px;
+  margin-left: -1px;
 }
 
 /*
