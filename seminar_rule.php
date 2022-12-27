@@ -1,4 +1,4 @@
-<!-- 每頁模板 複製用 -->
+
 <?php include("inc_head.php"); ?>
 <div class="bg-gray02">
     <div class="home__bg01">
