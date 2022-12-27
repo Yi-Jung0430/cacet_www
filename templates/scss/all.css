@@ -10850,6 +10850,10 @@ td.position-relative .art_icon.r {
   display: none;
 }
 
+ol.number_ol li {
+  list-style-type: decimal;
+}
+
 .cu__navbar {
   padding-top: 40px;
 }
