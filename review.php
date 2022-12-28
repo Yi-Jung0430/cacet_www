@@ -51,7 +51,7 @@
 
           <!-- 表格 開始 -->
           <div class="table-responsive">
-            <table class="align-middle  table table-bordered border-third table-hover mt-3 mt-lg-5 ">
+            <table class="align-middle table table-bordered border-third table-hover mt-3 mt-lg-5 ">
               <thead class="text-white bg-third text-nowrap">
                 <tr>
                   <th class="fs-6">論文編號</th>

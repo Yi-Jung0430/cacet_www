@@ -16,7 +16,7 @@
               <li class="breadcrumb-item"><a href="home.php">首頁</a></li>
               <li class="breadcrumb-item">委員中心</li>
               <li class="breadcrumb-item"><a href="review.php">稿件審查</a></li>
-              <li class="breadcrumb-item active" aria-current="page">回應
+              <li class="breadcrumb-item active" aria-current="page">審查
                 <span>(期刊論文)</span>
               </li>
             </ol>
@@ -24,7 +24,7 @@
           <!-- breadcrumb end -->
 
           <!-- 訊息 開始 -->
-          <div class="message">
+          <div class="message mb-2">
             <table>
               <tr valign="top">
                 <td class="message_text"></td>
@@ -155,74 +155,85 @@
             <div class="mt-1 mt-lg-3">
               <small class="text-small fw-light "><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
             </div>
-            <div class="detail_box">
-              <table class="table  table-bordered bg-white mt-1 seminarInner align-middle">
+
+            <div class="table-responsive">
+              <table class="table table-bordered bg-white mt-1 seminarInner align-middle cu__responsive">
                 <thead>
                   <tr>
                     <th class="bg-third text-light">項目與比重</th>
                     <th class="bg-third text-light">審查建議</th>
-                    <th class="bg-third text-light">得分</th>
+                    <th class="bg-third text-light score_th">得分</th>
                   </tr>
                 </thead>
-                <tbody class="cu__table">
+                <tbody>
                   <tr>
                     <th scope="row" valign="middle">
                       原創性、學術性或應用價值之程度（20分）
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
+                    <!-- v_01 第一欄文字 -->
                     <td>
-                      <textarea class="form-control v_05" rows="3"></textarea>
+                      <textarea class="form-control v_01" rows="5"></textarea>
                     </td>
-                    <td class="align-top">
-                      <input type="number" class="form-control v_03" placeholder="" value="A narrative study of Pixar animation on the study planning of a Phocomelia student">
+                    <!-- v_02 第一欄分數 -->
+                    <td class="align-top score_th">
+                      <input type="number" class="form-control v_02" placeholder="" value="">
                     </td>
                   </tr>
                   <tr>
                     <th valign="middle">
-                      資料取得、引用、 評析與詮釋得當 之程度（20分）
+                      資料取得、引用、評析與詮釋得當之程度（20分）
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
+                    <!-- v_03 第二欄文字 -->
                     <td>
-                      <textarea class="form-control v_05" rows="3"></textarea>
+                      <textarea class="form-control v_03" rows="5"></textarea>
                     </td>
+                    <!-- v_04 第二欄分數 -->
                     <td class="align-top">
-                      <input type="number" class="form-control v_03" placeholder="" value="A narrative study of Pixar animation on the study planning of a Phocomelia student">
+                      <input type="number" class="form-control v_04" placeholder="" value="">
                     </td>
                   </tr>
                   <tr>
                     <th valign="middle">
-                      研究方法、過程 與推論嚴謹之程 度（25分）
+                      研究方法、過程與推論嚴謹之程度（25分）
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
+                    <!-- v_05 第三欄文字 -->
                     <td>
-                      <textarea class="form-control v_05" rows="3"></textarea>
+                      <textarea class="form-control v_05" rows="5"></textarea>
                     </td>
+                    <!-- v_06 第三欄分數 -->
                     <td class="align-top">
-                      <input type="number" class="form-control v_03" placeholder="" value="A narrative study of Pixar animation on the study planning of a Phocomelia student">
+                      <input type="number" class="form-control v_03" placeholder="" value="">
                     </td>
                   </tr>
                   <tr>
                     <th valign="middle">
-                      文章結構安排與 論證層次適切、 有系統之程度 （25分）
+                      文章結構安排與論證層次適切、有系統之程度 （25分）
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
+                    <!-- v_07 第四欄文字 -->
                     <td>
-                      <textarea class="form-control v_05" rows="3"></textarea>
+                      <textarea class="form-control v_07" rows="5"></textarea>
                     </td>
+                    <!-- v_08 第四欄分數 -->
                     <td class="align-top">
-                      <input type="number" class="form-control v_03" placeholder="" value="A narrative study of Pixar animation on the study planning of a Phocomelia student">
+                      <input type="number" class="form-control v_08" placeholder="" value="">
                     </td>
                   </tr>
                   <tr>
                     <th valign="middle">
-                      文字精確、流暢 之程度 （10分）
+                      文字精確、流暢之程度 （10分）
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
+                    <!-- v_09 第五欄文字 -->
                     <td>
-                      <textarea class="form-control v_05" rows="3"></textarea>
+                      <textarea class="form-control v_09" rows="5"></textarea>
                     </td>
+                    <!-- v_10 第五欄分數 -->
                     <td class="align-top">
-                      <input type="number" class="form-control v_03" placeholder="" value="A narrative study of Pixar animation on the study planning of a Phocomelia student">
+                      <input type="number" class="form-control v_10" placeholder="" value="">
                     </td>
                   </tr>
                 </tbody>
@@ -237,49 +248,51 @@
                   </tr>
                 </thead>
                 <tbody class="cu__table">
-                  <!-- 投稿項目 span -->
+                  <!-- v_11 -->
                   <tr>
                     <th scope="row" valign="middle">
                       (一) 優點
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
-                      <textarea class="form-control v_05" rows="3"></textarea>
+                      <textarea class="form-control v_11" rows="3"></textarea>
                     </td>
                   </tr>
-                  <!-- 建議發表形式 v_01 -->
+                  <!-- v_12 -->
                   <tr>
                     <th valign="middle">
                       (二) 缺點
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
-                      <textarea class="form-control v_05" rows="3"></textarea>
+                      <textarea class="form-control v_12" rows="3"></textarea>
                     </td>
                   </tr>
+                  <!-- v_13 -->
                   <tr>
                     <th valign="middle">
-                      (三) 英文摘要 修改建議
+                      (三) 英文摘要修改建議
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
-                      <textarea class="form-control v_05" rows="3"></textarea>
+                      <textarea class="form-control v_13" rows="3"></textarea>
                     </td>
                   </tr>
+                  <!-- v_14 -->
                   <tr>
                     <th valign="middle">
                       (四) 具體修改建議
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
-                      <textarea class="form-control v_05" rows="3"></textarea>
+                      <textarea class="form-control v_14" rows="3"></textarea>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <!-- 刊登建議 表格 開始 -->
-            <div class="detail_box">
+            <div class="">
               <table class="table  table-bordered bg-white mt-1 seminarInner align-middle">
                 <thead>
                   <tr>
@@ -322,6 +335,91 @@
     message_print_errer_hide();
 
     var msg = "";
+
+    //欄位1、3、5、7、9
+    if ($(".v_01").val() == "") {
+      msg += "<p>「原創性、學術性或應用價值之程度」審查建議，必填欄位。</p>";
+    }
+    if ($(".v_03").val() == "") {
+      msg += "<p>「資料取得、引用、評析與詮釋得當之程度」審查建議，必填欄位。</p>";
+    }
+    if ($(".v_05").val() == "") {
+      msg += "<p>「研究方法、過程與推論嚴謹之程度」審查建議，必填欄位。</p>";
+    }
+    if ($(".v_07").val() == "") {
+      msg += "<p>「文章結構安排與論證層次適切、有系統之程度」審查建議，必填欄位。</p>";
+    }
+    if ($(".v_09").val() == "") {
+      msg += "<p>「文字精確、流暢之程度」審查建議，必填欄位。</p>";
+    }
+
+    //欄位2 4 6 8 10
+    if ($(".v_02").val() == "") {
+      msg += "<p>「原創性、學術性或應用價值之程度」分數，必填欄位。</p>";
+    };
+    if ($(".v_02").val() != "") {
+      if ($(".v_02").val() > 20) {
+        msg += "<p>「原創性、學術性或應用價值之程度」分數不可大於 20 分。</p>"; 
+      };
+    }
+
+    if ($(".v_04").val() == "") {
+      msg += "<p>「資料取得、引用、評析與詮釋得當之程度」分數，必填欄位。</p>";
+    };
+    if ($(".v_04").val() != "") {
+      if ($(".v_04").val() > 20) {
+        msg += "<p>「資料取得、引用、評析與詮釋得當之程度」分數不可大於 20 分。</p>"; 
+      };
+    }
+
+    if ($(".v_06").val() == "") {
+      msg += "<p>「研究方法、過程與推論嚴謹之程度」分數，必填欄位。</p>";
+    };
+    if ($(".v_06").val() != "") {
+      if ($(".v_06").val() > 25) {
+        msg += "<p>「研究方法、過程與推論嚴謹之程度」分數不可大於 25 分。</p>"; 
+      };
+    }
+
+    if ($(".v_08").val() == "") {
+      msg += "<p>「文章結構安排與論證層次適切、有系統之程度」分數，必填欄位。</p>";
+    };
+    if ($(".v_08").val() != "") {
+      if ($(".v_08").val() > 25) {
+        msg += "<p>「文章結構安排與論證層次適切、有系統之程度」分數不可大於 25 分。</p>"; 
+      };
+    }
+
+    if ($(".v_10").val() == "") {
+      msg += "<p>「文字精確、流暢之程度」分數，必填欄位。</p>";
+    };
+    if ($(".v_10").val() != "") {
+      if ($(".v_10").val() > 10) {
+        msg += "<p>「文字精確、流暢之程度」分數不可大於 10 分。</p>"; 
+      };
+    }
+
+    // V_11
+    if ($(".v_11").val() == "") {
+      msg += "<p>(一) 優點，必填欄位。</p>";
+    }
+
+    // V_12
+    if ($(".v_12").val() == "") {
+      msg += "<p>(二) 缺點，必填欄位。</p>";
+    }
+
+    // V_13
+    if ($(".v_13").val() == "") {
+      msg += "<p>(三) 英文摘要修改建議，必填欄位。</p>";
+    }
+
+    // V_14
+    if ($(".v_14").val() == "") {
+      msg += "<p>(四) 具體修改建議，必填欄位。</p>";
+    }
+
+
 
     if (msg != "") {
       message_show(msg);

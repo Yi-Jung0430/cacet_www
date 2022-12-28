@@ -11,6 +11,11 @@
             width: 20%;
             background-color: #fafafa;
         }
+        @include md {
+            th {
+                width: 50%;
+            }
+        }
     }
 }
 
@@ -20,6 +25,14 @@
 
 .browse_box>table tr th {
     white-space: nowrap;
+}
+
+table.cu__responsive tr th {
+    width: 230px;
+    min-width: 230px;
+    background: #fafafa;
+    padding: 10px 20px;
+    
 }
 
 .detail_box table tr th {
@@ -109,8 +122,8 @@
     border: 1px solid #d1d9e4;
 }
 
-.detail_box table, 
-.detail_box table tr th, 
+.detail_box table,
+.detail_box table tr th,
 .detail_box table tr td {
     border: 1px solid #d8dadc;
     padding: 1rem 1rem;
@@ -136,4 +149,8 @@
     background: #f0f6ff;
     color: #555;
     padding: 10px 20px;
+}
+
+.score_th {
+    width: 15%;
 }

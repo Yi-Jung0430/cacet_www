@@ -11056,6 +11056,11 @@ ol.number_ol li {
   width: 20%;
   background-color: #fafafa;
 }
+@media (max-width: 768px) {
+  .cu__table th {
+    width: 50%;
+  }
+}
 
 .browse_box > table tr td {
   min-width: 100px;
@@ -11063,6 +11068,13 @@ ol.number_ol li {
 
 .browse_box > table tr th {
   white-space: nowrap;
+}
+
+table.cu__responsive tr th {
+  width: 230px;
+  min-width: 230px;
+  background: #fafafa;
+  padding: 10px 20px;
 }
 
 .detail_box table tr th {
@@ -11169,6 +11181,10 @@ ol.number_ol li {
   background: #f0f6ff;
   color: #555;
   padding: 10px 20px;
+}
+
+.score_th {
+  width: 15%;
 }
 
 .top-icon {
