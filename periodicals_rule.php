@@ -14,7 +14,7 @@
                     <nav class="mt-1 mt-md-3" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="home.php">首頁</a></li>
-                            <li class="breadcrumb-item" aria-current="page">會議投稿</li>
+                            <li class="breadcrumb-item" aria-current="page">期刊投稿</li>
                             <li class="breadcrumb-item active" aria-current="page">撰稿原則</li>
                         </ol>
                     </nav>

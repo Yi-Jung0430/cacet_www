@@ -76,6 +76,11 @@
                         <td>檢視(主編已決議)</td>
                         <td><a href="review_view07.php">檢視</a></td>
                     </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>撰稿原則</td>
+                        <td><a href="periodicals_rule.php">檢視</a></td>
+                    </tr>
                 </tbody>
             </table>
             <!-- 頁面 -->
