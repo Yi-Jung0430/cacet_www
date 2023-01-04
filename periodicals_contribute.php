@@ -39,7 +39,7 @@
                                     <td class="text-nowrap">2023-05-24</td>
                                     <td class="text-nowrap">開放投稿</td>
                                     <td class="text-nowrap">
-                                        <a href="seminar_method.php" class="btn btn-outline-third">線上投稿</a>
+                                        <a href="periodicals_method.php" class="btn btn-outline-third">線上投稿</a>
                                     </td>
                                 </tr>
                                 <tr>

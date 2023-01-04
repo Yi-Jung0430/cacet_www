@@ -198,7 +198,7 @@
                         <td>
                           <div class="form-check form-check-inline">
                             <label class="form-check-label seminarInner__label" for="author01">
-                              <input class="form-check-input v_10" type="radio" value="boss" id="author01">
+                              <input class="form-check-input v_10" type="radio" value="boss" id="author01" checked>
                               <span>
                                 第一作者
                               </span>
@@ -206,15 +206,15 @@
                           </div>
                           <div class="form-check form-check-inline">
                             <label class="form-check-label seminarInner__label" for="author02">
-                              <input class="form-check-input v_10" type="radio" value="team" id="author02" checked>
+                              <input class="form-check-input v_10" type="radio" value="team" id="author02">
                               <span>
                                 共同作者
                               </span>
                             </label>
                           </div>
                           <div class="form-check form-check-inline border-start border-third check-border">
-                            <label class="form-check-label seminarInner__label ">
-                              <input class="form-check-input v_11" type="checkbox" value="1">
+                            <label class="form-check-label seminarInner__label">
+                              <input class="form-check-input v_11" type="checkbox" value="1" checked>
                               <span>
                                 通訊作者
                               </span>
@@ -226,7 +226,7 @@
                           <sup><i class="bi bi-asterisk text-primary"></i><sup>
                         </th>
                         <td>
-                          <input type="email" class="form-control v_12" value="James Chih-Hsin Yang@sydt.com.tw">
+                          <input type="email" class="form-control v_12" value="Yang@sydt.com.tw">
                         </td>
                       </tr>
                       <!-- 第二列 -->
@@ -516,11 +516,6 @@
 
       // 先進行欄位驗證
       // 論文資訊 欄位驗證 開始
-
-      //發表形式v_01
-      if ($(".v_01:checked").length == 0) {
-        msg += "<p>發表形式，必填欄位。</p>";
-      }
 
       //論文標題(中文) v_02
       if ($(".v_02").val() == "") {

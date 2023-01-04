@@ -111,7 +111,7 @@
                 <tr>
                   <th>全文</th>
                   <td>
-                    <a class="art_word" href="#">
+                    <a class="art_word" href="storage/以深度學習神經網路實現特徵點遮蔽之人臉偵測.pdf" download="以深度學習神經網路實現特徵點遮蔽之人臉偵測.pdf">
                       <span>國小學童使用水資源VR遊戲之研發與推廣.pdf</span>
                     </a>
                   </td>
@@ -119,7 +119,7 @@
                 <tr>
                   <th>附件下載</th>
                   <td>
-                    <a class="art_word" href="#">
+                    <a class="art_word" href="storage/以深度學習神經網路實現特徵點遮蔽之人臉偵測.pdf" download="以深度學習神經網路實現特徵點遮蔽之人臉偵測.pdf">
                       <span>國小學童使用水資源VR遊戲之研發與推廣.zip</span>
                     </a>
                   </td>
@@ -177,7 +177,7 @@
                     </td>
                     <!-- v_02 第一欄分數 -->
                     <td class="align-top score_th">
-                      <input type="number" class="form-control v_02" placeholder="" value="">
+                      <input type="number" class="form-control v_02" placeholder="滿分為 20 分" value="">
                     </td>
                   </tr>
                   <tr>
@@ -191,7 +191,7 @@
                     </td>
                     <!-- v_04 第二欄分數 -->
                     <td class="align-top">
-                      <input type="number" class="form-control v_04" placeholder="" value="">
+                      <input type="number" class="form-control v_04" placeholder="滿分為 20 分" value="">
                     </td>
                   </tr>
                   <tr>
@@ -205,7 +205,7 @@
                     </td>
                     <!-- v_06 第三欄分數 -->
                     <td class="align-top">
-                      <input type="number" class="form-control v_03" placeholder="" value="">
+                      <input type="number" class="form-control v_06" placeholder="滿分為 25 分" value="">
                     </td>
                   </tr>
                   <tr>
@@ -219,7 +219,7 @@
                     </td>
                     <!-- v_08 第四欄分數 -->
                     <td class="align-top">
-                      <input type="number" class="form-control v_08" placeholder="" value="">
+                      <input type="number" class="form-control v_08" placeholder="滿分為 25 分" value="">
                     </td>
                   </tr>
                   <tr>
@@ -233,7 +233,7 @@
                     </td>
                     <!-- v_10 第五欄分數 -->
                     <td class="align-top">
-                      <input type="number" class="form-control v_10" placeholder="" value="">
+                      <input type="number" class="form-control v_10" placeholder="滿分為 10 分" value="">
                     </td>
                   </tr>
                 </tbody>
@@ -293,7 +293,7 @@
             </div>
             <!-- 刊登建議 表格 開始 -->
             <div class="">
-              <table class="table  table-bordered bg-white mt-1 seminarInner align-middle">
+              <table class="table table-bordered bg-white mt-1 seminarInner align-middle">
                 <thead>
                   <tr>
                     <th class="bg-third text-light">刊登建議 ( 系統自動計算 )

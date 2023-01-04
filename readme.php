@@ -4,7 +4,82 @@
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-12">
+
+            <!-- 第二階段期刊相關頁面 -->
+            <h5>第二階段期刊相關頁面</h5>
+            <table class="table table-hover">
+                <thead class="bg-light">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">頁面</th>
+                        <th scope="col">連結</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>23</td>
+                        <td>期刊投稿-投稿列表</td>
+                        <td><a href="periodicals_contribute.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>期刊投稿-投稿內頁</td>
+                        <td><a href="periodicals_inner.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>期刊論文>修改稿件(草稿)</td>
+                        <td><a href="progress_edit03.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>期刊論文>修改稿件(形式審查退回)</td>
+                        <td><a href="progress_edit04.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>期刊論文>修改稿件(修改後刊登)(修改後重審)</td>
+                        <td><a href="progress_edit05.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>期刊論文>審委意見(修改後刊登)(修改後重審)</td>
+                        <td><a href="progress_view03.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>期刊論文>檢視(通過)</td>
+                        <td><a href="progress_view04.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>期刊論文>檢視(不通過)</td>
+                        <td><a href="progress_view05.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>期刊論文>回應(徵詢)</td>
+                        <td><a href="review_view04.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>審查(期刊)</td>
+                        <td><a href="review_view05.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
+                        <td>重新審查(期刊論文)</td>
+                        <td><a href="review_view06.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>檢視(主編已決議)</td>
+                        <td><a href="review_view07.php">檢視</a></td>
+                    </tr>
+                </tbody>
+            </table>
             <!-- 頁面 -->
+            <h5>第一階段會議相關頁面</h5>
             <table class="table table-hover">
                 <thead class="bg-light">
                     <tr>
@@ -183,29 +258,7 @@
                     </tr>
                 </tbody>
             </table>
-            <!-- 第二階段期刊相關頁面 -->
-            <h5>第二階段期刊相關頁面</h5>
-            <table class="table table-hover">
-            <thead class="bg-light">
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">頁面</th>
-                        <th scope="col">連結</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>23</td>
-                        <td>期刊投稿-投稿列表</td>
-                        <td><a href="periodicals_contribute.php">檢視</a></td>
-                    </tr>
-                    <tr>
-                        <td>24</td>
-                        <td>期刊投稿-投稿內頁</td>
-                        <td><a href="periodicals_inner.php">檢視</a></td>
-                    </tr>
-                </tbody>
-            </table>
+
             <!-- 電子郵件 -->
             <table class="table table-hover">
                 <thead class="bg-light">
@@ -216,7 +269,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
+
                     <tr>
                         <td>2</td>
                         <td>密碼已修改成功</td>

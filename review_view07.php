@@ -111,7 +111,7 @@
                 <tr>
                   <th>全文</th>
                   <td>
-                    <a class="art_word" href="#">
+                    <a class="art_word" href="storage/以深度學習神經網路實現特徵點遮蔽之人臉偵測.pdf" download="以深度學習神經網路實現特徵點遮蔽之人臉偵測.pdf">
                       <span>國小學童使用水資源VR遊戲之研發與推廣.pdf</span>
                     </a>
                   </td>
@@ -119,7 +119,7 @@
                 <tr>
                   <th>附件下載</th>
                   <td>
-                    <a class="art_word" href="#">
+                    <a class="art_word" href="storage/以深度學習神經網路實現特徵點遮蔽之人臉偵測.pdf" download="以深度學習神經網路實現特徵點遮蔽之人臉偵測.pdf">
                       <span>國小學童使用水資源VR遊戲之研發與推廣.zip</span>
                     </a>
                   </td>

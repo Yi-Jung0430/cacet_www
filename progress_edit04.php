@@ -226,7 +226,7 @@
                           <td>
                             <div class="form-check form-check-inline">
                               <label class="form-check-label seminarInner__label" for="author01">
-                                <input class="form-check-input v_10" type="radio" value="boss" id="author01">
+                                <input class="form-check-input v_10" type="radio" value="boss" id="author01" checked>
                                 <span>
                                   第一作者
                                 </span>
@@ -234,7 +234,7 @@
                             </div>
                             <div class="form-check form-check-inline">
                               <label class="form-check-label seminarInner__label" for="author02">
-                                <input class="form-check-input v_10" type="radio" value="team" id="author02" checked>
+                                <input class="form-check-input v_10" type="radio" value="team" id="author02">
                                 <span>
                                   共同作者
                                 </span>
@@ -254,7 +254,7 @@
                             <sup><i class="bi bi-asterisk text-primary"></i><sup>
                           </th>
                           <td>
-                            <input type="email" class="form-control v_12" value="James Chih-Hsin Yang@sydt.com.tw">
+                            <input type="email" class="form-control v_12" value="Yang@sydt.com.tw">
                           </td>
                         </tr>
                         <!-- 第二列 -->
@@ -545,11 +545,6 @@
       // 先進行欄位驗證
       // 論文資訊 欄位驗證 開始
 
-      //發表形式v_01
-      if ($(".v_01:checked").length == 0) {
-        msg += "<p>發表形式，必填欄位。</p>";
-      }
-
       //論文標題(中文) v_02
       if ($(".v_02").val() == "") {
         msg += "<p>論文標題(中文)，必填欄位。</p>";
@@ -608,35 +603,13 @@
           msg += "<p>全文，檔案大小限制：20MB以內。</p>";
         }
       }
-      // if ($(".v_08").val() != "") {
-      //   var format = 'PDF、DOC、DOCX';
-      //   var arr_format = format.split("、");
-      //   if (!checkFileFormat($(this).val(), arr_format)) {
-      //     msg += "<p>全文，檔案格式限制:" + format + "。</p>";
-      //   }
-      // }
-
-      //附件 v_09
-      // if ($(".v_09").val() == "") {
-      //   if ($(".v_09").closest(".art_upload_raw").next(".oldfile_box").find(".file_is_del").val() == 0) {
-      //     /**/
-      //   } else {
-      //     msg += "<p>附件，必填欄位。</p>";
-      //   }
-      // }
+      
       if ($(".v_09").val() != "") {
         //checkFilesize()之說明:第1參數:對象;第2參數:最大限制MB,如:5MB,則設定為「5」
         if (!checkFilesize($(".v_09"), 20)) {
           msg += "<p>附件，檔案大小限制：20MB以內。</p>";
         }
       }
-      // if ($(".v_09").val() != "") {
-      //   var format = 'zip、7z、WinRAR';
-      //   var arr_format = format.split("、");
-      //   if (!checkFileFormat($(".v_09").val(), arr_format)) {
-      //     msg += "<p>附件，檔案格式限制:" + format + "。</p>";
-      //   }
-      // }
       // 論文資訊 欄位驗證 結束
 
 
@@ -718,7 +691,7 @@
         }
         //
         if ($(this).find(".v_17").val() == "") {
-          msg += "<p>第<span class='list_group_num'>" + (i + 1) + "</span> 位的職稱，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的職稱，必填欄位。</p>";
         }
       });
 

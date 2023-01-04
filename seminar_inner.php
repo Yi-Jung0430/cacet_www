@@ -223,7 +223,7 @@
                           <sup><i class="bi bi-asterisk text-primary"></i><sup>
                         </th>
                         <td>
-                          <input type="email" class="form-control v_12" value="James Chih-Hsin Yang@sydt.com.tw">
+                          <input type="email" class="form-control v_12" value="Yang@sydt.com.tw">
                         </td>
                       </tr>
                       <!-- 第二列 -->
