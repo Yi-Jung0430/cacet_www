@@ -10854,6 +10854,10 @@ ol.number_ol li {
   list-style-type: decimal;
 }
 
+.fade:not(.show) {
+  opacity: 1;
+}
+
 .cu__navbar {
   padding-top: 40px;
 }

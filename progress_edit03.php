@@ -575,35 +575,13 @@
           msg += "<p>全文，檔案大小限制：20MB以內。</p>";
         }
       }
-      // if ($(".v_08").val() != "") {
-      //   var format = 'PDF、DOC、DOCX';
-      //   var arr_format = format.split("、");
-      //   if (!checkFileFormat($(this).val(), arr_format)) {
-      //     msg += "<p>全文，檔案格式限制:" + format + "。</p>";
-      //   }
-      // }
-
-      //附件 v_09
-      // if ($(".v_09").val() == "") {
-      //   if ($(".v_09").closest(".art_upload_raw").next(".oldfile_box").find(".file_is_del").val() == 0) {
-      //     /**/
-      //   } else {
-      //     msg += "<p>附件，必填欄位。</p>";
-      //   }
-      // }
+      
       if ($(".v_09").val() != "") {
         //checkFilesize()之說明:第1參數:對象;第2參數:最大限制MB,如:5MB,則設定為「5」
         if (!checkFilesize($(".v_09"), 20)) {
           msg += "<p>附件，檔案大小限制：20MB以內。</p>";
         }
       }
-      // if ($(".v_09").val() != "") {
-      //   var format = 'zip、7z、WinRAR';
-      //   var arr_format = format.split("、");
-      //   if (!checkFileFormat($(".v_09").val(), arr_format)) {
-      //     msg += "<p>附件，檔案格式限制:" + format + "。</p>";
-      //   }
-      // }
       // 論文資訊 欄位驗證 結束
 
 

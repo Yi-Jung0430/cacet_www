@@ -330,3 +330,8 @@ td.position-relative .art_icon.r {
 ol.number_ol li {
     list-style-type: decimal;
 }
+
+// tab 的 fade 效果刪除
+.fade:not(.show) {
+    opacity: 1;
+}
