@@ -86,7 +86,7 @@
                 <!-- 第一本書 end -->
                 <!-- 第二本書 start -->
                 <div class="col-4 header__area">
-                  <a href="#" class="header__link position-relative">
+                  <a href="periodicals_method.php" class="header__link position-relative">
                     <img src="storage/images/book02.png" alt="" class="header__book">
                     <span class="header__contribute position-relative btn-primary">我要投稿</span>
                     <span class="position-absolute header__arrow">
