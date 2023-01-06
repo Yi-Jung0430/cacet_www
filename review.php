@@ -133,7 +133,31 @@
                   <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
                   <td class="text-nowrap">林姸安</td>
                   <td class="text-nowrap">
-                    稿件已審查
+                    您已拒絕審查
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-nowrap">20220812409</td>
+                  <td class="text-nowrap">期刊論文</td>
+                  <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
+                  <td class="text-nowrap">林姸安</td>
+                  <td class="text-nowrap">
+                    稿件已過期
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-nowrap">20220812409</td>
+                  <td class="text-nowrap">期刊論文</td>
+                  <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
+                  <td class="text-nowrap">林姸安</td>
+                  <td class="text-nowrap">
+                    修改後重審
                   </td>
                   <td>
                     <a href="review_view06.php" class="btn btn-outline-third">重新審查</a>
