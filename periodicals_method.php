@@ -1,4 +1,3 @@
-
 <?php include("inc_head.php"); ?>
 <div class="bg-gray02">
     <div class="home__bg01">
@@ -23,10 +22,31 @@
                     <div class="subhtml">
                         <h3 style="text-align: center;">中華資訊與科技教育學會</h3>
 
-                        <h4 style="text-align: center;">期刊論文投稿辦法</h4>
+                        <h4 style="text-align: center;">期刊投稿辦法</h4>
 
-                        <p>~等待後臺的 Ck editor 內容~</p>
-
+                        <ul class="list_tw">
+                            <li>
+                                <p>來稿請用電腦橫打（檔案名稱請註明：投稿題目及作者姓名；檔案內容第一頁請註明中英文投稿題目、作者中英文姓名、中英文作者所屬單位及職稱及電子郵址），中文文長以一萬五千字為原則，至多請勿超過兩萬字。</p>
+                            </li>
+                            <li>
+                                <p>來稿之編排順序為中文摘要、英文摘要、正文（註解請採當頁註方式）、附錄、參考文獻；文稿正文及中英文摘要之中，請勿出現任何個人資料。</p>
+                            </li>
+                            <li>
+                                <p>中文摘要請勿超過350字，英文摘要請勿超過200字，並請列出中、英文關鍵字各三至五個。</p>
+                            </li>
+                            <li>
+                                <p>將文稿上傳至投稿連結 <a href="https://portal.cacet.org/event/submission" target="_blank">https://portal.cacet.org/event/submission</a> 進行投稿。</p>
+                            </li>
+                            <li>
+                                <p>稿件一但接受並且錄取，一律不可增減共同作者，請於投稿送出前做好確認。</p>
+                            </li>
+                            <li>
+                                <p>文稿確定刊登後， 若有致謝詞，請於通知文稿接受刊登後再加上，並置於正文後，長度請勿超過六十字。</p>
+                            </li>
+                            <li>
+                                <p>來稿正文撰寫形式、附註及參考文獻，請用APA格式；若不符合此項規定者，本刊得退回稿件或請作者修改後再行投稿。</p>
+                            </li>
+                        </ul>
                     </div>
 
                     <!-- 我同意 -->

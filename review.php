@@ -20,10 +20,10 @@
           </td>
         </tr>
       </table>
-      <table>
+      <table class="mt-2">
         <tr valign="top">
           <td class="message_text">
-            <p>您的回應已提交成功!</p>
+            <p>您已接受此篇審稿，可立即在列表中進行審稿!</p>
           </td>
           <td class="message_close text-end" valign="middle">
             <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
@@ -133,7 +133,7 @@
                   <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
                   <td class="text-nowrap">林姸安</td>
                   <td class="text-nowrap">
-                    您已拒絕審查
+                    不接受徵詢
                   </td>
                   <td>
                     
@@ -145,7 +145,7 @@
                   <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
                   <td class="text-nowrap">林姸安</td>
                   <td class="text-nowrap">
-                    稿件已過期
+                    徵詢已過期
                   </td>
                   <td>
                     
@@ -157,7 +157,7 @@
                   <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
                   <td class="text-nowrap">林姸安</td>
                   <td class="text-nowrap">
-                    修改後重審
+                    稿件已審查
                   </td>
                   <td>
                     <a href="review_view06.php" class="btn btn-outline-third">重新審查</a>

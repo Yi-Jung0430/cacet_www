@@ -11,7 +11,7 @@
             <table>
                 <tr valign="top">
                     <td class="message_text">
-                        <p>您的投稿已成功！ 您可以在此查詢所有稿件進度。</p>
+                        <p>您的稿件已送出！ 您可以在此檢視所有稿件進度。</p>
                     </td>
                     <td class="message_close text-end" valign="middle">
                         <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
@@ -160,18 +160,6 @@
 
                                 <!-- 期刊論文 會有的狀態列表 開始 -->
                                 <tr>
-                                    <td class="text-nowrap">2022-09-12 15:18:00</td>
-                                    <td class="text-nowrap">20220912101</td>
-                                    <td class="text-nowrap">期刊論文</td>
-                                    <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
-                                    <td class="text-nowrap">
-                                        已投稿
-                                        <span class="text-primary">[形式審查中]</span>
-                                    </td>
-                                    <td class="text-nowrap">
-                                    </td>
-                                </tr>
-                                <tr>
                                     <td class="text-nowrap">2021-05-12 14:17:33</td>
                                     <td class="text-nowrap">20210512582</td>
                                     <td class="text-nowrap">期刊論文</td>
@@ -185,6 +173,18 @@
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td class="text-nowrap">2022-09-12 15:18:00</td>
+                                    <td class="text-nowrap">20220912101</td>
+                                    <td class="text-nowrap">期刊論文</td>
+                                    <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
+                                    <td class="text-nowrap">
+                                        形式審查中
+                                    </td>
+                                    <td class="text-nowrap">
+                                    </td>
+                                </tr>
+
+                                <tr>
                                     <td class="text-nowrap">2021-05-12 14:17:33</td>
                                     <td class="text-nowrap">20210512582</td>
                                     <td class="text-nowrap">期刊論文</td>
@@ -197,13 +197,14 @@
                                         <a href="progress_edit04.php" class="btn btn-outline-third">稿件修改</a>
                                     </td>
                                 </tr>
+                                <!-- 修改後刊登 四種狀態 開始 -->
                                 <tr>
                                     <td class="text-nowrap">2021-05-12 14:17:33</td>
                                     <td class="text-nowrap">20210512582</td>
                                     <td class="text-nowrap">期刊論文</td>
                                     <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
                                     <td class="text-nowrap">
-                                        已投稿
+                                        待修改
                                         <span class="text-primary">[修改後刊登]</span>
                                     </td>
                                     <td class="text-nowrap">
@@ -217,7 +218,7 @@
                                     <td class="text-nowrap">期刊論文</td>
                                     <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
                                     <td class="text-nowrap">
-                                        已投稿
+                                        形式審查中
                                         <span class="text-primary">[修改後刊登]</span>
                                     </td>
                                     <td class="text-nowrap">
@@ -231,6 +232,35 @@
                                     <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
                                     <td class="text-nowrap">
                                         已投稿
+                                        <span class="text-primary">[修改後刊登]</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                        <a href="progress_view03.php" class="me-2 btn btn-outline-third">審委意見</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-nowrap">2021-05-12 14:17:33</td>
+                                    <td class="text-nowrap">20210512582</td>
+                                    <td class="text-nowrap">期刊論文</td>
+                                    <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
+                                    <td class="text-nowrap">
+                                        形式審查退回
+                                        <span class="text-primary">[修改後刊登]</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                        <a href="progress_view03.php" class="me-2 btn btn-outline-third">審委意見</a>
+                                        <a href="progress_edit06.php" class="btn btn-outline-third">稿件修改</a>
+                                    </td>
+                                </tr>
+                                <!-- 修改後刊登 四種狀態 結束 -->
+                                <!-- 修改後重審 四種狀態 開始 -->
+                                <tr>
+                                    <td class="text-nowrap">2021-05-12 14:17:33</td>
+                                    <td class="text-nowrap">20210512582</td>
+                                    <td class="text-nowrap">期刊論文</td>
+                                    <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
+                                    <td class="text-nowrap">
+                                        待修改
                                         <span class="text-primary">[修改後重審]</span>
                                     </td>
                                     <td class="text-nowrap">
@@ -244,13 +274,41 @@
                                     <td class="text-nowrap">期刊論文</td>
                                     <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
                                     <td class="text-nowrap">
-                                        已投稿
-                                        <span class="text-primary">[形式審查中]</span>
+                                        形式審查中
+                                        <span class="text-primary">[修改後重審]</span>
                                     </td>
                                     <td class="text-nowrap">
                                         <a href="progress_view03.php" class="me-2 btn btn-outline-third">審委意見</a>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td class="text-nowrap">2021-05-12 14:17:33</td>
+                                    <td class="text-nowrap">20210512582</td>
+                                    <td class="text-nowrap">期刊論文</td>
+                                    <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
+                                    <td class="text-nowrap">
+                                        審稿中
+                                        <span class="text-primary">[修改後重審]</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                        <a href="progress_view03.php" class="me-2 btn btn-outline-third">審委意見</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-nowrap">2021-05-12 14:17:33</td>
+                                    <td class="text-nowrap">20210512582</td>
+                                    <td class="text-nowrap">期刊論文</td>
+                                    <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
+                                    <td class="text-nowrap">
+                                        形式審查退回
+                                        <span class="text-primary">[修改後重審]</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                        <a href="progress_view03.php" class="me-2 btn btn-outline-third">審委意見</a>
+                                        <a href="progress_edit06.php" class="btn btn-outline-third">稿件修改</a>
+                                    </td>
+                                </tr>
+                                <!-- 修改後重審 四種狀態 開始 -->
                                 <tr>
                                     <td class="text-nowrap">2022-08-12 15:18:00</td>
                                     <td class="text-nowrap">20220912101</td>
@@ -261,7 +319,7 @@
                                         <span class="text-primary">[同意刊登]</span>
                                     </td>
                                     <td class="text-nowrap">
-                                        <a href="progress_view04.php" class="btn btn-outline-third">檢視</a>
+                                        <a href="progress_view04.php" class="btn btn-outline-third">審委意見</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -274,7 +332,7 @@
                                         <span class="text-primary">[不同意刊登]</span>
                                     </td>
                                     <td class="text-nowrap">
-                                        <a href="progress_view05.php" class="btn btn-outline-third">檢視</a>
+                                        <a href="progress_view05.php" class="btn btn-outline-third">審委意見</a>
                                     </td>
                                 </tr>
                                 <!-- 期刊論文 會有的狀態列表 結束 -->
