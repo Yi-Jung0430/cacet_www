@@ -216,129 +216,115 @@
                         </tr>
                       </thead>
                       <tbody class="cu__table">
-                        <!-- 第一列 -->
-                        <tr>
-                          <!-- 作者類型 v_10 v_11 -->
-                          <th valign="middle">
-                            作者類型
-                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                          </th>
-                          <td>
-                            <div class="form-check form-check-inline">
-                              <label class="form-check-label seminarInner__label" for="author01">
-                                <input class="form-check-input v_10" type="radio" value="boss" id="author01" checked>
-                                <span>
-                                  第一作者
-                                </span>
-                              </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                              <label class="form-check-label seminarInner__label" for="author02">
-                                <input class="form-check-input v_10" type="radio" value="team" id="author02">
-                                <span>
-                                  共同作者
-                                </span>
-                              </label>
-                            </div>
-                            <div class="form-check form-check-inline border-start border-third check-border">
-                              <label class="form-check-label seminarInner__label ">
-                                <input class="form-check-input v_11" type="checkbox" value="1" checked>
-                                <span>
-                                  通訊作者
-                                </span>
-                              </label>
-                            </div>
-                          </td>
-                          <!-- 電子信箱 v_12 -->
-                          <th valign="middle">電子信箱
-                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                          </th>
-                          <td>
-                            <input type="email" class="form-control v_12" value="Yang@sydt.com.tw">
-                          </td>
-                        </tr>
-                        <!-- 第二列 -->
-                        <tr>
-                          <!-- 作者中文名 v_13 -->
-                          <th valign="middle">
-                            作者中文名
-                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                          </th>
-                          <td>
-                            <input type="text" class="form-control v_13" value="林北星">
-                          </td>
-                          <!-- 作者英文名 v_14 -->
-                          <th valign="middle">
-                            作者英文名
-                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                          </th>
-                          <td>
-                            <input type="text" class="form-control v_14" value="James Chih-Hsin Yang">
-                            <small class="form-text fileformat">
-                              範例 : James Chih-Hsin Yang
-                            </small>
-                          </td>
-                        </tr>
-                        <!-- 第三列 -->
-                        <tr>
-                          <!-- 服務機構 v_15 -->
-                          <th valign="middle">
-                            服務機構
-                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                          </th>
-                          <td>
-                            <input type="text" class="form-control v_15" value="天堂花園">
-                          </td>
-                          <!-- 手機 v_16 -->
-                          <th valign="middle">
-                            手機
-                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                          </th>
-                          <td>
-                            <input type="text" class="form-control v_16" value="0912345678">
-                          </td>
-                        </tr>
-                        <!-- 第四列 -->
-                        <tr>
-                          <!-- 職稱 v_17 -->
-                          <th valign="middle">
-                            職稱
-                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                          </th>
-                          <td>
-                            <input type="text" class="form-control v_17" value="公主">
-                          </td>
-                          <!-- 手機 v_18 -->
-                          <th valign="middle">
-                            服務機構電話
-                          </th>
-                          <td>
-                            <input type="text" class="form-control v_18" value="">
-                          </td>
-                        </tr>
-                        <!-- 第五列 -->
-                        <tr>
-                          <!-- 郵遞區號 v_19 -->
-                          <th valign="middle">
-                            郵遞區號
-                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                          </th>
-                          <td>
-                            <input type="text" class="form-control v_19" value="777">
-                            <small class="form-text fileformat">
-                              最多六位數字
-                            </small>
-                          </td>
-                          <!-- 手機 v_20 -->
-                          <th valign="middle">
-                            通訊地址
-                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                          </th>
-                          <td>
-                            <input type="text" class="form-control v_20" value="花園區花見小路166號10樓">
-                          </td>
-                        </tr>
-                      </tbody>
+                      <!-- 第一列 -->
+                      <tr>
+                        <!-- 作者類型 v_10 v_11 -->
+                        <th valign="middle">
+                          作者類型
+                          <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                        </th>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <label class="form-check-label seminarInner__label" for="author01">
+                              <input class="form-check-input v_10" type="radio" value="boss" id="author01">
+                              <span>
+                                第一作者
+                              </span>
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <label class="form-check-label seminarInner__label" for="author02">
+                              <input class="form-check-input v_10" type="radio" value="team" id="author02" checked>
+                              <span>
+                                共同作者
+                              </span>
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline border-start border-third check-border">
+                            <label class="form-check-label seminarInner__label ">
+                              <input class="form-check-input v_11" type="checkbox" value="1">
+                              <span>
+                                通訊作者
+                              </span>
+                            </label>
+                          </div>
+                        </td>
+                        <!-- 電子信箱 v_12 -->
+                        <th valign="middle">電子信箱
+                        </th>
+                        <td>
+                          <span>Yang@sydt.com.tw</span>
+                        </td>
+                      </tr>
+                      <!-- 第二列 -->
+                      <tr>
+                        <!-- 作者中文名 v_13 -->
+                        <th valign="middle">
+                          作者中文名
+                        </th>
+                        <td>
+                          <span>林北星</span>
+                        </td>
+                        <!-- 作者英文名 v_14 -->
+                        <th valign="middle">
+                          作者英文名
+                        </th>
+                        <td>
+                          <span>James Chih-Hsin Yang</span>
+                        </td>
+                      </tr>
+                      <!-- 第三列 -->
+                      <tr>
+                        <!-- 服務機構 v_15 -->
+                        <th valign="middle">
+                          服務機構
+                        </th>
+                        <td>
+                          <span>天堂花園</span>
+                        </td>
+                        <!-- 手機 v_16 -->
+                        <th valign="middle">
+                          手機
+                        </th>
+                        <td>
+                          <span>0912345678</span>
+                        </td>
+                      </tr>
+                      <!-- 第四列 -->
+                      <tr>
+                        <!-- 職稱 v_17 -->
+                        <th valign="middle">
+                          職稱
+                        </th>
+                        <td>
+                          <span>公主</span>
+                        </td>
+                        <!-- 手機 v_18 -->
+                        <th valign="middle">
+                          服務機構電話
+                        </th>
+                        <td>
+                          <span></span>
+                        </td>
+                      </tr>
+                      <!-- 第五列 -->
+                      <tr>
+                        <!-- 郵遞區號 v_19 -->
+                        <th valign="middle">
+                          郵遞區號
+                        </th>
+                        <td>
+                          <span>777</span>
+                        </td>
+                        <!-- 手機 v_20 -->
+                        <th valign="middle">
+                          通訊地址
+                        </th>
+                        <td>
+                          <span>花園區花見小路166號10樓</span>
+                        </td>
+                      </tr>
+                    </tbody>
                     </table>
                   </section>
                 </li>
