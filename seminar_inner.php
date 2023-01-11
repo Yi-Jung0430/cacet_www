@@ -1,4 +1,3 @@
-
 <?php include("inc_head.php"); ?>
 <div class="bg-gray02">
   <div class="home__bg01">
@@ -176,7 +175,7 @@
             <!-- 論文資訊 表格 結束 -->
 
             <!-- 作者資訊 表格 開始 -->
-            <ul class="list_group author_list">
+            <ul class="list_group">
               <!-- 第一位 -->
               <li>
                 <section class="detail_box">
@@ -313,8 +312,8 @@
               </li>
 
               <!-- 新增的空白表格 -->
-              <li class="li_copy">
-                <section class="detail_box">
+              <li class="li_copy author_list">
+                <section class="detail_box li_copy_child">
                   <table class="table table-bordered bg-white mt-2 seminarInner align-middle">
                     <thead>
                       <tr>
@@ -589,139 +588,118 @@
           msg += "<p>全文，檔案大小限制：20MB以內。</p>";
         }
       }
-      // if ($(".v_08").val() != "") {
-      //   var format = 'PDF、DOC、DOCX';
-      //   var arr_format = format.split("、");
-      //   if (!checkFileFormat($(this).val(), arr_format)) {
-      //     msg += "<p>全文，檔案格式限制:" + format + "。</p>";
-      //   }
-      // }
 
-      //附件 v_09
-      // if ($(".v_09").val() == "") {
-      //   if ($(".v_09").closest(".art_upload_raw").next(".oldfile_box").find(".file_is_del").val() == 0) {
-      //     /**/
-      //   } else {
-      //     msg += "<p>附件，必填欄位。</p>";
-      //   }
-      // }
       if ($(".v_09").val() != "") {
         //checkFilesize()之說明:第1參數:對象;第2參數:最大限制MB,如:5MB,則設定為「5」
         if (!checkFilesize($(".v_09"), 20)) {
           msg += "<p>附件，檔案大小限制：20MB以內。</p>";
         }
       }
-      // if ($(".v_09").val() != "") {
-      //   var format = 'zip、7z、WinRAR';
-      //   var arr_format = format.split("、");
-      //   if (!checkFileFormat($(".v_09").val(), arr_format)) {
-      //     msg += "<p>附件，檔案格式限制:" + format + "。</p>";
-      //   }
-      // }
+
       // 論文資訊 欄位驗證 結束
 
 
       // 作者資訊 欄位驗證 開始
       //作者類型
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_10:checked").length == 0) {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的作者類型，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的作者類型，必填欄位。</p>";
         }
       });
 
       //電子信箱
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_12").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的電子信箱，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的電子信箱，必填欄位。</p>";
         } else {
           if (!checkEmail($(this).find(".v_12").val())) {
-            msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的電子信箱，資料格式限制：電子信箱格式。</p>";
+            msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的電子信箱，資料格式限制：電子信箱格式。</p>";
           }
         }
       });
 
       //作者中文名
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_13").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的作者中文名，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的作者中文名，必填欄位。</p>";
         }
       });
 
       //作者英文名
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_14").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的作者英文名，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的作者英文名，必填欄位。</p>";
         }
       });
 
       //服務機構
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_15").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的服務機構，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的服務機構，必填欄位。</p>";
         }
       });
 
       //手機
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_16").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的手機，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的手機，必填欄位。</p>";
         }
       });
 
       //職稱
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_17").val() == "") {
-          msg += "<p>第<span class='list_group_num'>" + (i + 1) + "</span> 位的職稱，必填欄位。</p>";
+          msg += "<p>第<span class='list_group_num'>" + (i + 2) + "</span> 位的職稱，必填欄位。</p>";
         }
       });
 
       //郵遞區號
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_19").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的郵遞區號，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的郵遞區號，必填欄位。</p>";
         }
       });
 
       //通訊地址
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_20").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的通訊地址，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的通訊地址，必填欄位。</p>";
         }
       });
 

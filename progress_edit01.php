@@ -191,7 +191,7 @@
             <!-- 論文資訊 表格 結束 -->
 
             <!-- 作者資訊 表格 開始 -->
-            <ul class="list_group author_list">
+            <ul class="list_group">
               <!-- 第一位 -->
               <li>
                 <section class="detail_box">
@@ -222,7 +222,7 @@
                           </div>
                           <div class="form-check form-check-inline">
                             <label class="form-check-label seminarInner__label" for="author02">
-                              <input class="form-check-input v_10" type="radio" value="team" id="author02"  checked>
+                              <input class="form-check-input v_10" type="radio" value="team" id="author02" checked>
                               <span>
                                 共同作者
                               </span>
@@ -239,10 +239,9 @@
                         </td>
                         <!-- 電子信箱 v_12 -->
                         <th valign="middle">電子信箱
-                          <sup><i class="bi bi-asterisk text-primary"></i><sup>
                         </th>
                         <td>
-                          <input type="email" class="form-control v_12" value="Yang@sydt.com.tw">
+                          <span>Yang@sydt.com.tw</span>
                         </td>
                       </tr>
                       <!-- 第二列 -->
@@ -250,21 +249,16 @@
                         <!-- 作者中文名 v_13 -->
                         <th valign="middle">
                           作者中文名
-                          <sup><i class="bi bi-asterisk text-primary"></i><sup>
                         </th>
                         <td>
-                          <input type="text" class="form-control v_13" value="林北星">
+                          <span>林北星</span>
                         </td>
                         <!-- 作者英文名 v_14 -->
                         <th valign="middle">
                           作者英文名
-                          <sup><i class="bi bi-asterisk text-primary"></i><sup>
                         </th>
                         <td>
-                          <input type="text" class="form-control v_14" value="James Chih-Hsin Yang">
-                          <small class="form-text fileformat">
-                            範例 : James Chih-Hsin Yang
-                          </small>
+                          <span>James Chih-Hsin Yang</span>
                         </td>
                       </tr>
                       <!-- 第三列 -->
@@ -272,18 +266,16 @@
                         <!-- 服務機構 v_15 -->
                         <th valign="middle">
                           服務機構
-                          <sup><i class="bi bi-asterisk text-primary"></i><sup>
                         </th>
                         <td>
-                          <input type="text" class="form-control v_15" value="天堂花園">
+                          <span>天堂花園</span>
                         </td>
                         <!-- 手機 v_16 -->
                         <th valign="middle">
                           手機
-                          <sup><i class="bi bi-asterisk text-primary"></i><sup>
                         </th>
                         <td>
-                          <input type="text" class="form-control v_16" value="0912345678">
+                          <span>0912345678</span>
                         </td>
                       </tr>
                       <!-- 第四列 -->
@@ -291,17 +283,16 @@
                         <!-- 職稱 v_17 -->
                         <th valign="middle">
                           職稱
-                          <sup><i class="bi bi-asterisk text-primary"></i><sup>
                         </th>
                         <td>
-                          <input type="text" class="form-control v_17" value="公主">
+                          <span>公主</span>
                         </td>
                         <!-- 手機 v_18 -->
                         <th valign="middle">
                           服務機構電話
                         </th>
                         <td>
-                          <input type="text" class="form-control v_18" value="">
+                          <span></span>
                         </td>
                       </tr>
                       <!-- 第五列 -->
@@ -309,31 +300,25 @@
                         <!-- 郵遞區號 v_19 -->
                         <th valign="middle">
                           郵遞區號
-                          <sup><i class="bi bi-asterisk text-primary"></i><sup>
                         </th>
                         <td>
-                          <input type="text" class="form-control v_19" value="777">
-                          <small class="form-text fileformat">
-                            最多六位數字
-                          </small>
+                          <span>777</span>
                         </td>
                         <!-- 手機 v_20 -->
                         <th valign="middle">
                           通訊地址
-                          <sup><i class="bi bi-asterisk text-primary"></i><sup>
                         </th>
                         <td>
-                          <input type="text" class="form-control v_20" value="花園區花見小路166號10樓">
+                          <span>花園區花見小路166號10樓</span>
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </section>
               </li>
-
-              <!-- 新增的空白表格 -->
-              <li class="li_copy">
-                <section class="detail_box">
+            <!-- 新增的空白表格 -->
+              <li class="li_copy author_list">
+                <section class="detail_box li_copy_child">
                   <table class="table table-bordered bg-white mt-2 seminarInner align-middle">
                     <thead>
                       <tr class="bg-third text-light">
@@ -522,11 +507,7 @@
     var msg = "";
 
     //自訂對話框
-    if (arg2 == "draft") {
-      if (!await art_confirm("系統訊息", "確認儲存成草稿嗎？")) {
-        return false;
-      }
-    }
+    
     if (arg2 == "finish") {
 
       // 先進行欄位驗證
@@ -595,139 +576,117 @@
           msg += "<p>全文，檔案大小限制：20MB以內。</p>";
         }
       }
-      // if ($(".v_08").val() != "") {
-      //   var format = 'PDF、DOC、DOCX';
-      //   var arr_format = format.split("、");
-      //   if (!checkFileFormat($(this).val(), arr_format)) {
-      //     msg += "<p>全文，檔案格式限制:" + format + "。</p>";
-      //   }
-      // }
-
-      //附件 v_09
-      // if ($(".v_09").val() == "") {
-      //   if ($(".v_09").closest(".art_upload_raw").next(".oldfile_box").find(".file_is_del").val() == 0) {
-      //     /**/
-      //   } else {
-      //     msg += "<p>附件，必填欄位。</p>";
-      //   }
-      // }
       if ($(".v_09").val() != "") {
         //checkFilesize()之說明:第1參數:對象;第2參數:最大限制MB,如:5MB,則設定為「5」
         if (!checkFilesize($(".v_09"), 20)) {
           msg += "<p>附件，檔案大小限制：20MB以內。</p>";
         }
       }
-      // if ($(".v_09").val() != "") {
-      //   var format = 'zip、7z、WinRAR';
-      //   var arr_format = format.split("、");
-      //   if (!checkFileFormat($(".v_09").val(), arr_format)) {
-      //     msg += "<p>附件，檔案格式限制:" + format + "。</p>";
-      //   }
-      // }
+      
       // 論文資訊 欄位驗證 結束
 
 
       // 作者資訊 欄位驗證 開始
       //作者類型
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_10:checked").length == 0) {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的作者類型，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的作者類型，必填欄位。</p>";
         }
       });
 
       //電子信箱
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_12").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的電子信箱，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的電子信箱，必填欄位。</p>";
         } else {
           if (!checkEmail($(this).find(".v_12").val())) {
-            msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的電子信箱，資料格式限制：電子信箱格式。</p>";
+            msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的電子信箱，資料格式限制：電子信箱格式。</p>";
           }
         }
       });
 
       //作者中文名
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_13").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的作者中文名，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的作者中文名，必填欄位。</p>";
         }
       });
 
       //作者英文名
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_14").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的作者英文名，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的作者英文名，必填欄位。</p>";
         }
       });
 
       //服務機構
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_15").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的服務機構，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的服務機構，必填欄位。</p>";
         }
       });
 
       //手機
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_16").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的手機，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的手機，必填欄位。</p>";
         }
       });
 
       //職稱
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_17").val() == "") {
-          msg += "<p>第<span class='list_group_num'>" + (i + 1) + "</span> 位的職稱，必填欄位。</p>";
+          msg += "<p>第<span class='list_group_num'>" + (i + 2) + "</span> 位的職稱，必填欄位。</p>";
         }
       });
 
       //郵遞區號
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_19").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的郵遞區號，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的郵遞區號，必填欄位。</p>";
         }
       });
 
       //通訊地址
-      $(".author_list li").each(function(i, e) {
+      $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_20").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 1) + "</span> 位的通訊地址，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的通訊地址，必填欄位。</p>";
         }
       });
 
@@ -762,7 +721,7 @@
         temp_1 += $(this).closest("li").find(".v_13").val();
 
         //
-        if ($(".v_10[value='boss']:checked").length > (i + 1)) {
+        if ($(".v_10[value='boss']:checked").length > (i + 2)) {
           temp_1 += "、";
         }
       });
@@ -773,7 +732,7 @@
         temp_2 += $(this).closest("li").find(".v_13").val();
 
         //
-        if ($(".v_11:checked").length > (i + 1)) {
+        if ($(".v_11:checked").length > (i + 2)) {
           temp_2 += "、";
         }
       });
@@ -803,7 +762,7 @@
 
   /* name屬性，陣列重設index  -- 開始 */
   function author_array_reset() {
-    $(".author_list li:not('.li_copy')").each(function(i, e) {
+    $(".author_list section:not('.li_copy')").each(function(i, e) {
       //作者類型
       $(this).find(".v_10").attr("name", "author[" + i + "]['type']");
 

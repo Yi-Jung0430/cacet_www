@@ -2362,7 +2362,7 @@ function menu_switch(){
 //
 function list_group_add(arg){
 	var new_html = $(arg).closest(".list_group").find(".li_copy").html();
-	$(arg).closest(".list_group").find(".li_copy").before("<li>" + new_html + "</li>");
+	$(arg).closest(".list_group").find(".li_copy").before('<li class="author_list">' + new_html + "</li>");
 	 list_group_num();
 	//為新角色添加事件
 	art_upload_raw_init();
