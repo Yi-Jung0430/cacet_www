@@ -28,58 +28,78 @@
                     </tr>
                     <tr>
                         <td>25</td>
-                        <td>期刊論文>修改稿件(草稿)</td>
+                        <td>(會員)期刊論文>修改稿件(草稿)</td>
                         <td><a href="progress_edit03.php">檢視</a></td>
                     </tr>
                     <tr>
                         <td>26</td>
-                        <td>期刊論文>修改稿件(形式審查退回)</td>
+                        <td>(會員)期刊論文>修改稿件(形式審查退回-未送過委員)</td>
                         <td><a href="progress_edit04.php">檢視</a></td>
                     </tr>
                     <tr>
                         <td>27</td>
-                        <td>期刊論文>修改稿件(修改後刊登)(修改後重審)</td>
-                        <td><a href="progress_edit05.php">檢視</a></td>
+                        <td>(會員)期刊論文>修改稿件(形式審查退回-已送過委員)</td>
+                        <td><a href="progress_edit06.php">檢視</a></td>
                     </tr>
                     <tr>
                         <td>28</td>
-                        <td>期刊論文>審委意見(修改後刊登)(修改後重審)</td>
-                        <td><a href="progress_view03.php">檢視</a></td>
+                        <td>(會員)期刊論文>修改稿件(修改後刊登)(修改後重審)</td>
+                        <td><a href="progress_edit05.php">檢視</a></td>
                     </tr>
                     <tr>
                         <td>29</td>
-                        <td>期刊論文>檢視(通過)</td>
-                        <td><a href="progress_view04.php">檢視</a></td>
+                        <td>(會員)期刊論文>審委意見(修改後刊登)(修改後重審)</td>
+                        <td><a href="progress_view03.php">檢視</a></td>
                     </tr>
                     <tr>
                         <td>30</td>
-                        <td>期刊論文>檢視(不通過)</td>
-                        <td><a href="progress_view05.php">檢視</a></td>
+                        <td>(會員)期刊論文>檢視(通過)</td>
+                        <td><a href="progress_view04.php">檢視</a></td>
                     </tr>
                     <tr>
                         <td>31</td>
-                        <td>期刊論文>回應(徵詢)</td>
-                        <td><a href="review_view04.php">檢視</a></td>
+                        <td>(會員)期刊論文>檢視(不通過)</td>
+                        <td><a href="progress_view05.php">檢視</a></td>
                     </tr>
                     <tr>
                         <td>32</td>
-                        <td>審查(期刊)</td>
-                        <td><a href="review_view05.php">檢視</a></td>
+                        <td>(委員)期刊論文>回應(徵詢)</td>
+                        <td><a href="review_view04.php">檢視</a></td>
                     </tr>
                     <tr>
                         <td>33</td>
-                        <td>重新審查(期刊論文)</td>
-                        <td><a href="review_view06.php">檢視</a></td>
+                        <td>(委員)期刊論文>審查</td>
+                        <td><a href="review_view05.php">檢視</a></td>
                     </tr>
                     <tr>
                         <td>34</td>
-                        <td>檢視(主編已決議)</td>
-                        <td><a href="review_view07.php">檢視</a></td>
+                        <td>(委員)期刊論文>重新審查</td>
+                        <td><a href="review_view06.php">檢視</a></td>
                     </tr>
                     <tr>
                         <td>35</td>
+                        <td>(委員)期刊論文>檢視</td>
+                        <td><a href="review_view07.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
                         <td>撰稿原則</td>
                         <td><a href="periodicals_rule.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td>徵稿辦法</td>
+                        <td><a href="periodicals_manual.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>審稿辦法</td>
+                        <td><a href="periodicals_reviewer.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>39</td>
+                        <td>投稿辦法</td>
+                        <td><a href="periodicals_method.php">檢視</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -98,7 +118,6 @@
                         <td>1-a.</td>
                         <td>首頁(會員-已登入)</td>
                         <td><a href="home.php">檢視</a></td>
-
                     </tr>
                     <tr>
                         <td>1-b.</td>
