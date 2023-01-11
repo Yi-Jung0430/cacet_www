@@ -664,7 +664,7 @@
         }
         //
         if ($(this).find(".v_17").val() == "") {
-          msg += "<p>第<span class='list_group_num'>" + (i + 2) + "</span> 位的職稱，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的職稱，必填欄位。</p>";
         }
       });
 

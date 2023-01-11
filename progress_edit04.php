@@ -226,7 +226,7 @@
                         <td>
                           <div class="form-check form-check-inline">
                             <label class="form-check-label seminarInner__label" for="author01">
-                              <input class="form-check-input v_10" type="radio" value="boss" id="author01">
+                              <input class="form-check-input v_10" type="radio" value="boss" id="author01" checked>
                               <span>
                                 第一作者
                               </span>
@@ -234,7 +234,7 @@
                           </div>
                           <div class="form-check form-check-inline">
                             <label class="form-check-label seminarInner__label" for="author02">
-                              <input class="form-check-input v_10" type="radio" value="team" id="author02" checked>
+                              <input class="form-check-input v_10" type="radio" value="team" id="author02">
                               <span>
                                 共同作者
                               </span>
@@ -242,7 +242,7 @@
                           </div>
                           <div class="form-check form-check-inline border-start border-third check-border">
                             <label class="form-check-label seminarInner__label ">
-                              <input class="form-check-input v_11" type="checkbox" value="1">
+                              <input class="form-check-input v_11" type="checkbox" value="1" checked>
                               <span>
                                 通訊作者
                               </span>
@@ -673,7 +673,7 @@
         }
         //
         if ($(this).find(".v_17").val() == "") {
-          msg += "<p>第<span class='list_group_num'>" + (i + 2) + "</span> 位的職稱，必填欄位。</p>";
+          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的職稱，必填欄位。</p>";
         }
       });
 
