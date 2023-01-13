@@ -50,7 +50,7 @@
                     </th>
                     <td class="position-relative art_password">
                       <a class="art_icon icon-eye-close r" href="javascript:void(0);" onclick="art_password_eye(this);"></a>
-                      <input type="password" class="form-control  v_02" placeholder="請輸入6~12碼英文數字，英文有區分大小寫。">
+                      <input type="password" class="form-control  v_02" placeholder="請輸入6-12碼英文數字，英文有區分大小寫。">
                     </td>
                   </tr>
                   <!-- 再次輸入密碼v_01 -->
