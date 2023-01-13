@@ -177,7 +177,8 @@
                     </td>
                     <!-- v_02 第一欄分數 -->
                     <td class="align-top score_th">
-                      <input type="number" class="form-control v_02" placeholder="滿分為 20 分" value="">
+                      <input type="text" onfocusout="checkScore_02(this)" class="form-control v_02" placeholder="滿分為 20 分" value="">
+                      <small class="v_02_msg text-primary"></small>
                     </td>
                   </tr>
                   <tr>
@@ -191,7 +192,8 @@
                     </td>
                     <!-- v_04 第二欄分數 -->
                     <td class="align-top">
-                      <input type="number" class="form-control v_04" placeholder="滿分為 20 分" value="">
+                      <input type="text" onfocusout="checkScore_04(this)" class="form-control v_04" placeholder="滿分為 20 分" value="">
+                      <small class="v_04_msg text-primary"></small>
                     </td>
                   </tr>
                   <tr>
@@ -205,7 +207,8 @@
                     </td>
                     <!-- v_06 第三欄分數 -->
                     <td class="align-top">
-                      <input type="number" class="form-control v_06" placeholder="滿分為 25 分" value="">
+                      <input type="text" onfocusout="checkScore_06(this)" class="form-control v_06" placeholder="滿分為 25 分" value="">
+                      <small class="v_06_msg text-primary"></small>
                     </td>
                   </tr>
                   <tr>
@@ -219,7 +222,8 @@
                     </td>
                     <!-- v_08 第四欄分數 -->
                     <td class="align-top">
-                      <input type="number" class="form-control v_08" placeholder="滿分為 25 分" value="">
+                      <input type="text" onfocusout="checkScore_08(this)" class="form-control v_08" placeholder="滿分為 25 分" value="">
+                      <small class="v_08_msg text-primary"></small>
                     </td>
                   </tr>
                   <tr>
@@ -233,7 +237,8 @@
                     </td>
                     <!-- v_10 第五欄分數 -->
                     <td class="align-top">
-                      <input type="number" class="form-control v_10" placeholder="滿分為 10 分" value="">
+                      <input type="text" onfocusout="checkScore_10(this)" class="form-control v_10" placeholder="滿分為 10 分" value="">
+                      <small class="v_10_msg text-primary"></small>
                     </td>
                   </tr>
                 </tbody>
@@ -305,9 +310,11 @@
                   <!-- 投稿項目 span -->
                   <tr>
                     <th scope="row" valign="middle">
-                      同意刊登 (86分以上) </th>
+                      <input type="hidden" class="v_15">
+                      <span class="v_show_B"></span>
+                    </th>
                     <td>
-                      88
+                      <span class="v_show_A"></span>
                     </td>
                   </tr>
                 </tbody>
@@ -327,6 +334,287 @@
 </div>
 <?php include("inc_footer.php"); ?>
 <script>
+  // 02分數欄位 focusout 事件觸發驗證 ---開始
+  function checkScore_02(arg) {
+    var is_error = false;
+    //取得輸入的數字
+    var v_02 = $(".v_02").val();
+    var v_04 = $(".v_04").val();
+    var v_06 = $(".v_06").val();
+    var v_08 = $(".v_08").val();
+    var v_10 = $(".v_10").val();
+
+    //檢查所有分數的格式是不是數字
+    //v_02部分
+    if (v_02 != "") {
+      $(".v_02_msg").html("");
+      if (v_02.match(/^[0-9]+$/)) {
+        if (v_02 >= 0 && v_02 <= 20) {
+          //
+        } else {
+          $(".v_02_msg").html("請輸入0~20分");
+          is_error = true;
+        }
+      } else {
+        $(".v_02_msg").html("請輸入數字");
+        is_error = true;
+      }
+    } else if (v_02 == "") {
+      $(".v_02_msg").html("請輸入數字");
+      is_error = true;
+    }
+
+    //如果所有分數無誤就執行計算
+    if (!is_error) {
+      var result = Number(v_02) + Number(v_04) + Number(v_06) + Number(v_08) + Number(v_10);
+      //總分給hidden的input值，送表單用的。
+      $(".v_15").val(result);
+
+      //總分
+      $(".v_show_A").html(result + "分");
+
+      //等級
+      if (result >= 0 && result <= 69) {
+        $(".v_show_B").html("不予刊登(總分 69 分以下)");
+      }
+      if (result >= 70 && result <= 75) {
+        $(".v_show_B").html("修改後送原審者審查(70 分至 75 分)");
+      }
+      if (result >= 76 && result <= 85) {
+        $(".v_show_B").html("修改後推薦刊登(76 分至 85 分)");
+      }
+      if (result >= 86 && result <= 100) {
+        $(".v_show_B").html("同意刊登(86 分以上)");
+      }
+    }
+  }
+  // 02分數欄位 focusout 事件觸發驗證 ---結束
+
+  // 04分數欄位 focusout 事件觸發驗證 ---開始
+  function checkScore_04(arg) {
+    var is_error = false;
+    //取得輸入的數字
+    var v_02 = $(".v_02").val();
+    var v_04 = $(".v_04").val();
+    var v_06 = $(".v_06").val();
+    var v_08 = $(".v_08").val();
+    var v_10 = $(".v_10").val();
+
+    //檢查所有分數的格式是不是數字
+    //v_04部分
+    if (v_04 != "") {
+      $(".v_04_msg").html("");
+      if (v_04.match(/^[0-9]+$/)) {
+        if (v_04 >= 0 && v_04 <= 20) {
+          //
+        } else {
+          $(".v_04_msg").html("請輸入0~20分");
+          is_error = true;
+        }
+      } else {
+        $(".v_04_msg").html("請輸入數字");
+        is_error = true;
+      }
+    } else if (v_04 == "") {
+      $(".v_04_msg").html("請輸入數字");
+      is_error = true;
+    }
+
+    //如果所有分數無誤就執行計算
+    if (!is_error) {
+      var result = Number(v_02) + Number(v_04) + Number(v_06) + Number(v_08) + Number(v_10);
+      //總分給hidden的input值，送表單用的。
+      $(".v_15").val(result);
+
+      //總分
+      $(".v_show_A").html(result + "分");
+
+      //等級
+      if (result >= 0 && result <= 69) {
+        $(".v_show_B").html("不予刊登(總分 69 分以下)");
+      }
+      if (result >= 70 && result <= 75) {
+        $(".v_show_B").html("修改後送原審者審查(70 分至 75 分)");
+      }
+      if (result >= 76 && result <= 85) {
+        $(".v_show_B").html("修改後推薦刊登(76 分至 85 分)");
+      }
+      if (result >= 86 && result <= 100) {
+        $(".v_show_B").html("同意刊登(86 分以上)");
+      }
+    }
+  }
+  // 04分數欄位 focusout 事件觸發驗證 ---結束
+
+  // 06分數欄位 focusout 事件觸發驗證 ---開始
+  function checkScore_06(arg) {
+    var is_error = false;
+    //取得輸入的數字
+    var v_02 = $(".v_02").val();
+    var v_04 = $(".v_04").val();
+    var v_06 = $(".v_06").val();
+    var v_08 = $(".v_08").val();
+    var v_10 = $(".v_10").val();
+
+    //檢查所有分數的格式是不是數字
+    //v_06部分
+    if (v_06 != "") {
+      $(".v_06_msg").html("");
+      if (v_06.match(/^[0-9]+$/)) {
+        if (v_06 >= 0 && v_06 <= 20) {
+          //
+        } else {
+          $(".v_06_msg").html("請輸入0~20分");
+          is_error = true;
+        }
+      } else {
+        $(".v_06_msg").html("請輸入數字");
+        is_error = true;
+      }
+    } else if (v_06 == "") {
+      $(".v_06_msg").html("請輸入數字");
+      is_error = true;
+    }
+
+    //如果所有分數無誤就執行計算
+    if (!is_error) {
+      var result = Number(v_02) + Number(v_04) + Number(v_06) + Number(v_08) + Number(v_10);
+      //總分給hidden的input值，送表單用的。
+      $(".v_15").val(result);
+
+      //總分
+      $(".v_show_A").html(result + "分");
+
+      //等級
+      if (result >= 0 && result <= 69) {
+        $(".v_show_B").html("不予刊登(總分 69 分以下)");
+      }
+      if (result >= 70 && result <= 75) {
+        $(".v_show_B").html("修改後送原審者審查(70 分至 75 分)");
+      }
+      if (result >= 76 && result <= 85) {
+        $(".v_show_B").html("修改後推薦刊登(76 分至 85 分)");
+      }
+      if (result >= 86 && result <= 100) {
+        $(".v_show_B").html("同意刊登(86 分以上)");
+      }
+    }
+  }
+  // 06分數欄位 focusout 事件觸發驗證 ---結束
+
+  // 08分數欄位 focusout 事件觸發驗證 ---開始
+  function checkScore_08(arg) {
+    var is_error = false;
+    //取得輸入的數字
+    var v_02 = $(".v_02").val();
+    var v_04 = $(".v_04").val();
+    var v_06 = $(".v_06").val();
+    var v_08 = $(".v_08").val();
+    var v_10 = $(".v_10").val();
+
+    //檢查所有分數的格式是不是數字
+    //v_06部分
+    if (v_08 != "") {
+      $(".v_08_msg").html("");
+      if (v_08.match(/^[0-9]+$/)) {
+        if (v_08 >= 0 && v_08 <= 20) {
+          //
+        } else {
+          $(".v_08_msg").html("請輸入0~20分");
+          is_error = true;
+        }
+      } else {
+        $(".v_08_msg").html("請輸入數字");
+        is_error = true;
+      }
+    } else if (v_08 == "") {
+      $(".v_08_msg").html("請輸入數字");
+      is_error = true;
+    }
+
+    //如果所有分數無誤就執行計算
+    if (!is_error) {
+      var result = Number(v_02) + Number(v_04) + Number(v_06) + Number(v_08) + Number(v_10);
+      //總分給hidden的input值，送表單用的。
+      $(".v_15").val(result);
+
+      //總分
+      $(".v_show_A").html(result + "分");
+
+      //等級
+      if (result >= 0 && result <= 69) {
+        $(".v_show_B").html("不予刊登(總分 69 分以下)");
+      }
+      if (result >= 70 && result <= 75) {
+        $(".v_show_B").html("修改後送原審者審查(70 分至 75 分)");
+      }
+      if (result >= 76 && result <= 85) {
+        $(".v_show_B").html("修改後推薦刊登(76 分至 85 分)");
+      }
+      if (result >= 86 && result <= 100) {
+        $(".v_show_B").html("同意刊登(86 分以上)");
+      }
+    }
+  }
+  // 08分數欄位 focusout 事件觸發驗證 ---結束
+
+  // 10分數欄位 focusout 事件觸發驗證 ---開始
+  function checkScore_10(arg) {
+    var is_error = false;
+    //取得輸入的數字
+    var v_02 = $(".v_02").val();
+    var v_04 = $(".v_04").val();
+    var v_06 = $(".v_06").val();
+    var v_08 = $(".v_08").val();
+    var v_10 = $(".v_10").val();
+
+    //檢查所有分數的格式是不是數字
+    //v_06部分
+    if (v_10 != "") {
+      $(".v_10_msg").html("");
+      if (v_10.match(/^[0-9]+$/)) {
+        if (v_10 >= 0 && v_10 <= 20) {
+          //
+        } else {
+          $(".v_10_msg").html("請輸入0~20分");
+          is_error = true;
+        }
+      } else {
+        $(".v_10_msg").html("請輸入數字");
+        is_error = true;
+      }
+    } else if (v_10 == "") {
+      $(".v_10_msg").html("請輸入數字");
+      is_error = true;
+    }
+
+    //如果所有分數無誤就執行計算
+    if (!is_error) {
+      var result = Number(v_02) + Number(v_04) + Number(v_06) + Number(v_08) + Number(v_10);
+      //總分給hidden的input值，送表單用的。
+      $(".v_15").val(result);
+
+      //總分
+      $(".v_show_A").html(result + "分");
+
+      //等級
+      if (result >= 0 && result <= 69) {
+        $(".v_show_B").html("不予刊登(總分 69 分以下)");
+      }
+      if (result >= 70 && result <= 75) {
+        $(".v_show_B").html("修改後送原審者審查(70 分至 75 分)");
+      }
+      if (result >= 76 && result <= 85) {
+        $(".v_show_B").html("修改後推薦刊登(76 分至 85 分)");
+      }
+      if (result >= 86 && result <= 100) {
+        $(".v_show_B").html("同意刊登(86 分以上)");
+      }
+    }
+  }
+  // 10分數欄位 focusout 事件觸發驗證 ---結束
+
+  // 表單 submit 驗證 ---開始
   async function form_submit(arg1, arg2) {
     event.preventDefault();
 
@@ -359,7 +647,7 @@
     };
     if ($(".v_02").val() != "") {
       if ($(".v_02").val() > 20) {
-        msg += "<p>「原創性、學術性或應用價值之程度」分數不可大於 20 分。</p>"; 
+        msg += "<p>「原創性、學術性或應用價值之程度」分數不可大於 20 分。</p>";
       };
     }
 
@@ -368,7 +656,7 @@
     };
     if ($(".v_04").val() != "") {
       if ($(".v_04").val() > 20) {
-        msg += "<p>「資料取得、引用、評析與詮釋得當之程度」分數不可大於 20 分。</p>"; 
+        msg += "<p>「資料取得、引用、評析與詮釋得當之程度」分數不可大於 20 分。</p>";
       };
     }
 
@@ -377,7 +665,7 @@
     };
     if ($(".v_06").val() != "") {
       if ($(".v_06").val() > 25) {
-        msg += "<p>「研究方法、過程與推論嚴謹之程度」分數不可大於 25 分。</p>"; 
+        msg += "<p>「研究方法、過程與推論嚴謹之程度」分數不可大於 25 分。</p>";
       };
     }
 
@@ -386,7 +674,7 @@
     };
     if ($(".v_08").val() != "") {
       if ($(".v_08").val() > 25) {
-        msg += "<p>「文章結構安排與論證層次適切、有系統之程度」分數不可大於 25 分。</p>"; 
+        msg += "<p>「文章結構安排與論證層次適切、有系統之程度」分數不可大於 25 分。</p>";
       };
     }
 
@@ -395,7 +683,7 @@
     };
     if ($(".v_10").val() != "") {
       if ($(".v_10").val() > 10) {
-        msg += "<p>「文字精確、流暢之程度」分數不可大於 10 分。</p>"; 
+        msg += "<p>「文字精確、流暢之程度」分數不可大於 10 分。</p>";
       };
     }
 
@@ -434,6 +722,7 @@
 
     $(arg1).closest('form').submit();
   }
+  // 表單 submit 驗證 ---結束
 
   async function del() {
     event.preventDefault();
