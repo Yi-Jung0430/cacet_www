@@ -2769,3 +2769,14 @@ $(function() {
 		});
 	}
 });
+
+/* Loading設計 開始 */
+function loading_box_open(){
+	$("body").append('<div class="loading_box"></div>');
+}
+function loading_box_close(){
+	$(".loading_box").fadeOut("slow", function(){
+		$(this).remove();
+	});
+}
+/* Loading設計 結束 */

@@ -33,7 +33,7 @@
             </a>
           </td>
         </tr>
-        </table>
+      </table>
     </div>
 
     <div class="message_print_ok">
@@ -168,6 +168,14 @@
 </div>
 <?php include("inc_footer.php"); ?>
 <script>
+  $(document).ready(function() {
+    //打開loading畫面
+    loading_box_open();
+
+    //關閉loading畫面
+    setTimeout(loading_box_close, 5000);
+  });
+  
   // 最新消息輪播
   $('.owl-carousel').owlCarousel({
     loop: true,

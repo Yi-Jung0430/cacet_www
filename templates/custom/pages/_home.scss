@@ -471,3 +471,14 @@
 li.news__item:first-child {
     padding-top: 0;
 }
+
+// loading 畫面
+.loading_box{
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background:rgba(255,255,255,0.5) url(../images/loading.gif) 50% 50% no-repeat;
+	z-index: 600000;
+}
