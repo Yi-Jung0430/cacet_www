@@ -45,19 +45,20 @@
                                 <tr>
                                     <th class="text-nowrap">《教育科技與學習》期刊</th>
                                     <td class="text-nowrap">2023-05-24</td>
+                                    <td class="text-nowrap">未開放投稿</td>
+                                    <td class="text-nowrap">
+                                        <a href="periodicals_method.php" class="btn btn-outline-third disabled">線上投稿</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap">《教育科技與學習》期刊</th>
+                                    <td class="text-nowrap">2023-05-24</td>
                                     <td class="text-nowrap">開放投稿</td>
                                     <td>
                                         <p class="border-0 bg-transparent mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="此帳號為委員，如您需投稿，請註冊新的帳號。">
                                             您沒有權限投稿此項目
                                             <i class="bi bi-exclamation-circle text-primary fs-5"></i>
                                         </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="text-nowrap">《教育科技與學習》期刊</th>
-                                    <td class="text-nowrap">2022-05-24</td>
-                                    <td class="text-nowrap">投稿已截止</td>
-                                    <td>
                                     </td>
                                 </tr>
                             </tbody>
