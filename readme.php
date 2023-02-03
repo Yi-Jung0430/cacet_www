@@ -101,6 +101,21 @@
                         <td>投稿辦法</td>
                         <td><a href="periodicals_method.php">檢視</a></td>
                     </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>信件內連結-委員同意徵詢</td>
+                        <td><a href="reply_agree.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>41</td>
+                        <td>信件內連結-委員拒絕徵詢</td>
+                        <td><a href="reply_reject.php">檢視</a></td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>信件內連結-委員重複點了連結</td>
+                        <td><a href="reply_replied.php">檢視</a></td>
+                    </tr>
                 </tbody>
             </table>
             <!-- 頁面 -->
