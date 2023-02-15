@@ -186,7 +186,6 @@
         });
         //
         document.getElementById('page_num_01').textContent = num;
-        // document.getElementsByClassName('page_num_01').textContent = num;
     }
 
     //
@@ -208,7 +207,6 @@
         queueRenderPage_01(pageNum_01);
     }
     document.getElementById('prev_01').addEventListener('click', onPrevPage_01);
-    // document.getElementsByClassName('prev_01').addEventListener('click', onPrevPage_01);
 
     //下一頁按鈕
     function onNextPage_01() {
@@ -219,7 +217,6 @@
         queueRenderPage_01(pageNum_01);
     }
     document.getElementById('next_01').addEventListener('click', onNextPage_01);
-    // document.getElementsByClassName('next_01').addEventListener('click', onNextPage_01);
 
 
     //顯示頁數

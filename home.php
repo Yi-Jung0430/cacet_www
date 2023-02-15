@@ -149,14 +149,6 @@
                 <span class="news__arrow position-relative mt-1"></span>
               </a>
             </li>
-            <!-- <li class="news__item d-flex flex-column justify-content-start flex-sm-row  justify-content-sm-between align-items-start align-items-sm-center">
-              <p class="news__date d-none d-sm-block">2022<br><span>11.09</span></p>
-              <p class="news__date d-sm-none">2022.11.09</p>
-              <a href="#" class="news__link d-flex justify-content-start align-items-center">
-                <h4 class="text-dark news__subtitle px-sm-2 px-md-4">課堂中的 stem 教育：核心素養與教學實踐。</h4>
-                <span class="news__arrow position-relative mt-1"></span>
-              </a> 
-            </li>-->
           </ul>
 
         </div>
@@ -173,14 +165,12 @@
     loading_box_open();
 
     //關閉loading畫面
-    setTimeout(loading_box_close, 5000);
+    setTimeout(loading_box_close, 800);
   });
   
   // 最新消息輪播
   $('.owl-carousel').owlCarousel({
     loop: true,
-    // margin:10,
-    // nav:true,
     responsive: {
       0: {
         items: 1
