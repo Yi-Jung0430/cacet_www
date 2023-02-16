@@ -10946,12 +10946,7 @@ ol.number_ol li {
   margin-bottom: 0;
 }
 
-/* PDF容器 */
-#the-canvas,
-#the-canvas_01,
-#the-canvas_02,
-#the-canvas_03,
-#the-canvas_04 {
+.rule__pdf canvas {
   border: 2px solid #0A1D37;
   direction: ltr;
   width: 100%;
