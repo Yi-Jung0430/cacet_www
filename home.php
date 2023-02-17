@@ -125,6 +125,7 @@
             </div>
           </div>
           <ul class="col-12 col-md-6 news__list">
+            <!-- 當連結為內頁的時候，不用新開分頁，若是外部連結，需新開分頁 -->
             <li class="news__item d-flex flex-column justify-content-start flex-sm-row align-items-start align-items-sm-center">
               <p class="news__date d-none d-sm-block">2022<br><span>11.09</span></p>
               <p class="news__date d-sm-none">2022.11.09</p>
@@ -141,10 +142,11 @@
                 <span class="news__arrow position-relative mt-1"></span>
               </a>
             </li>
+            <!-- 外部連結範例:另開分頁 -->
             <li class="news__item d-flex flex-column justify-content-start flex-sm-row align-items-start align-items-sm-center">
               <p class="news__date d-none d-sm-block">2022<br><span>11.09</span></p>
               <p class="news__date d-sm-none">2022.11.09</p>
-              <a href="news.php" class="news__link d-flex justify-content-between align-items-center w-100">
+              <a href="https://news.google.com/home?hl=zh-TW&gl=TW&ceid=TW:zh-Hant" target="_blank" class="news__link d-flex justify-content-between align-items-center w-100">
                 <h4 class="text-left text-dark news__subtitle px-sm-2 px-md-4">課堂中的 stem 教育：核心素養與教學實踐。</h4>
                 <span class="news__arrow position-relative mt-1"></span>
               </a>

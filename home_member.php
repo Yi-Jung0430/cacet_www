@@ -35,7 +35,7 @@
         </tr>
       </table>
     </div>
-    <!-- 成功訊息 開始 -->
+    <!-- 成功訊息 結束 -->
 
     <!-- header 開始 -->
     <header class="container">
