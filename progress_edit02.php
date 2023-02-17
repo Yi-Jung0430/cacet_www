@@ -51,16 +51,7 @@
 
                   </td>
                 </tr>
-                <tr>
-                  <th scope="row" valign="middle">
-                    形式審查結果
-                  </th>
-                  <td>
-                    <div class="art_word">
-                      <span>退回</span>
-                    </div>
-                  </td>
-                </tr>
+                
                 <tr>
                   <th>
                     退回紀錄
