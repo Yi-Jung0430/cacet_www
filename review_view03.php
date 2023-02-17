@@ -143,11 +143,11 @@
                                 <table class="table">
                                     <tr>
                                         <td colspan="2">
-                                            <p>主編決議</p>
+                                            <p>審查結果</p>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th>審查委員1</th>
+                                        <th>審查委員</th>
                                         <td>
                                             <div class="art_word">
                                                 <span>陳可欣</span>
