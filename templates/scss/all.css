@@ -10661,6 +10661,12 @@ sup {
   position: relative;
 }
 
+.message_print_ok table .message_close {
+  padding: 0;
+  width: 26px;
+  text-align: center;
+}
+
 /* 訊息 結束 */
 .art_icon.r {
   right: 16px;

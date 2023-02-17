@@ -164,6 +164,8 @@ sup {
 }
 
 // message
+
+
 .message {
     border-radius: 4px;
     padding: 0;
@@ -211,7 +213,11 @@ sup {
     color: #0f5132;
     position: relative;
 }
-
+.message_print_ok table .message_close {
+    padding: 0;
+    width: 26px;
+    text-align: center;
+}
 /* 訊息 結束 */
 
 // icon 

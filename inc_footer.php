@@ -11,7 +11,7 @@
                     Chinese Association of Computer and Educational Technology
                 </p>
                 <div class="d-inline-block">
-                    <a href="#" class="footer__icon me-2">
+                    <a href="https://zh-tw.facebook.com/CACETorg/" class="footer__icon me-2">
                         <svg width="80" height="77" viewBox="0 0 62 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M62 25.4938C62 41.9874 59.1872 59 42.6706 59C19.5 59 0 45.9935 0 29.5C0 13.0065 19.5893 0 36.1059 0C52.6224 0 62 9.00029 62 25.4938Z" fill="#F5F5F5" />
                             <g clip-path="url(#clip0_367_186)">
@@ -26,7 +26,7 @@
                     </a>
                 </div>
                 <div class="d-inline-block">
-                    <a href="#" class="footer__icon">
+                    <a href="https://www.cacet.org/" class="footer__icon">
                         <svg id="圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 30">
                             <defs>
                                 <style>
