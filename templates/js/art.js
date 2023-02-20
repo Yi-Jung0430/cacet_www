@@ -2041,9 +2041,9 @@ function check_forward_DateTime(arg1, arg2, arg3, arg4, arg5, arg6){
 function message_show(arg,arg2){
 	if(arg2 == "ok"){
 		art_notistack_count = 0;
-		$(".art_notistack").append('<div class="message_print_ok"><table><tr valign="top"><td class="message_text">' + arg + '</td><td class="message_close" valign="middle"><a href="javascript:void(0);" onClick="message_print_ok_hide(this);"> <i class="bi bi-x-circle"></i></a></td></tr></table></div>');
+		$(".art_notistack").append('<div class="message_print_ok"><table><tr valign="top"><td class="message_text">' + arg + '</td><td class="message_close text-end pe-2" valign="middle"><a href="javascript:void(0);" onClick="message_print_ok_hide(this);"> <i class="bi bi-x-circle"></i></a></td></tr></table></div>');
 	}else{
-		$(".message .message_text").html(arg);
+		$(".message .message_text").append('<div class="message_print_errer"><table><tr valign="top"><td class="message_text">' + arg + '</td><td class="message_close text-end pe-2" valign="middle"><a href="javascript:void(0);" onClick="message_print_errer_hide(this);"> <i class="bi bi-x-circle"></i></a></td></tr></table></div>');
 		$(".message").show();
 		$('html, body').animate({scrollTop:0}, 'false');
 	}

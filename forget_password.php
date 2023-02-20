@@ -1,30 +1,9 @@
 <?php include("inc_head.php"); ?>
 <div class="forget forget__bg01">
-  <!-- 錯誤訊息 開始 -->
-  <div class="container">
-    <div class="row justify-content-center position-relative">
-      <div class="col-5 position-absolute">
-        <!-- 錯誤訊息1 -->
-        <div class="mt-2 alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
-          <i class="bi bi-exclamation-triangle-fill me-2"></i>
-          <div>
-            電子信箱錯誤。
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
 
-        <!-- 錯誤訊息2 -->
-        <div class="mt-2 alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
-          <i class="bi bi-exclamation-triangle-fill me-2"></i>
-          <div>
-            驗證碼錯誤。
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- 錯誤訊息 結束 -->
+  <!-- 訊息外殼位置 開始 -->
+  <?php include("inc_message.php"); ?>
+  <!-- 訊息外殼位置 結束 -->
 
   <!-- 內容 開始 -->
   <div class="container h-100 ">

@@ -18,20 +18,9 @@
           </nav>
           <!-- breadcrumb end -->
 
-          <!-- 訊息 開始 -->
-          <div class="message">
-            <table>
-              <tr valign="top">
-                <td class="message_text"></td>
-                <td class="message_close text-end pe-2" valign="middle">
-                  <a href="javascript:void(0);" onClick="message_hide(this);">
-                    <i class="bi bi-x-circle"></i>
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <!-- 訊息 結束 -->
+          <!-- 訊息外殼位置 開始 -->
+          <?php include("inc_message.php"); ?>
+          <!-- 訊息外殼位置 結束 -->
 
           <!-- 表單內容 開始 -->
           <h2 class="my-lg-3 h1">編輯個人資料</h2>
@@ -275,7 +264,7 @@
     if (msg != "") {
       message_show(msg);
       return false;
-    }
+    } 
 
     //自訂對話框
     if (!await art_confirm("系統訊息", "確認修改個人資料嗎?")) {

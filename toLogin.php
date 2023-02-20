@@ -1,6 +1,11 @@
 <?php include("inc_head.php"); ?>
 <div class="forget bg-gray02">
     <div class="forget__bg01">
+
+        <!-- 訊息外殼位置 開始 -->
+        <?php include("inc_message.php"); ?>
+        <!-- 訊息外殼位置 結束 -->
+        
         <!-- 內容 開始 -->
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center">

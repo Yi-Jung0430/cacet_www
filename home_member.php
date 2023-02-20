@@ -5,37 +5,9 @@
     <?php include("inc_navbar_member.php"); ?>
     <!-- 導航欄 結束 -->
 
-    <!-- 成功訊息 開始 -->
-    <div class="message_print_ok">
-      <table>
-        <tr valign="top">
-          <td class="message_text">
-            <p>您的個人資料已修改成功！</p>
-          </td>
-          <td class="message_close text-end" valign="middle">
-            <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
-              <i class="bi bi-x-circle text-success"></i>
-            </a>
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="message_print_ok">
-      <table>
-        <tr valign="top">
-          <td class="message_text">
-            <p>您已成功登出！</p>
-          </td>
-          <td class="message_close text-end" valign="middle">
-            <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
-              <i class="bi bi-x-circle text-success"></i>
-            </a>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <!-- 成功訊息 結束 -->
+    <!-- 訊息外殼位置 開始 -->
+    <?php include("inc_message.php"); ?>
+    <!-- 訊息外殼位置 結束 -->
 
     <!-- header 開始 -->
     <header class="container">

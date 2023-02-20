@@ -6,6 +6,10 @@
         <?php include("inc_navbar.php"); ?>
         <!-- 導航欄 結束 -->
 
+        <!-- 訊息外殼位置 開始 -->
+        <?php include("inc_message.php"); ?>
+        <!-- 訊息外殼位置 結束 -->
+
         <!-- 主要內容 開始 -->
         <div class="container pb-3 pb-lg-5">
             <div class="row">

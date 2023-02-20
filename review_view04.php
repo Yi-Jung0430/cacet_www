@@ -23,17 +23,9 @@
           </nav>
           <!-- breadcrumb end -->
 
-          <!-- 訊息 開始 -->
-          <div class="message">
-            <table>
-              <tr valign="top">
-                <td class="message_text"></td>
-                <td class="message_close text-end" valign="middle"><a href="javascript:void(0);" onClick="message_hide(this);"> </a></td>
-              </tr>
-            </table>
-          </div>
-
-          <!-- 訊息 結束 -->
+          <!-- 訊息外殼位置 開始 -->
+          <?php include("inc_message.php"); ?>
+          <!-- 訊息外殼位置 結束 -->
 
           <!-- 詳細內容 開始 -->
           <form method="post" enctype="multipart/form-data" action="review.php">

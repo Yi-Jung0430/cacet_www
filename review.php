@@ -6,34 +6,9 @@
     <?php include("inc_navbar_member.php"); ?>
     <!-- 導航欄 結束 -->
 
-    <!-- 成功訊息 開始 -->
-    <div class="message_print_ok">
-      <table>
-        <tr valign="top">
-          <td class="message_text">
-            <p>您的審查已提交成功!</p>
-          </td>
-          <td class="message_close text-end" valign="middle">
-            <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
-              <i class="bi bi-x-circle text-success"></i>
-            </a>
-          </td>
-        </tr>
-      </table>
-      <table class="mt-2">
-        <tr valign="top">
-          <td class="message_text">
-            <p>您已接受此篇審稿，可立即在列表中進行審稿!</p>
-          </td>
-          <td class="message_close text-end" valign="middle">
-            <a href="javascript:void(0);" onClick="message_print_ok_hide(this);">
-              <i class="bi bi-x-circle text-success"></i>
-            </a>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <!-- 成功訊息 開始 -->
+    <!-- 訊息外殼位置 開始 -->
+    <?php include("inc_message.php"); ?>
+    <!-- 訊息外殼位置 結束 -->
 
     <!-- 主要內容 開始 -->
     <div class="container pb-3 pb-lg-5">
@@ -136,7 +111,7 @@
                     不接受徵詢
                   </td>
                   <td>
-                    
+
                   </td>
                 </tr>
                 <tr>
@@ -148,7 +123,7 @@
                     徵詢已過期
                   </td>
                   <td>
-                    
+
                   </td>
                 </tr>
                 <tr>

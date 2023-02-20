@@ -24,16 +24,10 @@
           </nav>
           <!-- breadcrumb end -->
 
-          <!-- 訊息 開始 -->
-          <div class="message">
-            <table>
-              <tr valign="top">
-                <td class="message_text"></td>
-                <td class="message_close text-end" valign="middle"><a href="javascript:void(0);" onClick="message_hide(this);"> </a></td>
-              </tr>
-            </table>
-          </div>
-          <!-- 訊息 結束 -->
+          <!-- 訊息外殼位置 開始 -->
+          <?php include("inc_message.php"); ?>
+          <!-- 訊息外殼位置 結束 -->
+          
           <div class="mt-1 mt-lg-3">
             <small class="text-small fw-light "><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
           </div>
@@ -316,7 +310,7 @@
                   </table>
                 </section>
               </li>
-            <!-- 新增的空白表格 -->
+              <!-- 新增的空白表格 -->
               <li class="li_copy author_list">
                 <section class="detail_box li_copy_child">
                   <table class="table table-bordered bg-white mt-2 seminarInner align-middle">
@@ -507,7 +501,7 @@
     var msg = "";
 
     //自訂對話框
-    
+
     if (arg2 == "finish") {
 
       // 先進行欄位驗證
@@ -582,7 +576,7 @@
           msg += "<p>附件，檔案大小限制：20MB以內。</p>";
         }
       }
-      
+
       // 論文資訊 欄位驗證 結束
 
 
@@ -709,11 +703,11 @@
 
 
       if (msg != "") {
-        message_show(msg,"ok");
+        message_show(msg);
         return false;
       }
 
-     
+
 
 
       // 跳出系統訊息再次確認---開始

@@ -10631,9 +10631,13 @@ sup {
 
 .message table .message_text {
   font-size: 15px;
-  padding: 10px;
   position: relative;
   color: #842029;
+}
+
+.message table .message_text .message_print_errer,
+.message table .message_text .message_print_ok {
+  margin: 10px;
 }
 
 .message_text p {
