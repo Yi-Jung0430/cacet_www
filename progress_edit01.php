@@ -709,9 +709,11 @@
 
 
       if (msg != "") {
-        message_show(msg);
+        message_show(msg,"ok");
         return false;
       }
+
+     
 
 
       // 跳出系統訊息再次確認---開始
