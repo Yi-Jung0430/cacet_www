@@ -50,16 +50,6 @@
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" valign="middle">
-                    形式審查結果
-                  </th>
-                  <td>
-                    <div class="art_word">
-                      <span>退回</span>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
                   <th>
                     退回紀錄
                   </th>
@@ -72,7 +62,7 @@
               </table>
               <!-- 形式審查退回 表格 結束 -->
               <!-- 論文資訊 表格 開始 -->
-              <table class="table  table-bordered bg-white mt-1 seminarInner align-middle">
+              <table class="table  table-bordered bg-white mt-2 seminarInner align-middle">
                 <thead>
                   <tr>
                     <th colspan="2" class="bg-third text-light">論文資訊</th>
