@@ -14,7 +14,7 @@
           <nav class="mt-3 mt-md-5" aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="home.php">首頁</a></li>
-              <li class="breadcrumb-item">委員中心</li>
+              <li class="breadcrumb-item">會員中心</li>
               <li class="breadcrumb-item"><a href="review.php">稿件審查</a></li>
               <li class="breadcrumb-item active" aria-current="page">檢視
                 <span>(期刊論文)</span>
