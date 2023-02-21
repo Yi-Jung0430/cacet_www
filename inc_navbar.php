@@ -60,6 +60,7 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown2">
                         <li><a class="dropdown-item" href="member_view.php">個人資料</a></li>
                         <li><a class="dropdown-item" href="progress.php">稿件進度</a></li>
+                        <li><a class="dropdown-item" href="review.php">稿件審查</a></li>
                         <li>
                             <hr class="dropdown-divider">
                             </hr>
