@@ -311,4 +311,5 @@
       location.href = "progress.php";
     }
   }
+
 </script>

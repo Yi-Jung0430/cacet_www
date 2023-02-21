@@ -10633,6 +10633,7 @@ sup {
   font-size: 15px;
   position: relative;
   color: #842029;
+  padding: 12px;
 }
 
 .message table .message_text .message_print_errer,
