@@ -11,6 +11,10 @@
                             系統已寄出『CACET 投稿系統 - 忘記密碼』郵件，請至您的電子信箱內收取。
                         </p>
                         <p><i class="bi bi-exclamation-triangle text-danger me-2"></i>注意：有些信箱會將此郵件視為垃圾郵件，若於收件匣內找不到此郵件，請記得確認垃圾信件匣，謝謝。</p>
+                        
+                        <div class="text-center mt-4">
+                        <a href="home_noLogin.php" class="btn btn-outline-third">前往首頁</a>
+                        </div>
                     </div>
                 </div>
             </div>
