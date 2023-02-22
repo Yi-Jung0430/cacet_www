@@ -3,7 +3,7 @@
 <div class="bg-gray02">
   <div class="home__bg01">
     <!-- 導航欄 開始 -->
-    <?php include("inc_navbar_member.php"); ?>
+    <?php include("inc_navbar.php"); ?>
     <!-- 導航欄 結束 -->
 
     <!-- 訊息外殼位置 開始 -->
