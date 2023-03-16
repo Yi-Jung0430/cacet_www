@@ -19,12 +19,11 @@
                         </ol>
                     </nav>
                     <!-- breadcrumb end -->
+
+                    <h3 class="text-center">中華資訊與科技教育學會</h3>
+                    <h4 class="text-center" >會議論文投稿辦法</h4>
                     <!-- 子HTML 開始 -->
                     <div class="subhtml">
-                        <h3 style="text-align: center;">中華資訊與科技教育學會</h3>
-
-                        <h4 style="text-align: center;">會議論文投稿辦法</h4>
-
                         <p>(一)口頭發表 (8-10頁為限)</p>
 
                         <p>(二)海報發表 (2-4頁為限)</p>

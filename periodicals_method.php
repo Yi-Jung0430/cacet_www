@@ -18,11 +18,11 @@
                         </ol>
                     </nav>
                     <!-- breadcrumb end -->
-                    <!-- 子HTML 開始 -->
-                    <div class="subhtml">
-                        <h3 style="text-align: center;">中華資訊與科技教育學會</h3>
 
-                        <h4 style="text-align: center;">期刊投稿辦法</h4>
+                    <h3 class="text-center">中華資訊與科技教育學會</h3>
+                    <h4 class="text-center">期刊投稿辦法</h4>
+                    <!-- 子HTML 開始 -->
+                    <div class="subhtml"></div>
 
                         <ul class="list_tw">
                             <li>
