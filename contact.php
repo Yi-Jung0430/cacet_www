@@ -28,11 +28,11 @@
                             <tbody>
                                 <tr>
                                     <th scope="row" class="text-nowrap">聯絡人</th>
-                                    <td>廖敏蕙助理秘書</td>
+                                    <td>彭佳惠小姐</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-nowrap">電話</th>
-                                    <td class="text-nowrap">02-8226-5021#3014</td>
+                                    <td class="text-nowrap">02-8226-5021#3013</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-nowrap">信箱</th>
@@ -53,11 +53,11 @@
                             <tbody>
                                 <tr>
                                     <th scope="row" class="text-nowrap">聯絡人</th>
-                                    <td class="text-nowrap">廖敏蕙助理秘書</td>
+                                    <td class="text-nowrap">蔡汶蓉小姐</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-nowrap">電話</th>
-                                    <td class="text-nowrap">02-8226-5021#3014</td>
+                                    <td class="text-nowrap">02-8226-5021#3016</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-nowrap">信箱</th>
