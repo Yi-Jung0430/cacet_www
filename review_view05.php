@@ -153,14 +153,14 @@
                 <thead>
                   <tr>
                     <th class="bg-third text-light">項目與比重</th>
-                    <th class="bg-third text-light">審查建議</th>
+                    <th class="bg-third text-light w-75">審查建議</th>
                     <th class="bg-third text-light score_th">得分</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row" valign="middle">
-                      原創性、學術性或應用價值之程度（20分）
+                      原創性、學術性或應用價值之程度(20分)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_01 第一欄文字 -->
@@ -175,7 +175,7 @@
                   </tr>
                   <tr>
                     <th valign="middle">
-                      資料取得、引用、評析與詮釋得當之程度（20分）
+                      資料取得、引用、評析與詮釋得當之程度(20分)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_03 第二欄文字 -->
@@ -190,7 +190,7 @@
                   </tr>
                   <tr>
                     <th valign="middle">
-                      研究方法、過程與推論嚴謹之程度（25分）
+                      研究方法、過程與推論嚴謹之程度(25分)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_05 第三欄文字 -->
@@ -205,7 +205,7 @@
                   </tr>
                   <tr>
                     <th valign="middle">
-                      文章結構安排與論證層次適切、有系統之程度 （25分）
+                      文章結構安排與論證層次適切、有系統之程度(25分)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_07 第四欄文字 -->
@@ -220,7 +220,7 @@
                   </tr>
                   <tr>
                     <th valign="middle">
-                      文字精確、流暢之程度 （10分）
+                      文字精確、流暢之程度（10分）
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_09 第五欄文字 -->
@@ -248,7 +248,7 @@
                   <!-- v_11 -->
                   <tr>
                     <th scope="row" valign="middle">
-                      (一) 優點
+                     (一)優點
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
@@ -258,7 +258,7 @@
                   <!-- v_12 -->
                   <tr>
                     <th valign="middle">
-                      (二) 缺點
+                      (二)缺點
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
@@ -268,7 +268,7 @@
                   <!-- v_13 -->
                   <tr>
                     <th valign="middle">
-                      (三) 英文摘要修改建議
+                      (三)英文摘要修改建議
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
@@ -278,7 +278,7 @@
                   <!-- v_14 -->
                   <tr>
                     <th valign="middle">
-                      (四) 具體修改建議
+                      (四)具體修改建議
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
@@ -293,9 +293,9 @@
               <table class="table table-bordered bg-white mt-1 seminarInner align-middle">
                 <thead>
                   <tr>
-                    <th class="bg-third text-light">刊登建議 ( 系統自動計算 )
+                    <th class="bg-third text-light">刊登建議(系統自動計算)
                     </th>
-                    <th class="bg-third text-light">總分 (100)</th>
+                    <th class="bg-third text-light">總分(100)</th>
                   </tr>
                 </thead>
                 <tbody class="cu__table">

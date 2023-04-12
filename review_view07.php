@@ -132,7 +132,7 @@
                         出版等情況)，侵犯他人著作權(如翻譯、抄襲等等)等情況，懇請審查委員特別留意(可上網搜尋)，以維持學術規範
                         及學術水準。</li>
                       <li>本刊審查作業遵循專業性、保密性、以及迴避性原則。請審查委員本專業知能審查，並為投稿者、審稿過程及結果
-                        善盡保密之責。如果因與投稿者間有利害關係（如論文指導關係、同事關係、親戚關係等）而有所顧忌時，請速與
+                        善盡保密之責。如果因與投稿者間有利害關係(如論文指導關係、同事關係、親戚關係等)而有所顧忌時，請速與
                         本刊執行編輯聯絡。</li>
                     </ol>
                   </th>
@@ -150,14 +150,14 @@
                 <thead>
                   <tr>
                     <th class="bg-third text-light">項目與比重</th>
-                    <th class="bg-third text-light">審查建議</th>
+                    <th class="bg-third text-light w-75">審查建議</th>
                     <th class="bg-third text-light score_th">得分</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row" valign="middle">
-                      原創性、學術性或應用價值之程度（20分）
+                      原創性、學術性或應用價值之程度(20分)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_01 第一欄文字 -->
@@ -171,7 +171,7 @@
                   </tr>
                   <tr>
                     <th valign="middle">
-                      資料取得、引用、評析與詮釋得當之程度（20分）
+                      資料取得、引用、評析與詮釋得當之程度(20分)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_03 第二欄文字 -->
@@ -185,7 +185,7 @@
                   </tr>
                   <tr>
                     <th valign="middle">
-                      研究方法、過程與推論嚴謹之程度（25分）
+                      研究方法、過程與推論嚴謹之程度(25分)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_05 第三欄文字 -->
@@ -199,7 +199,7 @@
                   </tr>
                   <tr>
                     <th valign="middle">
-                      文章結構安排與論證層次適切、有系統之程度 （25分）
+                      文章結構安排與論證層次適切、有系統之程度 (25分)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_07 第四欄文字 -->
@@ -213,7 +213,7 @@
                   </tr>
                   <tr>
                     <th valign="middle">
-                      文字精確、流暢之程度 （10分）
+                      文字精確、流暢之程度 (10分)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_09 第五欄文字 -->
