@@ -560,7 +560,7 @@
         if ($(".v_08").closest(".art_upload_raw").next(".oldfile_box").find(".file_is_del").val() == 0) {
           /**/
         } else {
-          msg += "<p>全文，必填欄位。</p>";
+          msg += "<p>全文，請上傳稿件檔案。</p>";
         }
       }
       if ($(".v_08").val() != "") {
