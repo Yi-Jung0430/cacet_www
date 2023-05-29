@@ -23,10 +23,12 @@
             </ol>
           </nav>
           <!-- breadcrumb end -->
-
+          <h2 class="my-lg-4 my-2 h3 border-start border-dark ps-2">稿件審查</h2>
+        </div>
+        <div class="col-12">
           <!-- 表格 開始 -->
           <div class="table-responsive">
-            <table class="align-middle table table-bordered border-third table-hover mt-3 mt-lg-5 ">
+            <table class="align-middle table table-bordered border-third table-hover">
               <thead class="text-white bg-third text-nowrap">
                 <tr>
                   <th class="fs-6">論文編號</th>
