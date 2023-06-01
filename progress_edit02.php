@@ -37,14 +37,14 @@
               <!-- 形式審查退回 表格 開始 -->
               <table>
                 <tr>
-                  <td colspan="2">
+                  <td colspan="2" class="bg-third text-light">
                     <span>
                       形式審查退回
                     </span>
 
                   </td>
                 </tr>
-                
+
                 <tr>
                   <th>
                     退回紀錄
@@ -220,120 +220,130 @@
                         </tr>
                       </thead>
                       <tbody class="cu__table">
-                      <!-- 第一列 -->
-                      <tr>
-                        <!-- 作者類型 v_10 v_11 -->
-                        <th valign="middle">
-                          作者類型
-                          <sup><i class="bi bi-asterisk text-primary"></i><sup>
-                        </th>
-                        <td>
-                          <div class="form-check form-check-inline">
-                            <label class="form-check-label seminarInner__label" for="author01">
-                              <input class="form-check-input v_10" type="radio" value="boss" id="author01" checked>
-                              <span>
-                                第一作者
-                              </span>
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <label class="form-check-label seminarInner__label" for="author02">
-                              <input class="form-check-input v_10" type="radio" value="team" id="author02">
-                              <span>
-                                共同作者
-                              </span>
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline border-start border-third check-border">
-                            <label class="form-check-label seminarInner__label ">
-                              <input class="form-check-input v_11" type="checkbox" value="1" checked>
-                              <span>
-                                通訊作者
-                              </span>
-                            </label>
-                          </div>
-                        </td>
-                        <!-- 電子信箱 v_12 -->
-                        <th valign="middle">電子信箱
-                        </th>
-                        <td>
-                          <span>Yang@sydt.com.tw</span>
-                        </td>
-                      </tr>
-                      <!-- 第二列 -->
-                      <tr>
-                        <!-- 作者中文名 v_13 -->
-                        <th valign="middle">
-                          作者中文名
-                        </th>
-                        <td>
-                          <span>林北星</span>
-                        </td>
-                        <!-- 作者英文名 v_14 -->
-                        <th valign="middle">
-                          作者英文名
-                        </th>
-                        <td>
-                          <span>James Chih-Hsin Yang</span>
-                        </td>
-                      </tr>
-                      <!-- 第三列 -->
-                      <tr>
-                        <!-- 服務機構 v_15 -->
-                        <th valign="middle">
-                          服務機構
-                        </th>
-                        <td>
-                          <span>天堂花園</span>
-                        </td>
-                        <!-- 手機 v_16 -->
-                        <th valign="middle">
-                          手機
-                        </th>
-                        <td>
-                          <span>0912345678</span>
-                        </td>
-                      </tr>
-                      <!-- 第四列 -->
-                      <tr>
-                        <!-- 職稱 v_17 -->
-                        <th valign="middle">
-                          職稱
-                        </th>
-                        <td>
-                          <span>公主</span>
-                        </td>
-                        <!-- 手機 v_18 -->
-                        <th valign="middle">
-                          服務機構電話
-                        </th>
-                        <td>
-                          <span></span>
-                        </td>
-                      </tr>
-                      <!-- 第五列 -->
-                      <tr>
-                        <!-- 郵遞區號 v_19 -->
-                        <th valign="middle">
-                          郵遞區號
-                        </th>
-                        <td>
-                          <span>777</span>
-                        </td>
-                        <!-- 手機 v_20 -->
-                        <th valign="middle">
-                          通訊地址
-                        </th>
-                        <td>
-                          <span>花園區花見小路166號10樓</span>
-                        </td>
-                      </tr>
-                    </tbody>
+                        <!-- 第一列 -->
+                        <tr>
+                          <!-- 作者類型 v_10 v_11 -->
+                          <th valign="middle">
+                            作者類型
+                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                          </th>
+                          <td>
+                            <div class="form-check form-check-inline">
+                              <label class="form-check-label seminarInner__label" for="author01">
+                                <input class="form-check-input v_10" type="radio" value="boss" id="author01">
+                                <span>
+                                  第一作者
+                                </span>
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <label class="form-check-label seminarInner__label" for="author02">
+                                <input class="form-check-input v_10" type="radio" value="team" id="author02" checked>
+                                <span>
+                                  共同作者
+                                </span>
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline border-start border-third check-border">
+                              <label class="form-check-label seminarInner__label ">
+                                <input class="form-check-input v_11" type="checkbox" value="1">
+                                <span>
+                                  通訊作者
+                                </span>
+                              </label>
+                            </div>
+                          </td>
+                          <!-- 順序 -->
+                          <th valign="middle">
+                            順序
+                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                          </th>
+                          <td>
+                            <input type="number" class="form-control v_22" value="">
+                          </td>
+                          <!-- 第二列 -->
+                        <tr>
+                          <!-- 作者中文名 v_13 -->
+                          <th valign="middle">
+                            作者中文名
+                          </th>
+                          <td>
+                            <span>林北星</span>
+                          </td>
+                          <!-- 作者英文名 v_14 -->
+                          <th valign="middle">
+                            作者英文名
+                          </th>
+                          <td>
+                            <span>James Chih-Hsin Yang</span>
+                          </td>
+                        </tr>
+                        <!-- 第三列 -->
+                        <tr>
+                          <!-- 服務機構 v_15 -->
+                          <th valign="middle">
+                            服務機構
+                          </th>
+                          <td>
+                            <span>天堂花園</span>
+                          </td>
+                          <!-- 手機 v_16 -->
+                          <th valign="middle">
+                            手機
+                          </th>
+                          <td>
+                            <span>0912345678</span>
+                          </td>
+                        </tr>
+                        <!-- 第四列 -->
+                        <tr>
+                          <!-- 職稱 v_17 -->
+                          <th valign="middle">
+                            職稱
+                          </th>
+                          <td>
+                            <span>公主</span>
+                          </td>
+                          <!-- 服務機構電話 v_18 -->
+                          <th valign="middle">
+                            服務機構電話
+                          </th>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                        <!-- 第五列 -->
+                        <tr>
+                          <!-- 郵遞區號 v_19 -->
+                          <th valign="middle">
+                            郵遞區號
+                          </th>
+                          <td>
+                            <span>777</span>
+                          </td>
+                          <!-- 通訊地址 v_20 -->
+                          <th valign="middle">
+                            通訊地址
+                          </th>
+                          <td>
+                            <span>花園區花見小路166號10樓</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <!-- 電子信箱 v_21 -->
+                          <th valign="middle">電子信箱
+                          </th>
+                          <td colspan="3">
+                            <span>Yang@sydt.com.tw</span>
+                          </td>
+                        </tr>
+                        </tr>
+                      </tbody>
                     </table>
                   </section>
                 </li>
                 <!-- 新增的空白表格 -->
-                <li class="li_copy  author_list">
+                <li class="li_copy author_list">
                   <section class="detail_box li_copy_child">
                     <table class="table table-bordered bg-white mt-2 seminarInner align-middle">
                       <thead>
@@ -370,12 +380,13 @@
                               <label class="form-check-label seminarInner__label ">通訊作者</label>
                             </div>
                           </td>
-                          <!-- 電子信箱 v_12 -->
-                          <th valign="middle">電子信箱
+                          <!-- 順序 v_12 -->
+                          <th valign="middle">
+                            順序
                             <sup><i class="bi bi-asterisk text-primary"></i><sup>
                           </th>
                           <td>
-                            <input type="email" class="form-control v_12" value="">
+                            <input type="number" class="form-control v_12" value="">
                           </td>
                         </tr>
                         <!-- 第二列 -->
@@ -459,6 +470,15 @@
                             <input type="text" class="form-control v_20" value="">
                           </td>
                         </tr>
+                        <tr>
+                          <!-- 電子信箱 v_21 -->
+                          <th valign="middle">電子信箱
+                            <sup><i class="bi bi-asterisk text-primary"></i><sup>
+                          </th>
+                          <td colspan="3">
+                            <input type="email" class="form-control v_21" value="">
+                          </td>
+                        </tr>
                       </tbody>
                     </table>
                   </section>
@@ -524,7 +544,7 @@
     var msg = "";
 
     //自訂對話框
-    
+
     if (arg2 == "finish") {
 
       // 先進行欄位驗證
@@ -599,19 +619,35 @@
           msg += "<p>附件，檔案大小限制：20MB以內。</p>";
         }
       }
-      
+
       // 論文資訊 欄位驗證 結束
 
 
       // 作者資訊 欄位驗證 開始
-      //作者類型
+      // 作者類型
+      // 會員本人的排序欄位驗證(不得為空)
+      if ($(".v_22").val() == "") {
+        msg += "<p>表格 <span class='list_group_num'>" + "1" + "</span> 的順序，必填欄位。</p>";
+      }
+
       $(".author_list").each(function(i, e) {
         if ($(this).hasClass("li_copy")) {
           return false;
         }
         //
         if ($(this).find(".v_10:checked").length == 0) {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的作者類型，必填欄位。</p>";
+          msg += "<p>表格 <span class='list_group_num'>" + (i + 2) + "</span> 的作者類型，必填欄位。</p>";
+        }
+      });
+
+      //順序
+      $(".author_list").each(function(i, e) {
+        if ($(this).hasClass("li_copy")) {
+          return false;
+        }
+        //
+        if ($(this).find(".v_12").val() == "") {
+          msg += "<p>表格 <span class='list_group_num'>" + (i + 2) + "</span> 的順序，必填欄位。</p>";
         }
       });
 
@@ -621,11 +657,11 @@
           return false;
         }
         //
-        if ($(this).find(".v_12").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的電子信箱，必填欄位。</p>";
+        if ($(this).find(".v_21").val() == "") {
+          msg += "<p>表格 <span class='list_group_num'>" + (i + 2) + "</span> 的電子信箱，必填欄位。</p>";
         } else {
-          if (!checkEmail($(this).find(".v_12").val())) {
-            msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的電子信箱，資料格式限制：電子信箱格式。</p>";
+          if (!checkEmail($(this).find(".v_21").val())) {
+            msg += "<p>表格 <span class='list_group_num'>" + (i + 2) + "</span> 的電子信箱，資料格式限制：電子信箱格式。</p>";
           }
         }
       });
@@ -637,7 +673,7 @@
         }
         //
         if ($(this).find(".v_13").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的作者中文名，必填欄位。</p>";
+          msg += "<p>表格 <span class='list_group_num'>" + (i + 2) + "</span> 的作者中文名，必填欄位。</p>";
         }
       });
 
@@ -648,7 +684,7 @@
         }
         //
         if ($(this).find(".v_14").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的作者英文名，必填欄位。</p>";
+          msg += "<p>表格 <span class='list_group_num'>" + (i + 2) + "</span> 的作者英文名，必填欄位。</p>";
         }
       });
 
@@ -659,7 +695,7 @@
         }
         //
         if ($(this).find(".v_15").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的服務機構，必填欄位。</p>";
+          msg += "<p>表格 <span class='list_group_num'>" + (i + 2) + "</span> 的服務機構，必填欄位。</p>";
         }
       });
 
@@ -670,7 +706,7 @@
         }
         //
         if ($(this).find(".v_16").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的手機，必填欄位。</p>";
+          msg += "<p>表格 <span class='list_group_num'>" + (i + 2) + "</span> 的手機，必填欄位。</p>";
         }
       });
 
@@ -681,7 +717,7 @@
         }
         //
         if ($(this).find(".v_17").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的職稱，必填欄位。</p>";
+          msg += "<p>表格 <span class='list_group_num'>" + (i + 2) + "</span> 的職稱，必填欄位。</p>";
         }
       });
 
@@ -692,7 +728,7 @@
         }
         //
         if ($(this).find(".v_19").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的郵遞區號，必填欄位。</p>";
+          msg += "<p>表格 <span class='list_group_num'>" + (i + 2) + "</span> 的郵遞區號，必填欄位。</p>";
         }
       });
 
@@ -703,7 +739,7 @@
         }
         //
         if ($(this).find(".v_20").val() == "") {
-          msg += "<p>第 <span class='list_group_num'>" + (i + 2) + "</span> 位的通訊地址，必填欄位。</p>";
+          msg += "<p>表格 <span class='list_group_num'>" + (i + 2) + "</span> 的通訊地址，必填欄位。</p>";
         }
       });
 
@@ -723,6 +759,7 @@
       }
 
       // 作者資訊 欄位驗證 結束
+
 
 
       if (msg != "") {
@@ -779,15 +816,18 @@
 
   /* name屬性，陣列重設index  -- 開始 */
   function author_array_reset() {
-    $(".author_list li:not('.li_copy')").each(function(i, e) {
+    $(".author_list section:not('.li_copy')").each(function(i, e) {
       //作者類型
       $(this).find(".v_10").attr("name", "author[" + i + "]['type']");
 
       //通訊作者
       $(this).find(".v_11").attr("name", "author[" + i + "]['contact']");
 
+      //順序
+      $(this).find(".v_12").attr("name", "author[" + i + "]['order']");
+
       //電子信箱
-      $(this).find(".v_12").attr("name", "author[" + i + "]['email']");
+      $(this).find(".v_21").attr("name", "author[" + i + "]['email']");
 
       //作者中文名
       $(this).find(".v_13").attr("name", "author[" + i + "]['name_tw']");

@@ -78,6 +78,19 @@
                     <a href="review_view03.php" class="btn btn-outline-third">檢視</a>
                   </td>
                 </tr>
+                <tr>
+                  <td class="text-nowrap">20220812409</td>
+                  <td class="text-nowrap">會議論文</td>
+                  <td class="text-nowrap">科技輔助英語口說學習之分析與探討</td>
+                  <td class="text-nowrap">林姸安</td>
+                  <td class="text-nowrap">
+                    稿件已審查
+                    <span class="text-primary">[稿件不通過]</span>
+                  </td>
+                  <td>
+                    <a href="review_view08.php" class="btn btn-outline-third">檢視</a>
+                  </td>
+                </tr>
                 <!-- 會議論文 會有的狀態列表 結束 -->
                 <!-- 期刊論文 會有的狀態列表 開始 -->
                 <tr>
@@ -92,6 +105,7 @@
                     <a href="review_view04.php" class="btn btn-outline-third">回應</a>
                   </td>
                 </tr>
+                <!-- 此審查為第一次審查 開始 -->
                 <tr>
                   <td class="text-nowrap">20220812409</td>
                   <td class="text-nowrap">期刊論文</td>
@@ -104,6 +118,21 @@
                     <a href="review_view05.php" class="btn btn-outline-third">審查</a>
                   </td>
                 </tr>
+                <!-- 此審查為第一次審查 結束 -->
+                <!-- 此審查為修改後重審(再次審查，內頁有之前審查紀錄) 開始 -->
+                <!-- <tr>
+                  <td class="text-nowrap">20220812409</td>
+                  <td class="text-nowrap">期刊論文</td>
+                  <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
+                  <td class="text-nowrap">林姸安</td>
+                  <td class="text-nowrap">
+                    待委員審查
+                  </td>
+                  <td>
+                    <a href="review_view09.php" class="btn btn-outline-third">審查</a>
+                  </td>
+                </tr> -->
+                <!-- 此審查為修改後重審(再次審查，內頁有之前審查紀錄) 結束 -->
                 <tr>
                   <td class="text-nowrap">20220812409</td>
                   <td class="text-nowrap">期刊論文</td>

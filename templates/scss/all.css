@@ -11046,10 +11046,6 @@ table.cu__responsive tr th {
   margin: 0;
 }
 
-.detail_box table tr td[colspan] {
-  background: #0a1d37;
-  color: #fff;
-}
 .detail_box table tr td[colspan] p {
   margin: 0;
 }
@@ -11747,7 +11743,7 @@ label.seminarInner__label {
 }
 
 .author_th::before {
-  content: "第" counters(my_01, " ", decimal) "位作者資訊";
+  content: "表格" counters(my_01, " ", decimal) "-作者資訊";
 }
 
 .list_group li {

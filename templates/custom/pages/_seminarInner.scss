@@ -4,7 +4,7 @@ label.seminarInner__label {
 }
 
 .author_th::before {
-    content: "第" counters(my_01, " ", decimal) "位作者資訊";
+    content: "表格" counters(my_01, " ", decimal) "-作者資訊";
     // min-width: 13px;
     // line-height: 18px;
     // color: #fff;

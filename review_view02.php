@@ -34,7 +34,7 @@
             <div class="detail_box">
               <table class="table">
                 <tr>
-                  <td colspan="2">
+                  <td  colspan="2" class="bg-third text-light">
                     <p>論文資訊</p>
                   </td>
                 </tr>
@@ -135,7 +135,7 @@
                 <div class="">
                   <table class="table">
                     <tr>
-                      <td colspan="2">
+                      <td  colspan="2" class="bg-third text-light">
                         <p>審查結果</p>
                       </td>
                     </tr>

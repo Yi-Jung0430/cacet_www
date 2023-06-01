@@ -35,7 +35,7 @@
               <!-- 形式審查退回 表格 開始 -->
               <table>
                 <tr>
-                  <td colspan="2">
+                  <td colspan="2" class="bg-third text-light">
                     <span>
                       形式審查退回
                     </span>

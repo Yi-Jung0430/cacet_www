@@ -29,7 +29,7 @@
           <div class="detail_box">
             <table class="table">
               <tr>
-                <td colspan="2">
+                <td colspan="2" class="bg-third text-light">
                   <p>論文資訊</p>
                 </td>
               </tr>
@@ -125,7 +125,7 @@
             <table class="table">
               <!---->
               <tr>
-                <td colspan="4">
+                <td colspan="4" class="bg-third text-light">
                   <p>作者資訊</p>
                 </td>
               </tr>
@@ -136,10 +136,10 @@
                     <span>第一作者 (通訊作者)</span>
                   </div>
                 </td>
-                <th>電子信箱</th>
+                <th>順序</th>
                 <td>
                   <div class="art_word">
-                    <span>aaa@gmail.com</span>
+                    <span>2</span>
                   </div>
                 </td>
               </tr>
@@ -188,9 +188,6 @@
                 <td>
                   <div class="art_word">
                     <span>012</span>
-                    <small class="form-text fileformat">
-                      最多六位數字
-                    </small>
                   </div>
                 </td>
                 <th>通訊地址</th>
@@ -200,9 +197,18 @@
                   </div>
                 </td>
               </tr>
+              <tr>
+                <th valign="middle">電子信箱
+                </th>
+                <td colspan="3">
+                  <div class="art_word">
+                    <span>aaa@gmail.com</span>
+                  </div>
+                </td>
+              </tr>
               <!---->
               <tr>
-                <td colspan="4">
+                <td colspan="4" class="bg-third text-light">
                   <p>作者資訊</p>
                 </td>
               </tr>
@@ -213,10 +219,10 @@
                     <span>共同作者 (通訊作者)</span>
                   </div>
                 </td>
-                <th>電子信箱</th>
+                <th>順序</th>
                 <td>
                   <div class="art_word">
-                    <span>aaa@gmail.com</span>
+                    <span>1</span>
                   </div>
                 </td>
               </tr>
@@ -265,9 +271,6 @@
                 <td>
                   <div class="art_word">
                     <span>012</span>
-                    <small class="form-text fileformat">
-                      最多六位數字
-                    </small>
                   </div>
                 </td>
                 <th>通訊地址</th>
@@ -277,10 +280,20 @@
                   </div>
                 </td>
               </tr>
+              <tr>
+                <!-- 電子信箱 v_21 -->
+                <th valign="middle">電子信箱
+                </th>
+                <td colspan="3">
+                  <div class="art_word">
+                    <span>aaa@gmail.com</span>
+                  </div>
+                </td>
+              </tr>
             </table>
             <table class="table">
               <tr>
-                <td colspan="2">
+                <td colspan="2" class="bg-third text-light">
                   <p>審查結果</p>
                 </td>
               </tr>
@@ -368,7 +381,7 @@
             </table>
             <table class="table">
               <tr>
-                <td colspan="2">
+                <td colspan="2" class="bg-third text-light">
                   <p>主編決議</p>
                 </td>
               </tr>

@@ -28,7 +28,7 @@
           <div class="detail_box">
             <table class="table">
               <tr>
-                <td colspan="2">
+                <td colspan="2" class="bg-third text-light">
                   <p>論文資訊</p>
                 </td>
               </tr>
@@ -136,7 +136,7 @@
               <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <table class="table">
                   <tr>
-                    <td colspan="2">
+                    <td colspan="2" class="bg-third text-light">
                       <p>總評</p>
                     </td>
                   </tr>
@@ -171,7 +171,7 @@
               <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <table class="table">
                   <tr>
-                    <td colspan="2">
+                    <td colspan="2" class="bg-third text-light">
                       <p>總評</p>
                     </td>
                   </tr>
@@ -206,7 +206,7 @@
               <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                 <table class="table">
                   <tr>
-                    <td colspan="2">
+                    <td colspan="2" class="bg-third text-light">
                       <p>總評</p>
                     </td>
                   </tr>

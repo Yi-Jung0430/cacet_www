@@ -18,23 +18,20 @@
               <li class="breadcrumb-item"><a href="home.php">首頁</a></li>
               <li class="breadcrumb-item">會員中心</li>
               <li class="breadcrumb-item"><a href="review.php">稿件審查</a></li>
-              <li class="breadcrumb-item active" aria-current="page">審查
+              <li class="breadcrumb-item active" aria-current="page">檢視
                 <span>(會議論文)</span>
               </li>
             </ol>
           </nav>
           <!-- breadcrumb end -->
 
-          <!-- 訊息外殼位置 開始 -->
-          <?php include("inc_message.php"); ?>
-          <!-- 訊息外殼位置 結束 -->
 
           <div class="col-12">
             <!-- 詳細內容 開始 -->
             <div class="detail_box">
               <table class="table">
                 <tr>
-                  <td  colspan="2" class="bg-third text-light">
+                  <td colspan="2" class="bg-third text-light">
                     <p>論文資訊</p>
                   </td>
                 </tr>
@@ -127,15 +124,12 @@
                   </td>
                 </tr>
               </table>
-              <div class="mt-1 mt-lg-3">
-                <small class="text-small fw-light "><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
-              </div>
               <form method="post" enctype="multipart/form-data" action="review.php">
                 <!-- 論文資訊 表格 開始 -->
                 <div class="">
                   <table class="table">
                     <tr>
-                      <td  colspan="2" class="bg-third text-light">
+                      <td colspan="2" class="bg-third text-light">
                         <p>審查結果</p>
                       </td>
                     </tr>
@@ -149,64 +143,45 @@
                     </tr>
                     <tr>
                       <th>委員建議
-                        <sup><i class="bi bi-asterisk text-primary"></i><sup>
                       </th>
                       <td>
-                        <textarea class="form-control v_04" rows="3"></textarea>
-
+                        <div class="art_word">
+                          <span>論述不足</span>
+                        </div>
                       </td>
                     </tr>
+                    <!-- 建議發表形式 v_01 -->
                     <tr>
                       <th valign="middle">建議發表形式
-                        <sup><i class="bi bi-asterisk text-primary"></i><sup>
                       </th>
                       <td>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input v_01" name="publishing method" id="publishing_method_01" type="radio" value="口頭" checked>
-                          <label class="form-check-label seminarInner__label" for="publishing_method_01">口頭</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input v_01" name="publishing method" id="publishing_method_02" type="radio" value="海報">
-                          <label class="form-check-label seminarInner__label" for="publishing_method_02">海報</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input v_01" name="publishing method" id="publishing_method_03" type="radio" value="兩者皆可">
-                          <label class="form-check-label seminarInner__label" for="publishing_method_03">兩者皆可</label>
+                        <div class="art_word">
+                          <span>海報</span>
                         </div>
                       </td>
                     </tr>
 
                     <tr>
                       <th valign="middle">結果
-                        <sup><i class="bi bi-asterisk text-primary"></i><sup>
                       </th>
                       <td>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input v_02" name="review_01" id="review_01" type="radio" value="通過" checked>
-                          <label class="form-check-label seminarInner__label" for="review_01">通過</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input v_02" name="review_02" id="review_02" type="radio" value="不通過">
-                          <label class="form-check-label seminarInner__label" for="review_02">不通過</label>
+                        <div class="art_word">
+                          <span>不通過</span>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <th valign="middle" class="register__th">評分分數
-                        <sup><i class="bi bi-asterisk text-primary"></i><sup>
                       </th>
                       <td>
-                        <div class="row g-3">
-                          <div class="col-sm-12 col-lg-4">
-                            <input type="number" class="form-control v_05" placeholder="">
-                          </div>
+                        <div class="art_word">
+                          <span>55</span>
                         </div>
                       </td>
                     </tr>
                   </table>
                   <div class="text-center">
-                    <a class="btn btn-outline-third me-2" href="javascript:history.go(-1);" onclick="del()">返回</a>
-                    <input class="btn btn-third" type="submit" onClick="form_submit(this,'finish')" value="提交審查">
+                    <a class="btn btn-outline-third me-2" href="javascript:history.go(-1);">返回</a>
                   </div>
                 </div>
                 <!-- 詳細內容 結束 -->
@@ -227,20 +202,6 @@
 
         var msg = "";
 
-        //委員建議
-        if ($(".v_04").val() == "") {
-          msg += "<p>委員建議，必填欄位。</p>";
-        }
-        // 分數
-        if ($(".v_05").val() == "") {
-          msg += "<p>評分分數，必填欄位。</p>";
-        }
-
-
-        if (msg != "") {
-          message_show(msg);
-          return false;
-        }
         //自訂對話框
         if (arg2 == "finish") {
           if (!await art_confirm("系統訊息", "確認提交此審核結果嗎？")) {
@@ -249,12 +210,5 @@
         }
 
         $(arg1).closest('form').submit();
-      }
-
-      async function del() {
-        event.preventDefault();
-        if (await art_confirm('系統訊息', '您剛剛的異動將不會儲存，確定要返回嗎?')) {
-          location.href = "review.php";
-        }
       }
     </script>

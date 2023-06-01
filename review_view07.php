@@ -29,7 +29,7 @@
             <div class="detail_box">
               <table class="table">
                 <tr>
-                  <td colspan="2">
+                  <td colspan="2" class="bg-third text-light">
                     <p>論文資訊</p>
                   </td>
                 </tr>
@@ -118,7 +118,7 @@
             <div class="detail_box">
               <table class="table">
                 <tr>
-                  <td colspan="2">
+                  <td colspan="2" class="bg-third text-light">
                     <p>審稿說明</p>
                   </td>
                 </tr>
@@ -141,10 +141,6 @@
             </div>
 
             <!-- 委員審查 表格 開始 -->
-            <div class="mt-1 mt-lg-3">
-              <small class="text-small fw-light "><i class="bi bi-asterisk me-1 text-primary"></i>為必填欄位</small>
-            </div>
-
             <div class="table-responsive">
               <table class="table table-bordered bg-white mt-1 seminarInner align-middle cu__responsive">
                 <thead>
@@ -158,7 +154,6 @@
                   <tr>
                     <th scope="row" valign="middle">
                       原創性、學術性或應用價值之程度(20分)
-                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_01 第一欄文字 -->
                     <td>
@@ -172,7 +167,6 @@
                   <tr>
                     <th valign="middle">
                       資料取得、引用、評析與詮釋得當之程度(20分)
-                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_03 第二欄文字 -->
                     <td>
@@ -186,7 +180,6 @@
                   <tr>
                     <th valign="middle">
                       研究方法、過程與推論嚴謹之程度(25分)
-                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_05 第三欄文字 -->
                     <td>
@@ -200,7 +193,6 @@
                   <tr>
                     <th valign="middle">
                       文章結構安排與論證層次適切、有系統之程度 (25分)
-                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_07 第四欄文字 -->
                     <td>
@@ -214,7 +206,6 @@
                   <tr>
                     <th valign="middle">
                       文字精確、流暢之程度 (10分)
-                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <!-- v_09 第五欄文字 -->
                     <td>
@@ -241,7 +232,6 @@
                   <tr>
                     <th scope="row" valign="middle">
                       (一) 優點
-                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
                       <span>內容創新，值得嘉許!</span>
@@ -251,7 +241,6 @@
                   <tr>
                     <th valign="middle">
                       (二) 缺點
-                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
                       <span>無</span>
@@ -261,7 +250,6 @@
                   <tr>
                     <th valign="middle">
                       (三) 英文摘要修改建議
-                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
                       <span>無</span>
@@ -271,7 +259,6 @@
                   <tr>
                     <th valign="middle">
                       (四) 具體修改建議
-                      <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
                       <span>無</span>
