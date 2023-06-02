@@ -238,6 +238,9 @@
                         </th>
                         <td>
                           <input type="number" class="form-control v_22" value="">
+                          <small class="form-text fileformat">
+                            範例：請依作者排序填寫數字，如第一作者填寫 1 即可。
+                          </small>
                         </td>
                         <!-- 第二列 -->
                       <tr>
@@ -365,6 +368,9 @@
                         </th>
                         <td>
                           <input type="number" class="form-control v_12" value="">
+                          <small class="form-text fileformat">
+                            範例：請依作者排序填寫數字，如第一作者填寫 1 即可。
+                          </small>
                         </td>
                       </tr>
                       <!-- 第二列 -->
@@ -431,7 +437,6 @@
                         <!-- 郵遞區號 v_19 -->
                         <th valign="middle">
                           郵遞區號
-                          <sup><i class="bi bi-asterisk text-primary"></i><sup>
                         </th>
                         <td>
                           <input type="text" class="form-control v_19" value="">
@@ -442,7 +447,6 @@
                         <!-- 手機 v_20 -->
                         <th valign="middle">
                           通訊地址
-                          <sup><i class="bi bi-asterisk text-primary"></i><sup>
                         </th>
                         <td>
                           <input type="text" class="form-control v_20" value="">
@@ -604,7 +608,7 @@
       // 作者類型
       // 會員本人的排序欄位驗證(不得為空)
       if ($(".v_22").val() == "") {
-        msg += "<p>表格 <span class='list_group_num'>" + "1"+ "</span> 的順序，必填欄位。</p>";
+        msg += "<p>表格 <span class='list_group_num'>" + "1" + "</span> 的順序，必填欄位。</p>";
       }
 
       $(".author_list").each(function(i, e) {
@@ -698,27 +702,6 @@
         }
       });
 
-      //郵遞區號
-      $(".author_list").each(function(i, e) {
-        if ($(this).hasClass("li_copy")) {
-          return false;
-        }
-        //
-        if ($(this).find(".v_19").val() == "") {
-          msg += "<p>表格 <span class='list_group_num'>" + (i + 2) + "</span> 的郵遞區號，必填欄位。</p>";
-        }
-      });
-
-      //通訊地址
-      $(".author_list").each(function(i, e) {
-        if ($(this).hasClass("li_copy")) {
-          return false;
-        }
-        //
-        if ($(this).find(".v_20").val() == "") {
-          msg += "<p>表格 <span class='list_group_num'>" + (i + 2) + "</span> 的通訊地址，必填欄位。</p>";
-        }
-      });
 
       //第一作者只能選擇一個
       if ($(".v_10[value='boss']:checked").length == 0) {
