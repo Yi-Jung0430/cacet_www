@@ -340,9 +340,9 @@
   // 計算分數的函式
   function calculate_score() {
     // 樣式設為預設值
-    $(".v_show_B").removeClass("text-black-50");
-    $(".v_show_A").removeClass("text-black-50");
-    $("input.btn-third").removeClass("disabled");
+    // $(".v_show_B").removeClass("text-black-50");
+    // $(".v_show_A").removeClass("text-black-50");
+    // $("input.btn-third").removeClass("disabled");
     //取得輸入的數字
     var v_02 = $(".v_02").val();
     var v_04 = $(".v_04").val();

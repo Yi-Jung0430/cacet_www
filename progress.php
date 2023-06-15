@@ -23,7 +23,7 @@
             </ol>
           </nav>
           <!-- breadcrumb end -->
-          <h2 class="my-lg-4 my-2 h3 border-start border-dark ps-2">會議投稿</h2>
+          <h2 class="my-lg-4 my-2 h3 border-start border-dark ps-2">稿件進度</h2>
         </div>
         <div class="col-12">
           <!-- 表格 開始 -->
@@ -253,6 +253,18 @@
                   </td>
                   <td class="text-nowrap">
                     <a href="progress_view03.php" class="me-2 btn btn-outline-third">審委意見</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-nowrap">2021-05-12 14:17:33</td>
+                  <td class="text-nowrap">20210512582</td>
+                  <td class="text-nowrap">期刊論文</td>
+                  <td class="text-nowrap">國小學童使用水資源VR遊戲之研發與推廣</td>
+                  <td class="text-nowrap">
+                    審稿中
+                    <span class="text-primary"></span>
+                  </td>
+                  <td class="text-nowrap">
                   </td>
                 </tr>
                 <tr>
