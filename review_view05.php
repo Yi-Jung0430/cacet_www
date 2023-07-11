@@ -372,7 +372,7 @@
       $(".v_show_B").html("修改後送原審者審查(70 分至 75 分)");
     }
     if (result >= 76 && result <= 85) {
-      $(".v_show_B").html("修改後推薦刊登(76 分至 85 分)");
+      $(".v_show_B").html("修改後刊登(76 分至 85 分)");
       $(".v_show_B").removeClass("text-black-50");
       $(".v_show_A").removeClass("text-black-50");
       $("input.btn-third").removeClass("disabled");
