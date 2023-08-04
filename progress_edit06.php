@@ -72,7 +72,7 @@
                   </tr>
                   <!-- 論文標題(中文) v_02 -->
                   <tr>
-                    <th valign="middle">論文標題 ( 中文 )
+                    <th valign="middle">論文標題 (中文)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
@@ -81,7 +81,7 @@
                   </tr>
                   <!-- 論文標題(英文) v_03 -->
                   <tr>
-                    <th valign="middle">論文標題 ( 英文 )
+                    <th valign="middle">論文標題 (英文)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
@@ -90,7 +90,7 @@
                   </tr>
                   <!-- 論文摘要(中文) v_04 -->
                   <tr>
-                    <th valign="middle">論文摘要 ( 中文 )
+                    <th valign="middle">論文摘要 (中文)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
@@ -101,7 +101,7 @@
                   </tr>
                   <!-- 論文摘要(英文) v_05 -->
                   <tr>
-                    <th valign="middle">論文摘要 ( 英文 )
+                    <th valign="middle">論文摘要 (英文)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
@@ -109,9 +109,9 @@
                       <small class="form-text">請勿超過500 個字</small>
                     </td>
                   </tr>
-                  <!-- 關鍵字 ( 中文 ) v_06 -->
+                  <!-- 關鍵字 (中文) v_06 -->
                   <tr>
-                    <th valign="middle">關鍵字 ( 中文 )
+                    <th valign="middle">關鍵字 (中文)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
@@ -119,9 +119,9 @@
                       <small class="form-text">請以全形分號 (<span class="text-primary">；</span>) 分隔</small>
                     </td>
                   </tr>
-                  <!-- 關鍵字 ( 英文 ) v_07 -->
+                  <!-- 關鍵字 (英文) v_07 -->
                   <tr>
-                    <th valign="middle">關鍵字 ( 英文 )
+                    <th valign="middle">關鍵字 (英文)
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
@@ -268,36 +268,36 @@
 
       //論文摘要(中文) v_04
       if ($(".v_04").val() == "") {
-        msg += "<p>論文摘要 ( 中文 )，必填欄位。</p>";
+        msg += "<p>論文摘要 (中文)，必填欄位。</p>";
       }
 
       if ($(".v_04").val() != "") {
         var temp = $(".v_04").val();
         if (temp.length > 500) {
-          msg += "<p>論文摘要 ( 中文 )，字數限制：500字以內。</p>";
+          msg += "<p>論文摘要 (中文)，字數限制：500字以內。</p>";
         }
       }
 
       //論文摘要(英文) v_05
       if ($(".v_05").val() == "") {
-        msg += "<p>論文摘要 ( 英文 )，必填欄位。</p>";
+        msg += "<p>論文摘要 (英文)，必填欄位。</p>";
       }
 
       if ($(".v_05").val() != "") {
         var temp = $(".v_05").val();
         if (temp.length > 500) {
-          msg += "<p>論文摘要 ( 英文 )，字數限制：500字以內。</p>";
+          msg += "<p>論文摘要 (英文)，字數限制：500字以內。</p>";
         }
       }
 
       //論文標題(中文) v_06
       if ($(".v_06").val() == "") {
-        msg += "<p>關鍵字 ( 中文 )，必填欄位。</p>";
+        msg += "<p>關鍵字 (中文)，必填欄位。</p>";
       }
 
       //論文標題(英文) v_07
       if ($(".v_07").val() == "") {
-        msg += "<p>關鍵字 ( 英文 )，必填欄位。</p>";
+        msg += "<p>關鍵字 (英文)，必填欄位。</p>";
       }
 
       //全文 v_08
