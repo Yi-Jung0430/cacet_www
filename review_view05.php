@@ -137,6 +137,11 @@
                       <li>本刊審查作業遵循專業性、保密性、以及迴避性原則。請審查委員本專業知能審查，並為投稿者、審稿過程及結果
                         善盡保密之責。如果因與投稿者間有利害關係（如論文指導關係、同事關係、親戚關係等）而有所顧忌時，請速與
                         本刊執行編輯聯絡。</li>
+                      <li>針對審稿總分之稿件審查結果如下：<br>
+                        同意刊登(86 分以上)<br>
+                        修改後刊登(76 分至 85 分)<br>
+                        修改後送原審者審查(70 分至 75 分)<br>
+                        不予刊登(總分 69 分以下)</li>
                     </ol>
                   </th>
                 </tr>
@@ -248,7 +253,7 @@
                   <!-- v_11 -->
                   <tr>
                     <th scope="row" valign="middle">
-                     (一)優點
+                      (一)優點
                       <sup><i class="bi bi-asterisk text-primary"></i><sup>
                     </th>
                     <td>
@@ -326,7 +331,6 @@
 </div>
 <?php include("inc_footer.php"); ?>
 <script>
-
   // 網頁載入時先執行總分計算 開始
   $(document).ready(function() {
     var is_error = false;

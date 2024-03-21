@@ -138,7 +138,7 @@
                         </div>
                       </div>
 
-                      <small class="form-text fileformat">需以 PDF、DOC、或 DOCX 形式上傳，檔案大小不可超過 20MB。</small>
+                      <small class="form-text fileformat">稿件內容請勿包含作者資訊。需以 PDF、DOC、或 DOCX 形式上傳，檔案大小不可超過 20MB。</small>
                     </td>
                   </tr>
                   <!-- 附件 v_09 -->

@@ -10773,6 +10773,10 @@ ol.number_ol li {
   opacity: 1;
 }
 
+sup {
+  font-size: 8px;
+}
+
 .cu__navbar {
   padding-top: 40px;
 }

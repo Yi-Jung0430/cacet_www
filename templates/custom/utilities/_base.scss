@@ -352,3 +352,8 @@ ol.number_ol li {
 .fade:not(.show) {
     opacity: 1;
 }
+
+// 修改必填星號的字級
+sup {
+    font-size: 8px;
+}
