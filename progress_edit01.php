@@ -96,7 +96,7 @@
                     <td>
                       <textarea class="form-control v_04" rows="3">本研究旨在探討一位罕見疾病中的海豹肢症大學生。透過皮克斯動畫對其大學學習電腦動畫影響之相關因素。
                                             </textarea>
-                      <small class="form-text">請勿超過500 個字</small>
+                      <small class="form-text">請勿超過 2000 個字</small>
                     </td>
                   </tr>
                   <!-- 論文摘要(英文) v_05 -->
@@ -106,7 +106,7 @@
                     </th>
                     <td>
                       <textarea class="form-control v_05" rows="3">This study aims to explore the related factors of a Phocomelia students’ study planning on computer animation.  </textarea>
-                      <small class="form-text">請勿超過500 個字</small>
+                      <small class="form-text">請勿超過 2000 個字</small>
                     </td>
                   </tr>
                   <!-- 關鍵字 (中文) v_06 -->

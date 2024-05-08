@@ -72,7 +72,7 @@
                     </th>
                     <td>
                       <textarea class="form-control v_04" rows="3"></textarea>
-                      <small class="form-text">請勿超過 500 個字</small>
+                      <small class="form-text">請勿超過 2000 個字</small>
                     </td>
                   </tr>
                   <!-- 論文摘要(英文) v_05 -->
@@ -82,7 +82,7 @@
                     </th>
                     <td>
                       <textarea class="form-control v_05" rows="3"></textarea>
-                      <small class="form-text">請勿超過 500 個字</small>
+                      <small class="form-text">請勿超過 2000 個字</small>
                     </td>
                   </tr>
                   <!-- 關鍵字 (中文) v_06 -->
